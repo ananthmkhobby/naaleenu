@@ -233,6 +233,19 @@ def nutrition_for(name: str, category: str, meal_type: MealType = MealType.break
     }
 
 
+def occasion_tags_for(name: str) -> list[str]:
+    lower = name.lower()
+    tags: list[str] = []
+    ekadashi_terms = ["sabudana", "ragi", "fruit", "banana", "curd", "peanut", "potato", "puttu", "sundal"]
+    ekadashi_avoid = ["rice", "akki", "dosa", "idli", "upma", "poha", "avalakki", "chapati", "wheat", "rava", "dal"]
+    festive_terms = ["poori", "pongal", "sweet", "kesari", "ghee", "thatte", "kanchipuram", "appam", "puttu", "vada", "bisi bele", "masala dosa"]
+    if any(term in lower for term in ekadashi_terms) and not any(term in lower for term in ekadashi_avoid):
+        tags.append("ekadashi-friendly")
+    if any(term in lower for term in festive_terms):
+        tags.append("festive")
+    return tags
+
+
 def steps_for(name: str, ingredients: list[str], meal_type: MealType = MealType.breakfast) -> list[str]:
     main = ingredients[0]
     if meal_type == MealType.lunch:
@@ -294,6 +307,7 @@ def load_catalog(meal_type: MealType | None = None) -> list[Dish]:
                 image_key=f"{current_meal_type.value}/{slug}",
                 tags=[
                     cuisine_tier_for(name),
+                    *occasion_tags_for(name),
                     *(
                         ["quick", "lunchbox"] if current_meal_type == MealType.lunch and morning <= 15
                         else ["lunchbox"] if current_meal_type == MealType.lunch

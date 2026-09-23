@@ -2,6 +2,7 @@ export type DietType = "veg" | "egg" | "non_veg";
 export type TimeBand = "under_10" | "under_20" | "under_30" | "relaxed";
 export type FeedbackRating = "loved" | "good" | "dont_suggest";
 export type MealType = "breakfast" | "lunch";
+export type OccasionPreference = "regular" | "ekadashi" | "festive";
 
 export interface Household {
   id: string;

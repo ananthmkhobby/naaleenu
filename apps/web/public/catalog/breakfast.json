@@ -2,6 +2,134 @@
   {
     "id": "dish-001",
     "meal_type": "breakfast",
+    "slug": "fruit-curd-bowl",
+    "name": "Fruit Curd Bowl",
+    "region": [
+      "Western",
+      "urban quick"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Fruit Curd Bowl warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/fruit-curd-bowl",
+    "tags": [
+      "western",
+      "ekadashi-friendly",
+      "quick"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-002",
+    "meal_type": "breakfast",
+    "slug": "boiled-potato-peanut-bowl",
+    "name": "Boiled Potato Peanut Bowl",
+    "region": [
+      "Western",
+      "urban quick"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Boiled Potato Peanut Bowl warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/boiled-potato-peanut-bowl",
+    "tags": [
+      "western",
+      "ekadashi-friendly",
+      "quick"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-003",
+    "meal_type": "breakfast",
     "slug": "plain-idli",
     "name": "Plain Idli",
     "region": [
@@ -67,7 +195,7 @@
     "is_active": true
   },
   {
-    "id": "dish-002",
+    "id": "dish-004",
     "meal_type": "breakfast",
     "slug": "mini-idli",
     "name": "Mini Idli",
@@ -134,7 +262,7 @@
     "is_active": true
   },
   {
-    "id": "dish-003",
+    "id": "dish-005",
     "meal_type": "breakfast",
     "slug": "button-idli",
     "name": "Button Idli",
@@ -201,7 +329,7 @@
     "is_active": true
   },
   {
-    "id": "dish-004",
+    "id": "dish-006",
     "meal_type": "breakfast",
     "slug": "mallige-idli",
     "name": "Mallige Idli",
@@ -268,7 +396,7 @@
     "is_active": true
   },
   {
-    "id": "dish-005",
+    "id": "dish-007",
     "meal_type": "breakfast",
     "slug": "thatte-idli",
     "name": "Thatte Idli",
@@ -319,6 +447,7 @@
     "image_key": "breakfast/thatte-idli",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -335,7 +464,7 @@
     "is_active": true
   },
   {
-    "id": "dish-006",
+    "id": "dish-008",
     "meal_type": "breakfast",
     "slug": "kanchipuram-idli",
     "name": "Kanchipuram Idli",
@@ -386,6 +515,7 @@
     "image_key": "breakfast/kanchipuram-idli",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -402,7 +532,7 @@
     "is_active": true
   },
   {
-    "id": "dish-007",
+    "id": "dish-009",
     "meal_type": "breakfast",
     "slug": "rava-idli",
     "name": "Rava Idli",
@@ -471,7 +601,7 @@
     "is_active": true
   },
   {
-    "id": "dish-008",
+    "id": "dish-010",
     "meal_type": "breakfast",
     "slug": "vegetable-rava-idli",
     "name": "Vegetable Rava Idli",
@@ -541,7 +671,7 @@
     "is_active": true
   },
   {
-    "id": "dish-009",
+    "id": "dish-011",
     "meal_type": "breakfast",
     "slug": "ragi-idli",
     "name": "Ragi Idli",
@@ -609,7 +739,7 @@
     "is_active": true
   },
   {
-    "id": "dish-010",
+    "id": "dish-012",
     "meal_type": "breakfast",
     "slug": "oats-idli",
     "name": "Oats Idli",
@@ -677,7 +807,7 @@
     "is_active": true
   },
   {
-    "id": "dish-011",
+    "id": "dish-013",
     "meal_type": "breakfast",
     "slug": "aval-idli",
     "name": "Aval Idli",
@@ -744,7 +874,7 @@
     "is_active": true
   },
   {
-    "id": "dish-012",
+    "id": "dish-014",
     "meal_type": "breakfast",
     "slug": "sabudana-idli",
     "name": "Sabudana Idli",
@@ -811,7 +941,7 @@
     "is_active": true
   },
   {
-    "id": "dish-013",
+    "id": "dish-015",
     "meal_type": "breakfast",
     "slug": "cucumber-idli",
     "name": "Cucumber Idli",
@@ -878,7 +1008,7 @@
     "is_active": true
   },
   {
-    "id": "dish-014",
+    "id": "dish-016",
     "meal_type": "breakfast",
     "slug": "podi-idli",
     "name": "Podi Idli",
@@ -945,7 +1075,7 @@
     "is_active": true
   },
   {
-    "id": "dish-015",
+    "id": "dish-017",
     "meal_type": "breakfast",
     "slug": "ghee-podi-idli",
     "name": "Ghee Podi Idli",
@@ -996,6 +1126,7 @@
     "image_key": "breakfast/ghee-podi-idli",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -1012,7 +1143,7 @@
     "is_active": true
   },
   {
-    "id": "dish-016",
+    "id": "dish-018",
     "meal_type": "breakfast",
     "slug": "masala-idli",
     "name": "Masala Idli",
@@ -1079,7 +1210,7 @@
     "is_active": true
   },
   {
-    "id": "dish-017",
+    "id": "dish-019",
     "meal_type": "breakfast",
     "slug": "fried-idli",
     "name": "Fried Idli",
@@ -1146,7 +1277,7 @@
     "is_active": true
   },
   {
-    "id": "dish-018",
+    "id": "dish-020",
     "meal_type": "breakfast",
     "slug": "idli-upma",
     "name": "Idli Upma",
@@ -1214,7 +1345,7 @@
     "is_active": true
   },
   {
-    "id": "dish-019",
+    "id": "dish-021",
     "meal_type": "breakfast",
     "slug": "idli-sambar-bowl",
     "name": "Idli Sambar Bowl",
@@ -1279,7 +1410,7 @@
     "is_active": true
   },
   {
-    "id": "dish-020",
+    "id": "dish-022",
     "meal_type": "breakfast",
     "slug": "spot-idli",
     "name": "Spot Idli",
@@ -1346,7 +1477,7 @@
     "is_active": true
   },
   {
-    "id": "dish-021",
+    "id": "dish-023",
     "meal_type": "breakfast",
     "slug": "goli-idli",
     "name": "Goli Idli",
@@ -1413,7 +1544,7 @@
     "is_active": true
   },
   {
-    "id": "dish-022",
+    "id": "dish-024",
     "meal_type": "breakfast",
     "slug": "stuffed-idli",
     "name": "Stuffed Idli",
@@ -1480,7 +1611,7 @@
     "is_active": true
   },
   {
-    "id": "dish-023",
+    "id": "dish-025",
     "meal_type": "breakfast",
     "slug": "moong-dal-idli",
     "name": "Moong Dal Idli",
@@ -1549,7 +1680,7 @@
     "is_active": true
   },
   {
-    "id": "dish-024",
+    "id": "dish-026",
     "meal_type": "breakfast",
     "slug": "kodo-millet-idli",
     "name": "Kodo Millet Idli",
@@ -1616,7 +1747,7 @@
     "is_active": true
   },
   {
-    "id": "dish-025",
+    "id": "dish-027",
     "meal_type": "breakfast",
     "slug": "little-millet-idli",
     "name": "Little Millet Idli",
@@ -1683,7 +1814,7 @@
     "is_active": true
   },
   {
-    "id": "dish-026",
+    "id": "dish-028",
     "meal_type": "breakfast",
     "slug": "plain-dosa",
     "name": "Plain Dosa",
@@ -1750,7 +1881,7 @@
     "is_active": true
   },
   {
-    "id": "dish-027",
+    "id": "dish-029",
     "meal_type": "breakfast",
     "slug": "home-dosa",
     "name": "Home Dosa",
@@ -1817,7 +1948,7 @@
     "is_active": true
   },
   {
-    "id": "dish-028",
+    "id": "dish-030",
     "meal_type": "breakfast",
     "slug": "set-dosa",
     "name": "Set Dosa",
@@ -1884,7 +2015,72 @@
     "is_active": true
   },
   {
-    "id": "dish-029",
+    "id": "dish-031",
+    "meal_type": "breakfast",
+    "slug": "peanut-potato-sundal",
+    "name": "Peanut Potato Sundal",
+    "region": [
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather dal and keep the usual pantry staples ready.",
+      "Prepare the dal base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Peanut Potato Sundal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/peanut-potato-sundal",
+    "tags": [
+      "south-indian",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 315,
+      "carbs_g": 44,
+      "protein_g": 13,
+      "fat_g": 8,
+      "fiber_g": 7,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-032",
     "meal_type": "breakfast",
     "slug": "sponge-dosa",
     "name": "Sponge Dosa",
@@ -1951,7 +2147,7 @@
     "is_active": true
   },
   {
-    "id": "dish-030",
+    "id": "dish-033",
     "meal_type": "breakfast",
     "slug": "neer-dosa",
     "name": "Neer Dosa",
@@ -2018,7 +2214,460 @@
     "is_active": true
   },
   {
-    "id": "dish-031",
+    "id": "dish-034",
+    "meal_type": "breakfast",
+    "slug": "sweet-pongal",
+    "name": "Sweet Pongal",
+    "region": [
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Sweet Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/sweet-pongal",
+    "tags": [
+      "south-indian",
+      "festive",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 320,
+      "carbs_g": 48,
+      "protein_g": 10,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-035",
+    "meal_type": "breakfast",
+    "slug": "kesari-bath",
+    "name": "Kesari Bath",
+    "region": [
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Kesari Bath warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/kesari-bath",
+    "tags": [
+      "south-indian",
+      "festive",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-036",
+    "meal_type": "breakfast",
+    "slug": "rava-kesari",
+    "name": "Rava Kesari",
+    "region": [
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "curd",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather curd, rava and keep the usual pantry staples ready.",
+      "Prepare the curd base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Rava Kesari warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/rava-kesari",
+    "tags": [
+      "pan-indian",
+      "festive",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-037",
+    "meal_type": "breakfast",
+    "slug": "pineapple-kesari",
+    "name": "Pineapple Kesari",
+    "region": [
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Pineapple Kesari warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/pineapple-kesari",
+    "tags": [
+      "pan-indian",
+      "festive",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-038",
+    "meal_type": "breakfast",
+    "slug": "chakkara-pongal",
+    "name": "Chakkara Pongal",
+    "region": [
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Chakkara Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/chakkara-pongal",
+    "tags": [
+      "south-indian",
+      "festive",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 320,
+      "carbs_g": 48,
+      "protein_g": 10,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-039",
+    "meal_type": "breakfast",
+    "slug": "semiya-payasam",
+    "name": "Semiya Payasam",
+    "region": [
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Semiya Payasam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/semiya-payasam",
+    "tags": [
+      "pan-indian",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-040",
+    "meal_type": "breakfast",
+    "slug": "aval-payasam",
+    "name": "Aval Payasam",
+    "region": [
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Aval Payasam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/aval-payasam",
+    "tags": [
+      "pan-indian",
+      "weekday"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 280,
+      "carbs_g": 44,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "dish-041",
     "meal_type": "breakfast",
     "slug": "benne-dosa",
     "name": "Benne Dosa",
@@ -2085,7 +2734,7 @@
     "is_active": true
   },
   {
-    "id": "dish-032",
+    "id": "dish-042",
     "meal_type": "breakfast",
     "slug": "masala-dosa",
     "name": "Masala Dosa",
@@ -2136,6 +2785,7 @@
     "image_key": "breakfast/masala-dosa",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -2152,7 +2802,7 @@
     "is_active": true
   },
   {
-    "id": "dish-033",
+    "id": "dish-043",
     "meal_type": "breakfast",
     "slug": "mysore-masala-dosa",
     "name": "Mysore Masala Dosa",
@@ -2203,6 +2853,7 @@
     "image_key": "breakfast/mysore-masala-dosa",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -2219,7 +2870,7 @@
     "is_active": true
   },
   {
-    "id": "dish-034",
+    "id": "dish-044",
     "meal_type": "breakfast",
     "slug": "podi-dosa",
     "name": "Podi Dosa",
@@ -2286,7 +2937,7 @@
     "is_active": true
   },
   {
-    "id": "dish-035",
+    "id": "dish-045",
     "meal_type": "breakfast",
     "slug": "ghee-roast-dosa",
     "name": "Ghee Roast Dosa",
@@ -2337,6 +2988,7 @@
     "image_key": "breakfast/ghee-roast-dosa",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -2353,7 +3005,7 @@
     "is_active": true
   },
   {
-    "id": "dish-036",
+    "id": "dish-046",
     "meal_type": "breakfast",
     "slug": "onion-dosa",
     "name": "Onion Dosa",
@@ -2420,7 +3072,7 @@
     "is_active": true
   },
   {
-    "id": "dish-037",
+    "id": "dish-047",
     "meal_type": "breakfast",
     "slug": "tomato-dosa",
     "name": "Tomato Dosa",
@@ -2487,7 +3139,7 @@
     "is_active": true
   },
   {
-    "id": "dish-038",
+    "id": "dish-048",
     "meal_type": "breakfast",
     "slug": "carrot-dosa",
     "name": "Carrot Dosa",
@@ -2554,7 +3206,7 @@
     "is_active": true
   },
   {
-    "id": "dish-039",
+    "id": "dish-049",
     "meal_type": "breakfast",
     "slug": "beetroot-dosa",
     "name": "Beetroot Dosa",
@@ -2621,7 +3273,7 @@
     "is_active": true
   },
   {
-    "id": "dish-040",
+    "id": "dish-050",
     "meal_type": "breakfast",
     "slug": "cucumber-dosa",
     "name": "Cucumber Dosa",
@@ -2688,7 +3340,7 @@
     "is_active": true
   },
   {
-    "id": "dish-041",
+    "id": "dish-051",
     "meal_type": "breakfast",
     "slug": "ragi-dosa",
     "name": "Ragi Dosa",
@@ -2756,7 +3408,7 @@
     "is_active": true
   },
   {
-    "id": "dish-042",
+    "id": "dish-052",
     "meal_type": "breakfast",
     "slug": "ragi-onion-dosa",
     "name": "Ragi Onion Dosa",
@@ -2824,7 +3476,7 @@
     "is_active": true
   },
   {
-    "id": "dish-043",
+    "id": "dish-053",
     "meal_type": "breakfast",
     "slug": "wheat-dosa",
     "name": "Wheat Dosa",
@@ -2891,7 +3543,7 @@
     "is_active": true
   },
   {
-    "id": "dish-044",
+    "id": "dish-054",
     "meal_type": "breakfast",
     "slug": "jowar-dosa",
     "name": "Jowar Dosa",
@@ -2958,7 +3610,7 @@
     "is_active": true
   },
   {
-    "id": "dish-045",
+    "id": "dish-055",
     "meal_type": "breakfast",
     "slug": "instant-rava-dosa",
     "name": "Instant Rava Dosa",
@@ -3027,7 +3679,7 @@
     "is_active": true
   },
   {
-    "id": "dish-046",
+    "id": "dish-056",
     "meal_type": "breakfast",
     "slug": "rava-onion-dosa",
     "name": "Rava Onion Dosa",
@@ -3096,7 +3748,7 @@
     "is_active": true
   },
   {
-    "id": "dish-047",
+    "id": "dish-057",
     "meal_type": "breakfast",
     "slug": "oats-dosa",
     "name": "Oats Dosa",
@@ -3164,7 +3816,7 @@
     "is_active": true
   },
   {
-    "id": "dish-048",
+    "id": "dish-058",
     "meal_type": "breakfast",
     "slug": "aval-dosa",
     "name": "Aval Dosa",
@@ -3231,7 +3883,7 @@
     "is_active": true
   },
   {
-    "id": "dish-049",
+    "id": "dish-059",
     "meal_type": "breakfast",
     "slug": "sabudana-dosa",
     "name": "Sabudana Dosa",
@@ -3298,7 +3950,7 @@
     "is_active": true
   },
   {
-    "id": "dish-050",
+    "id": "dish-060",
     "meal_type": "breakfast",
     "slug": "banana-dosa",
     "name": "Banana Dosa",
@@ -3366,7 +4018,7 @@
     "is_active": true
   },
   {
-    "id": "dish-051",
+    "id": "dish-061",
     "meal_type": "breakfast",
     "slug": "leftover-rice-dosa",
     "name": "Leftover Rice Dosa",
@@ -3434,7 +4086,7 @@
     "is_active": true
   },
   {
-    "id": "dish-052",
+    "id": "dish-062",
     "meal_type": "breakfast",
     "slug": "adai-dosa",
     "name": "Adai Dosa",
@@ -3501,7 +4153,7 @@
     "is_active": true
   },
   {
-    "id": "dish-053",
+    "id": "dish-063",
     "meal_type": "breakfast",
     "slug": "pesarattu",
     "name": "Pesarattu",
@@ -3567,7 +4219,7 @@
     "is_active": true
   },
   {
-    "id": "dish-054",
+    "id": "dish-064",
     "meal_type": "breakfast",
     "slug": "moong-dal-dosa",
     "name": "Moong Dal Dosa",
@@ -3636,7 +4288,7 @@
     "is_active": true
   },
   {
-    "id": "dish-055",
+    "id": "dish-065",
     "meal_type": "breakfast",
     "slug": "appam-dosa",
     "name": "Appam Dosa",
@@ -3687,6 +4339,7 @@
     "image_key": "breakfast/appam-dosa",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -3703,7 +4356,7 @@
     "is_active": true
   },
   {
-    "id": "dish-056",
+    "id": "dish-066",
     "meal_type": "breakfast",
     "slug": "cheese-dosa",
     "name": "Cheese Dosa",
@@ -3770,7 +4423,7 @@
     "is_active": true
   },
   {
-    "id": "dish-057",
+    "id": "dish-067",
     "meal_type": "breakfast",
     "slug": "egg-dosa",
     "name": "Egg Dosa",
@@ -3838,7 +4491,7 @@
     "is_active": true
   },
   {
-    "id": "dish-058",
+    "id": "dish-068",
     "meal_type": "breakfast",
     "slug": "plain-uttapam",
     "name": "Plain Uttapam",
@@ -3905,7 +4558,7 @@
     "is_active": true
   },
   {
-    "id": "dish-059",
+    "id": "dish-069",
     "meal_type": "breakfast",
     "slug": "onion-uttapam",
     "name": "Onion Uttapam",
@@ -3972,7 +4625,7 @@
     "is_active": true
   },
   {
-    "id": "dish-060",
+    "id": "dish-070",
     "meal_type": "breakfast",
     "slug": "tomato-uttapam",
     "name": "Tomato Uttapam",
@@ -4039,7 +4692,7 @@
     "is_active": true
   },
   {
-    "id": "dish-061",
+    "id": "dish-071",
     "meal_type": "breakfast",
     "slug": "vegetable-uttapam",
     "name": "Vegetable Uttapam",
@@ -4107,7 +4760,7 @@
     "is_active": true
   },
   {
-    "id": "dish-062",
+    "id": "dish-072",
     "meal_type": "breakfast",
     "slug": "carrot-uttapam",
     "name": "Carrot Uttapam",
@@ -4174,7 +4827,7 @@
     "is_active": true
   },
   {
-    "id": "dish-063",
+    "id": "dish-073",
     "meal_type": "breakfast",
     "slug": "podi-uttapam",
     "name": "Podi Uttapam",
@@ -4241,7 +4894,7 @@
     "is_active": true
   },
   {
-    "id": "dish-064",
+    "id": "dish-074",
     "meal_type": "breakfast",
     "slug": "mini-uttapam",
     "name": "Mini Uttapam",
@@ -4308,7 +4961,7 @@
     "is_active": true
   },
   {
-    "id": "dish-065",
+    "id": "dish-075",
     "meal_type": "breakfast",
     "slug": "oats-uttapam",
     "name": "Oats Uttapam",
@@ -4376,7 +5029,7 @@
     "is_active": true
   },
   {
-    "id": "dish-066",
+    "id": "dish-076",
     "meal_type": "breakfast",
     "slug": "ragi-uttapam",
     "name": "Ragi Uttapam",
@@ -4428,6 +5081,7 @@
     "image_key": "breakfast/ragi-uttapam",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -4444,7 +5098,7 @@
     "is_active": true
   },
   {
-    "id": "dish-067",
+    "id": "dish-077",
     "meal_type": "breakfast",
     "slug": "cheese-uttapam",
     "name": "Cheese Uttapam",
@@ -4511,7 +5165,7 @@
     "is_active": true
   },
   {
-    "id": "dish-068",
+    "id": "dish-078",
     "meal_type": "breakfast",
     "slug": "egg-uttapam",
     "name": "Egg Uttapam",
@@ -4579,7 +5233,7 @@
     "is_active": true
   },
   {
-    "id": "dish-069",
+    "id": "dish-079",
     "meal_type": "breakfast",
     "slug": "ven-pongal",
     "name": "Ven Pongal",
@@ -4630,6 +5284,7 @@
     "image_key": "breakfast/ven-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4646,7 +5301,7 @@
     "is_active": true
   },
   {
-    "id": "dish-070",
+    "id": "dish-080",
     "meal_type": "breakfast",
     "slug": "pepper-pongal",
     "name": "Pepper Pongal",
@@ -4697,6 +5352,7 @@
     "image_key": "breakfast/pepper-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4713,7 +5369,7 @@
     "is_active": true
   },
   {
-    "id": "dish-071",
+    "id": "dish-081",
     "meal_type": "breakfast",
     "slug": "ghee-pongal",
     "name": "Ghee Pongal",
@@ -4764,6 +5420,7 @@
     "image_key": "breakfast/ghee-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4780,7 +5437,7 @@
     "is_active": true
   },
   {
-    "id": "dish-072",
+    "id": "dish-082",
     "meal_type": "breakfast",
     "slug": "vegetable-pongal",
     "name": "Vegetable Pongal",
@@ -4830,6 +5487,7 @@
     "image_key": "breakfast/vegetable-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4846,7 +5504,7 @@
     "is_active": true
   },
   {
-    "id": "dish-073",
+    "id": "dish-083",
     "meal_type": "breakfast",
     "slug": "rava-pongal",
     "name": "Rava Pongal",
@@ -4897,6 +5555,7 @@
     "image_key": "breakfast/rava-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4913,7 +5572,7 @@
     "is_active": true
   },
   {
-    "id": "dish-074",
+    "id": "dish-084",
     "meal_type": "breakfast",
     "slug": "millet-pongal",
     "name": "Millet Pongal",
@@ -4964,6 +5623,7 @@
     "image_key": "breakfast/millet-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -4980,7 +5640,7 @@
     "is_active": true
   },
   {
-    "id": "dish-075",
+    "id": "dish-085",
     "meal_type": "breakfast",
     "slug": "foxtail-millet-pongal",
     "name": "Foxtail Millet Pongal",
@@ -5031,6 +5691,7 @@
     "image_key": "breakfast/foxtail-millet-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -5047,7 +5708,7 @@
     "is_active": true
   },
   {
-    "id": "dish-076",
+    "id": "dish-086",
     "meal_type": "breakfast",
     "slug": "moong-dal-pongal",
     "name": "Moong Dal Pongal",
@@ -5098,6 +5759,7 @@
     "image_key": "breakfast/moong-dal-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -5114,7 +5776,7 @@
     "is_active": true
   },
   {
-    "id": "dish-077",
+    "id": "dish-087",
     "meal_type": "breakfast",
     "slug": "coriander-pongal",
     "name": "Coriander Pongal",
@@ -5165,6 +5827,7 @@
     "image_key": "breakfast/coriander-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -5181,7 +5844,7 @@
     "is_active": true
   },
   {
-    "id": "dish-078",
+    "id": "dish-088",
     "meal_type": "breakfast",
     "slug": "temple-sweet-pongal",
     "name": "Temple Sweet Pongal",
@@ -5232,6 +5895,7 @@
     "image_key": "breakfast/temple-sweet-pongal",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -5248,7 +5912,7 @@
     "is_active": true
   },
   {
-    "id": "dish-079",
+    "id": "dish-089",
     "meal_type": "breakfast",
     "slug": "plain-upma",
     "name": "Plain Upma",
@@ -5316,7 +5980,7 @@
     "is_active": true
   },
   {
-    "id": "dish-080",
+    "id": "dish-090",
     "meal_type": "breakfast",
     "slug": "vegetable-upma",
     "name": "Vegetable Upma",
@@ -5385,7 +6049,7 @@
     "is_active": true
   },
   {
-    "id": "dish-081",
+    "id": "dish-091",
     "meal_type": "breakfast",
     "slug": "khara-bath",
     "name": "Khara Bath",
@@ -5451,7 +6115,7 @@
     "is_active": true
   },
   {
-    "id": "dish-082",
+    "id": "dish-092",
     "meal_type": "breakfast",
     "slug": "tomato-upma",
     "name": "Tomato Upma",
@@ -5519,7 +6183,7 @@
     "is_active": true
   },
   {
-    "id": "dish-083",
+    "id": "dish-093",
     "meal_type": "breakfast",
     "slug": "onion-upma",
     "name": "Onion Upma",
@@ -5587,7 +6251,7 @@
     "is_active": true
   },
   {
-    "id": "dish-084",
+    "id": "dish-094",
     "meal_type": "breakfast",
     "slug": "lemon-upma",
     "name": "Lemon Upma",
@@ -5655,7 +6319,7 @@
     "is_active": true
   },
   {
-    "id": "dish-085",
+    "id": "dish-095",
     "meal_type": "breakfast",
     "slug": "rava-khichadi",
     "name": "Rava Khichadi",
@@ -5717,7 +6381,7 @@
     "is_active": true
   },
   {
-    "id": "dish-086",
+    "id": "dish-096",
     "meal_type": "breakfast",
     "slug": "semiya-upma",
     "name": "Semiya Upma",
@@ -5785,7 +6449,7 @@
     "is_active": true
   },
   {
-    "id": "dish-087",
+    "id": "dish-097",
     "meal_type": "breakfast",
     "slug": "vegetable-semiya-upma",
     "name": "Vegetable Semiya Upma",
@@ -5854,7 +6518,7 @@
     "is_active": true
   },
   {
-    "id": "dish-088",
+    "id": "dish-098",
     "meal_type": "breakfast",
     "slug": "lemon-semiya",
     "name": "Lemon Semiya",
@@ -5916,7 +6580,7 @@
     "is_active": true
   },
   {
-    "id": "dish-089",
+    "id": "dish-099",
     "meal_type": "breakfast",
     "slug": "tomato-semiya",
     "name": "Tomato Semiya",
@@ -5978,7 +6642,7 @@
     "is_active": true
   },
   {
-    "id": "dish-090",
+    "id": "dish-100",
     "meal_type": "breakfast",
     "slug": "rice-sevai-upma",
     "name": "Rice Sevai Upma",
@@ -6047,7 +6711,7 @@
     "is_active": true
   },
   {
-    "id": "dish-091",
+    "id": "dish-101",
     "meal_type": "breakfast",
     "slug": "oats-upma",
     "name": "Oats Upma",
@@ -6116,7 +6780,7 @@
     "is_active": true
   },
   {
-    "id": "dish-092",
+    "id": "dish-102",
     "meal_type": "breakfast",
     "slug": "ragi-upma",
     "name": "Ragi Upma",
@@ -6185,7 +6849,7 @@
     "is_active": true
   },
   {
-    "id": "dish-093",
+    "id": "dish-103",
     "meal_type": "breakfast",
     "slug": "millet-upma",
     "name": "Millet Upma",
@@ -6253,7 +6917,7 @@
     "is_active": true
   },
   {
-    "id": "dish-094",
+    "id": "dish-104",
     "meal_type": "breakfast",
     "slug": "jowar-upma",
     "name": "Jowar Upma",
@@ -6321,7 +6985,7 @@
     "is_active": true
   },
   {
-    "id": "dish-095",
+    "id": "dish-105",
     "meal_type": "breakfast",
     "slug": "broken-wheat-upma",
     "name": "Broken Wheat Upma",
@@ -6389,7 +7053,7 @@
     "is_active": true
   },
   {
-    "id": "dish-096",
+    "id": "dish-106",
     "meal_type": "breakfast",
     "slug": "puffed-rice-upma",
     "name": "Puffed Rice Upma",
@@ -6458,7 +7122,7 @@
     "is_active": true
   },
   {
-    "id": "dish-097",
+    "id": "dish-107",
     "meal_type": "breakfast",
     "slug": "leftover-chapati-upma",
     "name": "Leftover Chapati Upma",
@@ -6527,7 +7191,7 @@
     "is_active": true
   },
   {
-    "id": "dish-098",
+    "id": "dish-108",
     "meal_type": "breakfast",
     "slug": "bread-upma",
     "name": "Bread Upma",
@@ -6596,7 +7260,7 @@
     "is_active": true
   },
   {
-    "id": "dish-099",
+    "id": "dish-109",
     "meal_type": "breakfast",
     "slug": "idli-upma-with-podi",
     "name": "Idli Upma with Podi",
@@ -6664,7 +7328,7 @@
     "is_active": true
   },
   {
-    "id": "dish-100",
+    "id": "dish-110",
     "meal_type": "breakfast",
     "slug": "avalakki-poha",
     "name": "Avalakki / Poha",
@@ -6732,7 +7396,7 @@
     "is_active": true
   },
   {
-    "id": "dish-101",
+    "id": "dish-111",
     "meal_type": "breakfast",
     "slug": "karnataka-avalakki",
     "name": "Karnataka Avalakki",
@@ -6800,7 +7464,7 @@
     "is_active": true
   },
   {
-    "id": "dish-102",
+    "id": "dish-112",
     "meal_type": "breakfast",
     "slug": "lemon-avalakki",
     "name": "Lemon Avalakki",
@@ -6868,7 +7532,7 @@
     "is_active": true
   },
   {
-    "id": "dish-103",
+    "id": "dish-113",
     "meal_type": "breakfast",
     "slug": "vegetable-avalakki",
     "name": "Vegetable Avalakki",
@@ -6937,7 +7601,7 @@
     "is_active": true
   },
   {
-    "id": "dish-104",
+    "id": "dish-114",
     "meal_type": "breakfast",
     "slug": "tomato-avalakki",
     "name": "Tomato Avalakki",
@@ -7005,7 +7669,7 @@
     "is_active": true
   },
   {
-    "id": "dish-105",
+    "id": "dish-115",
     "meal_type": "breakfast",
     "slug": "coconut-avalakki",
     "name": "Coconut Avalakki",
@@ -7073,7 +7737,7 @@
     "is_active": true
   },
   {
-    "id": "dish-106",
+    "id": "dish-116",
     "meal_type": "breakfast",
     "slug": "tamarind-avalakki",
     "name": "Tamarind Avalakki",
@@ -7141,7 +7805,7 @@
     "is_active": true
   },
   {
-    "id": "dish-107",
+    "id": "dish-117",
     "meal_type": "breakfast",
     "slug": "curd-avalakki",
     "name": "Curd Avalakki",
@@ -7209,7 +7873,7 @@
     "is_active": true
   },
   {
-    "id": "dish-108",
+    "id": "dish-118",
     "meal_type": "breakfast",
     "slug": "peanut-poha",
     "name": "Peanut Poha",
@@ -7277,7 +7941,7 @@
     "is_active": true
   },
   {
-    "id": "dish-109",
+    "id": "dish-119",
     "meal_type": "breakfast",
     "slug": "gojju-avalakki",
     "name": "Gojju Avalakki",
@@ -7345,7 +8009,7 @@
     "is_active": true
   },
   {
-    "id": "dish-110",
+    "id": "dish-120",
     "meal_type": "breakfast",
     "slug": "huli-avalakki",
     "name": "Huli Avalakki",
@@ -7413,7 +8077,7 @@
     "is_active": true
   },
   {
-    "id": "dish-111",
+    "id": "dish-121",
     "meal_type": "breakfast",
     "slug": "mangalore-avalakki",
     "name": "Mangalore Avalakki",
@@ -7481,7 +8145,7 @@
     "is_active": true
   },
   {
-    "id": "dish-112",
+    "id": "dish-122",
     "meal_type": "breakfast",
     "slug": "lemon-poha",
     "name": "Lemon Poha",
@@ -7549,7 +8213,7 @@
     "is_active": true
   },
   {
-    "id": "dish-113",
+    "id": "dish-123",
     "meal_type": "breakfast",
     "slug": "kande-pohe",
     "name": "Kande Pohe",
@@ -7611,7 +8275,7 @@
     "is_active": true
   },
   {
-    "id": "dish-114",
+    "id": "dish-124",
     "meal_type": "breakfast",
     "slug": "lemon-rice",
     "name": "Lemon Rice",
@@ -7679,7 +8343,7 @@
     "is_active": true
   },
   {
-    "id": "dish-115",
+    "id": "dish-125",
     "meal_type": "breakfast",
     "slug": "coconut-rice",
     "name": "Coconut Rice",
@@ -7747,7 +8411,7 @@
     "is_active": true
   },
   {
-    "id": "dish-116",
+    "id": "dish-126",
     "meal_type": "breakfast",
     "slug": "tomato-rice",
     "name": "Tomato Rice",
@@ -7815,7 +8479,7 @@
     "is_active": true
   },
   {
-    "id": "dish-117",
+    "id": "dish-127",
     "meal_type": "breakfast",
     "slug": "puliyogare",
     "name": "Puliyogare",
@@ -7880,7 +8544,7 @@
     "is_active": true
   },
   {
-    "id": "dish-118",
+    "id": "dish-128",
     "meal_type": "breakfast",
     "slug": "chitranna",
     "name": "Chitranna",
@@ -7945,7 +8609,7 @@
     "is_active": true
   },
   {
-    "id": "dish-119",
+    "id": "dish-129",
     "meal_type": "breakfast",
     "slug": "curd-rice",
     "name": "Curd Rice",
@@ -8013,7 +8677,7 @@
     "is_active": true
   },
   {
-    "id": "dish-120",
+    "id": "dish-130",
     "meal_type": "breakfast",
     "slug": "mango-rice",
     "name": "Mango Rice",
@@ -8081,7 +8745,7 @@
     "is_active": true
   },
   {
-    "id": "dish-121",
+    "id": "dish-131",
     "meal_type": "breakfast",
     "slug": "vegetable-rice-bath",
     "name": "Vegetable Rice Bath",
@@ -8151,7 +8815,7 @@
     "is_active": true
   },
   {
-    "id": "dish-122",
+    "id": "dish-132",
     "meal_type": "breakfast",
     "slug": "bisi-bele-bath",
     "name": "Bisi Bele Bath",
@@ -8201,6 +8865,7 @@
     "image_key": "breakfast/bisi-bele-bath",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -8217,7 +8882,7 @@
     "is_active": true
   },
   {
-    "id": "dish-123",
+    "id": "dish-133",
     "meal_type": "breakfast",
     "slug": "vangi-bath",
     "name": "Vangi Bath",
@@ -8283,7 +8948,7 @@
     "is_active": true
   },
   {
-    "id": "dish-124",
+    "id": "dish-134",
     "meal_type": "breakfast",
     "slug": "sambar-rice",
     "name": "Sambar Rice",
@@ -8352,7 +9017,7 @@
     "is_active": true
   },
   {
-    "id": "dish-125",
+    "id": "dish-135",
     "meal_type": "breakfast",
     "slug": "rasam-rice",
     "name": "Rasam Rice",
@@ -8420,7 +9085,7 @@
     "is_active": true
   },
   {
-    "id": "dish-126",
+    "id": "dish-136",
     "meal_type": "breakfast",
     "slug": "ghee-rice",
     "name": "Ghee Rice",
@@ -8472,6 +9137,7 @@
     "image_key": "breakfast/ghee-rice",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -8488,7 +9154,7 @@
     "is_active": true
   },
   {
-    "id": "dish-127",
+    "id": "dish-137",
     "meal_type": "breakfast",
     "slug": "coriander-rice",
     "name": "Coriander Rice",
@@ -8556,7 +9222,7 @@
     "is_active": true
   },
   {
-    "id": "dish-128",
+    "id": "dish-138",
     "meal_type": "breakfast",
     "slug": "mint-rice",
     "name": "Mint Rice",
@@ -8624,7 +9290,7 @@
     "is_active": true
   },
   {
-    "id": "dish-129",
+    "id": "dish-139",
     "meal_type": "breakfast",
     "slug": "capsicum-rice",
     "name": "Capsicum Rice",
@@ -8692,7 +9358,7 @@
     "is_active": true
   },
   {
-    "id": "dish-130",
+    "id": "dish-140",
     "meal_type": "breakfast",
     "slug": "peanut-rice",
     "name": "Peanut Rice",
@@ -8760,7 +9426,7 @@
     "is_active": true
   },
   {
-    "id": "dish-131",
+    "id": "dish-141",
     "meal_type": "breakfast",
     "slug": "sesame-rice",
     "name": "Sesame Rice",
@@ -8828,7 +9494,7 @@
     "is_active": true
   },
   {
-    "id": "dish-132",
+    "id": "dish-142",
     "meal_type": "breakfast",
     "slug": "tamarind-rice",
     "name": "Tamarind Rice",
@@ -8896,7 +9562,7 @@
     "is_active": true
   },
   {
-    "id": "dish-133",
+    "id": "dish-143",
     "meal_type": "breakfast",
     "slug": "puli-sadam",
     "name": "Puli Sadam",
@@ -8962,7 +9628,7 @@
     "is_active": true
   },
   {
-    "id": "dish-134",
+    "id": "dish-144",
     "meal_type": "breakfast",
     "slug": "akki-rotti",
     "name": "Akki Rotti",
@@ -9029,7 +9695,7 @@
     "is_active": true
   },
   {
-    "id": "dish-135",
+    "id": "dish-145",
     "meal_type": "breakfast",
     "slug": "soft-akki-rotti",
     "name": "Soft Akki Rotti",
@@ -9096,7 +9762,7 @@
     "is_active": true
   },
   {
-    "id": "dish-136",
+    "id": "dish-146",
     "meal_type": "breakfast",
     "slug": "vegetable-akki-rotti",
     "name": "Vegetable Akki Rotti",
@@ -9162,7 +9828,7 @@
     "is_active": true
   },
   {
-    "id": "dish-137",
+    "id": "dish-147",
     "meal_type": "breakfast",
     "slug": "onion-akki-rotti",
     "name": "Onion Akki Rotti",
@@ -9229,7 +9895,7 @@
     "is_active": true
   },
   {
-    "id": "dish-138",
+    "id": "dish-148",
     "meal_type": "breakfast",
     "slug": "methi-akki-rotti",
     "name": "Methi Akki Rotti",
@@ -9296,7 +9962,7 @@
     "is_active": true
   },
   {
-    "id": "dish-139",
+    "id": "dish-149",
     "meal_type": "breakfast",
     "slug": "dill-akki-rotti",
     "name": "Dill Akki Rotti",
@@ -9363,7 +10029,7 @@
     "is_active": true
   },
   {
-    "id": "dish-140",
+    "id": "dish-150",
     "meal_type": "breakfast",
     "slug": "ragi-rotti",
     "name": "Ragi Rotti",
@@ -9413,6 +10079,7 @@
     "image_key": "breakfast/ragi-rotti",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "weekend"
     ],
     "nutrition": {
@@ -9429,7 +10096,7 @@
     "is_active": true
   },
   {
-    "id": "dish-141",
+    "id": "dish-151",
     "meal_type": "breakfast",
     "slug": "ragi-onion-rotti",
     "name": "Ragi Onion Rotti",
@@ -9479,6 +10146,7 @@
     "image_key": "breakfast/ragi-onion-rotti",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "weekend"
     ],
     "nutrition": {
@@ -9495,7 +10163,7 @@
     "is_active": true
   },
   {
-    "id": "dish-142",
+    "id": "dish-152",
     "meal_type": "breakfast",
     "slug": "jowar-rotti",
     "name": "Jowar Rotti",
@@ -9562,7 +10230,7 @@
     "is_active": true
   },
   {
-    "id": "dish-143",
+    "id": "dish-153",
     "meal_type": "breakfast",
     "slug": "jolada-rotti-with-palya",
     "name": "Jolada Rotti with Palya",
@@ -9628,7 +10296,7 @@
     "is_active": true
   },
   {
-    "id": "dish-144",
+    "id": "dish-154",
     "meal_type": "breakfast",
     "slug": "bajra-rotti",
     "name": "Bajra Rotti",
@@ -9695,7 +10363,7 @@
     "is_active": true
   },
   {
-    "id": "dish-145",
+    "id": "dish-155",
     "meal_type": "breakfast",
     "slug": "thalipeeth",
     "name": "Thalipeeth",
@@ -9761,7 +10429,7 @@
     "is_active": true
   },
   {
-    "id": "dish-146",
+    "id": "dish-156",
     "meal_type": "breakfast",
     "slug": "akki-usli",
     "name": "Akki Usli",
@@ -9828,7 +10496,7 @@
     "is_active": true
   },
   {
-    "id": "dish-147",
+    "id": "dish-157",
     "meal_type": "breakfast",
     "slug": "vegetable-akki-usli",
     "name": "Vegetable Akki Usli",
@@ -9896,7 +10564,7 @@
     "is_active": true
   },
   {
-    "id": "dish-148",
+    "id": "dish-158",
     "meal_type": "breakfast",
     "slug": "beans-akki-usli",
     "name": "Beans Akki Usli",
@@ -9963,7 +10631,7 @@
     "is_active": true
   },
   {
-    "id": "dish-149",
+    "id": "dish-159",
     "meal_type": "breakfast",
     "slug": "avarekalu-akki-usli",
     "name": "Avarekalu Akki Usli",
@@ -10030,7 +10698,7 @@
     "is_active": true
   },
   {
-    "id": "dish-150",
+    "id": "dish-160",
     "meal_type": "breakfast",
     "slug": "cabbage-akki-usli",
     "name": "Cabbage Akki Usli",
@@ -10097,7 +10765,7 @@
     "is_active": true
   },
   {
-    "id": "dish-151",
+    "id": "dish-161",
     "meal_type": "breakfast",
     "slug": "carrot-akki-usli",
     "name": "Carrot Akki Usli",
@@ -10164,7 +10832,7 @@
     "is_active": true
   },
   {
-    "id": "dish-152",
+    "id": "dish-162",
     "meal_type": "breakfast",
     "slug": "peas-akki-usli",
     "name": "Peas Akki Usli",
@@ -10231,7 +10899,7 @@
     "is_active": true
   },
   {
-    "id": "dish-153",
+    "id": "dish-163",
     "meal_type": "breakfast",
     "slug": "coconut-akki-usli",
     "name": "Coconut Akki Usli",
@@ -10298,7 +10966,7 @@
     "is_active": true
   },
   {
-    "id": "dish-154",
+    "id": "dish-164",
     "meal_type": "breakfast",
     "slug": "idiyappam",
     "name": "Idiyappam",
@@ -10349,6 +11017,7 @@
     "image_key": "breakfast/idiyappam",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10365,7 +11034,7 @@
     "is_active": true
   },
   {
-    "id": "dish-155",
+    "id": "dish-165",
     "meal_type": "breakfast",
     "slug": "idiyappam-with-coconut-milk",
     "name": "Idiyappam with Coconut Milk",
@@ -10416,6 +11085,7 @@
     "image_key": "breakfast/idiyappam-with-coconut-milk",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10432,7 +11102,7 @@
     "is_active": true
   },
   {
-    "id": "dish-156",
+    "id": "dish-166",
     "meal_type": "breakfast",
     "slug": "lemon-idiyappam",
     "name": "Lemon Idiyappam",
@@ -10483,6 +11153,7 @@
     "image_key": "breakfast/lemon-idiyappam",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10499,7 +11170,7 @@
     "is_active": true
   },
   {
-    "id": "dish-157",
+    "id": "dish-167",
     "meal_type": "breakfast",
     "slug": "tomato-idiyappam",
     "name": "Tomato Idiyappam",
@@ -10550,6 +11221,7 @@
     "image_key": "breakfast/tomato-idiyappam",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10566,7 +11238,7 @@
     "is_active": true
   },
   {
-    "id": "dish-158",
+    "id": "dish-168",
     "meal_type": "breakfast",
     "slug": "appam",
     "name": "Appam",
@@ -10617,6 +11289,7 @@
     "image_key": "breakfast/appam",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10633,7 +11306,7 @@
     "is_active": true
   },
   {
-    "id": "dish-159",
+    "id": "dish-169",
     "meal_type": "breakfast",
     "slug": "kerala-appam-stew",
     "name": "Kerala Appam + Stew",
@@ -10684,6 +11357,7 @@
     "image_key": "breakfast/kerala-appam-stew",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10700,7 +11374,7 @@
     "is_active": true
   },
   {
-    "id": "dish-160",
+    "id": "dish-170",
     "meal_type": "breakfast",
     "slug": "wheat-appam",
     "name": "Wheat Appam",
@@ -10751,6 +11425,7 @@
     "image_key": "breakfast/wheat-appam",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10767,7 +11442,7 @@
     "is_active": true
   },
   {
-    "id": "dish-161",
+    "id": "dish-171",
     "meal_type": "breakfast",
     "slug": "puttu",
     "name": "Puttu",
@@ -10817,6 +11492,8 @@
     "image_key": "breakfast/puttu",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10833,7 +11510,7 @@
     "is_active": true
   },
   {
-    "id": "dish-162",
+    "id": "dish-172",
     "meal_type": "breakfast",
     "slug": "vegetable-puttu",
     "name": "Vegetable Puttu",
@@ -10882,6 +11559,8 @@
     "image_key": "breakfast/vegetable-puttu",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10898,7 +11577,7 @@
     "is_active": true
   },
   {
-    "id": "dish-163",
+    "id": "dish-173",
     "meal_type": "breakfast",
     "slug": "ragi-puttu",
     "name": "Ragi Puttu",
@@ -10947,6 +11626,8 @@
     "image_key": "breakfast/ragi-puttu",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -10963,7 +11644,7 @@
     "is_active": true
   },
   {
-    "id": "dish-164",
+    "id": "dish-174",
     "meal_type": "breakfast",
     "slug": "puttu-kadala-curry",
     "name": "Puttu + Kadala Curry",
@@ -11013,6 +11694,7 @@
     "image_key": "breakfast/puttu-kadala-curry",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11029,7 +11711,7 @@
     "is_active": true
   },
   {
-    "id": "dish-165",
+    "id": "dish-175",
     "meal_type": "breakfast",
     "slug": "aval-kozhukattai",
     "name": "Aval Kozhukattai",
@@ -11095,7 +11777,7 @@
     "is_active": true
   },
   {
-    "id": "dish-166",
+    "id": "dish-176",
     "meal_type": "breakfast",
     "slug": "kara-kozhukattai",
     "name": "Kara Kozhukattai",
@@ -11161,7 +11843,7 @@
     "is_active": true
   },
   {
-    "id": "dish-167",
+    "id": "dish-177",
     "meal_type": "breakfast",
     "slug": "kuzhi-paniyaram",
     "name": "Kuzhi Paniyaram",
@@ -11228,7 +11910,7 @@
     "is_active": true
   },
   {
-    "id": "dish-168",
+    "id": "dish-178",
     "meal_type": "breakfast",
     "slug": "kaara-paniyaram",
     "name": "Kaara Paniyaram",
@@ -11295,7 +11977,7 @@
     "is_active": true
   },
   {
-    "id": "dish-169",
+    "id": "dish-179",
     "meal_type": "breakfast",
     "slug": "sweet-paniyaram",
     "name": "Sweet Paniyaram",
@@ -11346,6 +12028,7 @@
     "image_key": "breakfast/sweet-paniyaram",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11362,7 +12045,7 @@
     "is_active": true
   },
   {
-    "id": "dish-170",
+    "id": "dish-180",
     "meal_type": "breakfast",
     "slug": "ragi-paniyaram",
     "name": "Ragi Paniyaram",
@@ -11412,6 +12095,7 @@
     "image_key": "breakfast/ragi-paniyaram",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -11428,7 +12112,7 @@
     "is_active": true
   },
   {
-    "id": "dish-171",
+    "id": "dish-181",
     "meal_type": "breakfast",
     "slug": "oats-paniyaram",
     "name": "Oats Paniyaram",
@@ -11494,7 +12178,7 @@
     "is_active": true
   },
   {
-    "id": "dish-172",
+    "id": "dish-182",
     "meal_type": "breakfast",
     "slug": "medu-vada",
     "name": "Medu Vada",
@@ -11541,6 +12225,7 @@
     "image_key": "breakfast/medu-vada",
     "tags": [
       "pan-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11557,7 +12242,7 @@
     "is_active": true
   },
   {
-    "id": "dish-173",
+    "id": "dish-183",
     "meal_type": "breakfast",
     "slug": "sambar-vada",
     "name": "Sambar Vada",
@@ -11607,6 +12292,7 @@
     "image_key": "breakfast/sambar-vada",
     "tags": [
       "south-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11623,7 +12309,7 @@
     "is_active": true
   },
   {
-    "id": "dish-174",
+    "id": "dish-184",
     "meal_type": "breakfast",
     "slug": "curd-vada",
     "name": "Curd Vada",
@@ -11670,6 +12356,8 @@
     "image_key": "breakfast/curd-vada",
     "tags": [
       "pan-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11686,7 +12374,7 @@
     "is_active": true
   },
   {
-    "id": "dish-175",
+    "id": "dish-185",
     "meal_type": "breakfast",
     "slug": "maddur-vada",
     "name": "Maddur Vada",
@@ -11733,6 +12421,7 @@
     "image_key": "breakfast/maddur-vada",
     "tags": [
       "pan-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11749,7 +12438,7 @@
     "is_active": true
   },
   {
-    "id": "dish-176",
+    "id": "dish-186",
     "meal_type": "breakfast",
     "slug": "masala-vada",
     "name": "Masala Vada",
@@ -11796,6 +12485,7 @@
     "image_key": "breakfast/masala-vada",
     "tags": [
       "pan-indian",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11812,7 +12502,7 @@
     "is_active": true
   },
   {
-    "id": "dish-177",
+    "id": "dish-187",
     "meal_type": "breakfast",
     "slug": "sabudana-vada",
     "name": "Sabudana Vada",
@@ -11859,6 +12549,8 @@
     "image_key": "breakfast/sabudana-vada",
     "tags": [
       "pan-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekday"
     ],
     "nutrition": {
@@ -11875,7 +12567,7 @@
     "is_active": true
   },
   {
-    "id": "dish-178",
+    "id": "dish-188",
     "meal_type": "breakfast",
     "slug": "sprouts-sundal",
     "name": "Sprouts Sundal",
@@ -11941,7 +12633,7 @@
     "is_active": true
   },
   {
-    "id": "dish-179",
+    "id": "dish-189",
     "meal_type": "breakfast",
     "slug": "chickpea-sundal",
     "name": "Chickpea Sundal",
@@ -12007,7 +12699,7 @@
     "is_active": true
   },
   {
-    "id": "dish-180",
+    "id": "dish-190",
     "meal_type": "breakfast",
     "slug": "peanut-sundal",
     "name": "Peanut Sundal",
@@ -12072,7 +12764,7 @@
     "is_active": true
   },
   {
-    "id": "dish-181",
+    "id": "dish-191",
     "meal_type": "breakfast",
     "slug": "green-gram-sundal",
     "name": "Green Gram Sundal",
@@ -12137,7 +12829,7 @@
     "is_active": true
   },
   {
-    "id": "dish-182",
+    "id": "dish-192",
     "meal_type": "breakfast",
     "slug": "poori-potato-palya",
     "name": "Poori + Potato Palya",
@@ -12186,6 +12878,8 @@
     "image_key": "breakfast/poori-potato-palya",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "weekend"
     ],
     "nutrition": {
@@ -12202,7 +12896,7 @@
     "is_active": true
   },
   {
-    "id": "dish-183",
+    "id": "dish-193",
     "meal_type": "breakfast",
     "slug": "chapati-vegetable-palya",
     "name": "Chapati + Vegetable Palya",
@@ -12269,7 +12963,7 @@
     "is_active": true
   },
   {
-    "id": "dish-184",
+    "id": "dish-194",
     "meal_type": "breakfast",
     "slug": "vegetable-paratha",
     "name": "Vegetable Paratha",
@@ -12332,7 +13026,7 @@
     "is_active": true
   },
   {
-    "id": "dish-185",
+    "id": "dish-195",
     "meal_type": "breakfast",
     "slug": "aloo-paratha",
     "name": "Aloo Paratha",
@@ -12396,7 +13090,7 @@
     "is_active": true
   },
   {
-    "id": "dish-186",
+    "id": "dish-196",
     "meal_type": "breakfast",
     "slug": "methi-paratha",
     "name": "Methi Paratha",
@@ -12460,7 +13154,7 @@
     "is_active": true
   },
   {
-    "id": "dish-187",
+    "id": "dish-197",
     "meal_type": "breakfast",
     "slug": "paneer-paratha",
     "name": "Paneer Paratha",
@@ -12526,7 +13220,7 @@
     "is_active": true
   },
   {
-    "id": "dish-188",
+    "id": "dish-198",
     "meal_type": "breakfast",
     "slug": "gobi-paratha",
     "name": "Gobi Paratha",
@@ -12590,7 +13284,7 @@
     "is_active": true
   },
   {
-    "id": "dish-189",
+    "id": "dish-199",
     "meal_type": "breakfast",
     "slug": "ajwain-paratha",
     "name": "Ajwain Paratha",
@@ -12654,7 +13348,7 @@
     "is_active": true
   },
   {
-    "id": "dish-190",
+    "id": "dish-200",
     "meal_type": "breakfast",
     "slug": "moong-dal-chilla",
     "name": "Moong Dal Chilla",
@@ -12717,7 +13411,7 @@
     "is_active": true
   },
   {
-    "id": "dish-191",
+    "id": "dish-201",
     "meal_type": "breakfast",
     "slug": "vegetable-besan-chilla",
     "name": "Vegetable Besan Chilla",
@@ -12779,7 +13473,7 @@
     "is_active": true
   },
   {
-    "id": "dish-192",
+    "id": "dish-202",
     "meal_type": "breakfast",
     "slug": "aloo-poha",
     "name": "Aloo Poha",
@@ -12847,7 +13541,7 @@
     "is_active": true
   },
   {
-    "id": "dish-193",
+    "id": "dish-203",
     "meal_type": "breakfast",
     "slug": "thepla-curd",
     "name": "Thepla + Curd",
@@ -12893,6 +13587,7 @@
     "image_key": "breakfast/thepla-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -12909,7 +13604,7 @@
     "is_active": true
   },
   {
-    "id": "dish-194",
+    "id": "dish-204",
     "meal_type": "breakfast",
     "slug": "phulka-paneer-bhurji",
     "name": "Phulka + Paneer Bhurji",
@@ -12975,7 +13670,7 @@
     "is_active": true
   },
   {
-    "id": "dish-195",
+    "id": "dish-205",
     "meal_type": "breakfast",
     "slug": "chole-poori",
     "name": "Chole Poori",
@@ -13021,6 +13716,7 @@
     "image_key": "breakfast/chole-poori",
     "tags": [
       "north-indian",
+      "festive",
       "weekend"
     ],
     "nutrition": {
@@ -13037,7 +13733,7 @@
     "is_active": true
   },
   {
-    "id": "dish-196",
+    "id": "dish-206",
     "meal_type": "breakfast",
     "slug": "dal-khichdi",
     "name": "Dal Khichdi",
@@ -13099,7 +13795,7 @@
     "is_active": true
   },
   {
-    "id": "dish-197",
+    "id": "dish-207",
     "meal_type": "breakfast",
     "slug": "sabudana-khichdi",
     "name": "Sabudana Khichdi",
@@ -13145,6 +13841,7 @@
     "image_key": "breakfast/sabudana-khichdi",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -13161,7 +13858,7 @@
     "is_active": true
   },
   {
-    "id": "dish-198",
+    "id": "dish-208",
     "meal_type": "breakfast",
     "slug": "vegetable-sandwich",
     "name": "Vegetable Sandwich",
@@ -13224,7 +13921,7 @@
     "is_active": true
   },
   {
-    "id": "dish-199",
+    "id": "dish-209",
     "meal_type": "breakfast",
     "slug": "paneer-sandwich",
     "name": "Paneer Sandwich",
@@ -13287,7 +13984,7 @@
     "is_active": true
   },
   {
-    "id": "dish-200",
+    "id": "dish-210",
     "meal_type": "breakfast",
     "slug": "egg-sandwich",
     "name": "Egg Sandwich",
@@ -13350,7 +14047,7 @@
     "is_active": true
   },
   {
-    "id": "dish-201",
+    "id": "dish-211",
     "meal_type": "breakfast",
     "slug": "bread-omelette",
     "name": "Bread Omelette",
@@ -13413,7 +14110,7 @@
     "is_active": true
   },
   {
-    "id": "dish-202",
+    "id": "dish-212",
     "meal_type": "breakfast",
     "slug": "masala-omelette",
     "name": "Masala Omelette",
@@ -13475,7 +14172,7 @@
     "is_active": true
   },
   {
-    "id": "dish-203",
+    "id": "dish-213",
     "meal_type": "breakfast",
     "slug": "boiled-egg-toast",
     "name": "Boiled Egg + Toast",
@@ -13538,7 +14235,7 @@
     "is_active": true
   },
   {
-    "id": "dish-204",
+    "id": "dish-214",
     "meal_type": "breakfast",
     "slug": "scrambled-egg-chapati",
     "name": "Scrambled Egg + Chapati",
@@ -13601,7 +14298,7 @@
     "is_active": true
   },
   {
-    "id": "dish-205",
+    "id": "dish-215",
     "meal_type": "breakfast",
     "slug": "egg-bhurji-roll",
     "name": "Egg Bhurji Roll",
@@ -13664,7 +14361,7 @@
     "is_active": true
   },
   {
-    "id": "dish-206",
+    "id": "dish-216",
     "meal_type": "breakfast",
     "slug": "oats-porridge",
     "name": "Oats Porridge",
@@ -13726,7 +14423,7 @@
     "is_active": true
   },
   {
-    "id": "dish-207",
+    "id": "dish-217",
     "meal_type": "breakfast",
     "slug": "banana-oats-porridge",
     "name": "Banana Oats Porridge",
@@ -13773,6 +14470,7 @@
     "image_key": "breakfast/banana-oats-porridge",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -13789,7 +14487,7 @@
     "is_active": true
   },
   {
-    "id": "dish-208",
+    "id": "dish-218",
     "meal_type": "breakfast",
     "slug": "savoury-oats-bowl",
     "name": "Savoury Oats Bowl",
@@ -13851,7 +14549,7 @@
     "is_active": true
   },
   {
-    "id": "dish-209",
+    "id": "dish-219",
     "meal_type": "breakfast",
     "slug": "ragi-malt",
     "name": "Ragi Malt",
@@ -13901,6 +14599,7 @@
     "image_key": "breakfast/ragi-malt",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "quick"
     ],
     "nutrition": {
@@ -13917,7 +14616,7 @@
     "is_active": true
   },
   {
-    "id": "dish-210",
+    "id": "dish-220",
     "meal_type": "breakfast",
     "slug": "ragi-banana-porridge",
     "name": "Ragi Banana Porridge",
@@ -13965,6 +14664,7 @@
     "image_key": "breakfast/ragi-banana-porridge",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {
@@ -13981,7 +14681,7 @@
     "is_active": true
   },
   {
-    "id": "dish-211",
+    "id": "dish-221",
     "meal_type": "breakfast",
     "slug": "fruit-curd-bowl",
     "name": "Fruit + Curd Bowl",
@@ -14028,6 +14728,7 @@
     "image_key": "breakfast/fruit-curd-bowl",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick"
     ],
     "nutrition": {
@@ -14044,7 +14745,7 @@
     "is_active": true
   },
   {
-    "id": "dish-212",
+    "id": "dish-222",
     "meal_type": "breakfast",
     "slug": "banana-peanut-bowl",
     "name": "Banana Peanut Bowl",
@@ -14090,6 +14791,7 @@
     "image_key": "breakfast/banana-peanut-bowl",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick"
     ],
     "nutrition": {
@@ -14106,7 +14808,7 @@
     "is_active": true
   },
   {
-    "id": "dish-213",
+    "id": "dish-223",
     "meal_type": "breakfast",
     "slug": "peanut-butter-toast",
     "name": "Peanut Butter Toast",
@@ -14152,6 +14854,7 @@
     "image_key": "breakfast/peanut-butter-toast",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick"
     ],
     "nutrition": {
@@ -14168,7 +14871,7 @@
     "is_active": true
   },
   {
-    "id": "dish-214",
+    "id": "dish-224",
     "meal_type": "breakfast",
     "slug": "cheese-toast",
     "name": "Cheese Toast",
@@ -14230,7 +14933,7 @@
     "is_active": true
   },
   {
-    "id": "dish-215",
+    "id": "dish-225",
     "meal_type": "breakfast",
     "slug": "vegetable-pasta-bowl",
     "name": "Vegetable Pasta Bowl",
@@ -14293,7 +14996,7 @@
     "is_active": true
   },
   {
-    "id": "dish-216",
+    "id": "dish-226",
     "meal_type": "breakfast",
     "slug": "cornflakes-banana",
     "name": "Cornflakes + Banana",
@@ -14339,6 +15042,7 @@
     "image_key": "breakfast/cornflakes-banana",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "weekday"
     ],
     "nutrition": {

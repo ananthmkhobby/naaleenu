@@ -4,7 +4,7 @@ from datetime import date, datetime
 from random import choice
 from uuid import uuid4
 
-from app.schemas.domain import DietType, Dish, RecommendationRequest, RecommendationResponse, TimeBand
+from app.schemas.domain import DietType, Dish, OccasionPreference, RecommendationRequest, RecommendationResponse, TimeBand
 from app.services.catalog import load_catalog
 
 
@@ -111,6 +111,8 @@ def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time
             continue
         if req.max_cook_minutes is not None and dish.morning_effort_minutes > req.max_cook_minutes:
             continue
+        if req.occasion_preference == OccasionPreference.ekadashi and "ekadashi-friendly" not in {tag.lower() for tag in dish.tags}:
+            continue
         if not relax_time and dish.morning_effort_minutes > limit:
             continue
         if not relax_repeat and cooked_days.get(dish.id, 999) < dish.repeat_gap_days:
@@ -145,9 +147,18 @@ def _score(dish: Dish, req: RecommendationRequest) -> tuple[float, list[str]]:
         + history_score * WEIGHTS["history"]
     )
     score += max((CUISINE_PRIORITY.get(tag.lower(), 0.0) for tag in dish.tags), default=0.0)
+    tag_set = {tag.lower() for tag in dish.tags}
+    if req.occasion_preference == OccasionPreference.festive and "festive" in tag_set:
+        score += 0.14
+    if req.occasion_preference == OccasionPreference.ekadashi and "ekadashi-friendly" in tag_set:
+        score += 0.18
 
     reasons = []
-    if "south-indian" in {tag.lower() for tag in dish.tags}:
+    if req.occasion_preference == OccasionPreference.ekadashi:
+        reasons.append("ekadashi_fit")
+    if req.occasion_preference == OccasionPreference.festive and "festive" in tag_set:
+        reasons.append("festive_fit")
+    if "south-indian" in tag_set:
         reasons.append("south_indian_first")
     if ingredient_score >= 0.75:
         reasons.append("pantry_match")
@@ -161,6 +172,10 @@ def _score(dish: Dish, req: RecommendationRequest) -> tuple[float, list[str]]:
 
 
 def _reason_text(codes: list[str]) -> str:
+    if "ekadashi_fit" in codes:
+        return "This keeps the suggestion aligned with your Ekadashi preference."
+    if "festive_fit" in codes:
+        return "This feels more special for a festive day and still fits your time."
     if "quick" in codes:
         return "It is quick enough for today and still feels like a proper meal."
     if "pantry_match" in codes and "good_rotation" in codes:

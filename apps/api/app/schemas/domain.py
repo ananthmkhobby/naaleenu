@@ -20,6 +20,12 @@ class MealType(StrEnum):
     lunch = "lunch"
 
 
+class OccasionPreference(StrEnum):
+    regular = "regular"
+    ekadashi = "ekadashi"
+    festive = "festive"
+
+
 class FeedbackRating(StrEnum):
     loved = "loved"
     good = "good"
@@ -96,6 +102,7 @@ class RecommendationRequest(BaseModel):
     cooked_history: list[dict] = []
     quicker_than_minutes: int | None = None
     max_cook_minutes: int | None = None
+    occasion_preference: OccasionPreference = OccasionPreference.regular
 
 
 class RecommendationResponse(BaseModel):

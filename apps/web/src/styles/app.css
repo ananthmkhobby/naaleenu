@@ -368,6 +368,29 @@ textarea {
   color: #fffdf8;
 }
 
+.occasion-switch {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: -0.35rem 0 0.85rem;
+}
+
+.occasion-switch button {
+  min-height: 38px;
+  border: 1px solid #e7dece;
+  border-radius: 999px;
+  background: #fffdf8;
+  color: #697066;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.occasion-switch button.active {
+  border-color: #b88a3b;
+  background: #fff7df;
+  color: #214f3a;
+}
+
 .cook-filter {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

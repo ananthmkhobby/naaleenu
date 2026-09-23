@@ -1,7 +1,7 @@
 import { ArrowLeft, BookOpen, CalendarCheck, Camera, Check, Clock, Heart, History, Pencil, Plus, RefreshCw, Search, Sparkles, Star, ThumbsUp, Wand2, X } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { createHousehold, listDishes, recommendation, recordFeedback, recordMeal } from "../domain/api";
-import type { CustomDish, DietType, Dish, FeedbackRating, Household, MealEvent, MealType, Recommendation, TimeBand } from "../domain/types";
+import type { CustomDish, DietType, Dish, FeedbackRating, Household, MealEvent, MealType, OccasionPreference, Recommendation, TimeBand } from "../domain/types";
 import { ChoiceButton } from "../components/ChoiceButton";
 import { db, getLocalState, saveLocalState } from "../offline/db";
 import { isSupabaseConfigured, supabase } from "../supabase/client";
@@ -17,6 +17,11 @@ const cookTimeFilters = [
   { label: "20 min", value: 20 },
   { label: "30 min", value: 30 }
 ] as const;
+const occasionOptions: Array<{ label: string; value: OccasionPreference }> = [
+  { label: "Regular", value: "regular" },
+  { label: "Ekadashi", value: "ekadashi" },
+  { label: "Festive", value: "festive" }
+];
 const categoryFamilies: Record<string, string[]> = {
   idli: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
   dosa: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
@@ -148,6 +153,18 @@ function cuisineScore(dish: Dish) {
   return Math.max(...dish.tags.map((tag) => cuisinePriority[tag.toLowerCase()] ?? 0), 0);
 }
 
+function occasionAllowed(dish: Dish, occasion: OccasionPreference) {
+  if (occasion === "ekadashi") return dish.tags.some((tag) => tag.toLowerCase() === "ekadashi-friendly");
+  return true;
+}
+
+function occasionScore(dish: Dish, occasion: OccasionPreference) {
+  const tags = new Set(dish.tags.map((tag) => tag.toLowerCase()));
+  if (occasion === "ekadashi" && tags.has("ekadashi-friendly")) return 18;
+  if (occasion === "festive" && tags.has("festive")) return 14;
+  return 0;
+}
+
 function nutritionForDish(dish: Dish): NonNullable<Dish["nutrition"]> {
   if (dish.nutrition) return dish.nutrition;
   const base: Record<string, [number, number, number, number, number]> = {
@@ -256,9 +273,9 @@ function avoidsAllowed(dish: Dish, household?: Household) {
   return !dish.ingredients_required.some((ingredient) => avoid.has(ingredient.toLowerCase()));
 }
 
-function chooseDish(dishes: Dish[], household: Household | undefined, pantry: string[], favoriteDishIds: string[], avoidCategory?: string) {
+function chooseDish(dishes: Dish[], household: Household | undefined, pantry: string[], favoriteDishIds: string[], avoidCategory?: string, occasion: OccasionPreference = "regular") {
   const pantrySet = new Set(pantry.map((item) => item.toLowerCase()));
-  const eligible = dishes.filter((dish) => dietAllowed(dish, household) && avoidsAllowed(dish, household) && dish.category !== avoidCategory);
+  const eligible = dishes.filter((dish) => dietAllowed(dish, household) && avoidsAllowed(dish, household) && occasionAllowed(dish, occasion) && dish.category !== avoidCategory);
   const pool = eligible.length > 0 ? eligible : dishes.filter((dish) => dietAllowed(dish, household) && avoidsAllowed(dish, household));
   return [...pool].sort((first, second) => {
     const fav = Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id));
@@ -268,6 +285,8 @@ function chooseDish(dishes: Dish[], household: Household | undefined, pantry: st
     if (pantryDiff !== 0) return pantryDiff;
     const cuisineDiff = cuisineScore(second) - cuisineScore(first);
     if (cuisineDiff !== 0) return cuisineDiff;
+    const occasionDiff = occasionScore(second, occasion) - occasionScore(first, occasion);
+    if (occasionDiff !== 0) return occasionDiff;
     return first.morning_effort_minutes - second.morning_effort_minutes;
   })[0];
 }
@@ -300,6 +319,7 @@ async function clientRecommendation(payload: {
   cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
   quicker_than_minutes?: number;
   max_cook_minutes?: number;
+  occasion_preference?: OccasionPreference;
 }): Promise<Recommendation> {
   const catalog = await listDishes(payload.meal_type);
   const pantrySet = new Set(payload.pantry_items.map((item) => item.toLowerCase()));
@@ -310,6 +330,7 @@ async function clientRecommendation(payload: {
     .filter((dish) => !payload.session_exclusions.includes(dish.id))
     .filter((dish) => !payload.session_category_exclusions.includes(dish.category))
     .filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household))
+    .filter((dish) => occasionAllowed(dish, payload.occasion_preference ?? "regular"))
     .filter((dish) => !payload.quicker_than_minutes || dish.morning_effort_minutes < payload.quicker_than_minutes)
     .filter((dish) => !payload.max_cook_minutes || dish.morning_effort_minutes <= payload.max_cook_minutes);
   const pool = dishes.length ? dishes : [...payload.custom_dishes, ...catalog].filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household));
@@ -318,7 +339,7 @@ async function clientRecommendation(payload: {
     const pantryScore = item.ingredients_required.filter((ingredient) => pantrySet.has(ingredient.toLowerCase())).length * 4;
     const favoriteScore = loved.has(item.id) ? 8 : 0;
     const styleScore = preferred.has(item.category.toLowerCase()) ? 5 : 0;
-    return pantryScore + favoriteScore + styleScore + cuisineScore(item) - item.morning_effort_minutes / 10;
+    return pantryScore + favoriteScore + styleScore + cuisineScore(item) + occasionScore(item, payload.occasion_preference ?? "regular") - item.morning_effort_minutes / 10;
   };
   const dish = pickFromTopBand(pool, score);
   if (!dish) throw new Error("No dish available");
@@ -328,7 +349,7 @@ async function clientRecommendation(payload: {
     dish,
     score: 80,
     reason_codes: ["local_fit"],
-    reason: "This fits your saved preferences and today’s time."
+    reason: payload.occasion_preference === "ekadashi" ? "This keeps the suggestion aligned with your Ekadashi preference." : payload.occasion_preference === "festive" ? "This feels more special for a festive day and still fits your time." : "This fits your saved preferences and today’s time."
   };
 }
 
@@ -346,6 +367,7 @@ export default function App() {
   const [favoriteDishIds, setFavoriteDishIds] = useState<string[]>([]);
   const [reminderTime, setReminderTime] = useState("20:30");
   const [maxCookMinutes, setMaxCookMinutes] = useState<number | undefined>();
+  const [occasionPreference, setOccasionPreference] = useState<OccasionPreference>("regular");
   const [syncEmail, setSyncEmail] = useState("");
   const [syncStatus, setSyncStatus] = useState("");
   const [signedInEmail, setSignedInEmail] = useState<string | undefined>();
@@ -366,6 +388,7 @@ export default function App() {
       setSessionCategoryExclusions(state.session_category_exclusions);
       setFavoriteDishIds(state.favorite_dish_ids);
       setReminderTime(state.reminder_time);
+      setOccasionPreference(state.occasion_preference);
       setMeals(localMeals);
       setCustomDishes(localCustomDishes);
       setScreen(state.household ? "home" : "setup");
@@ -456,7 +479,8 @@ export default function App() {
         ...favoriteDishIds.map((dishId) => ({ dish_id: dishId, rating: "loved" as const }))
       ],
       quicker_than_minutes: quicker && rec ? rec.dish.morning_effort_minutes : undefined,
-      max_cook_minutes: quicker ? undefined : maxCookMinutes
+      max_cook_minutes: quicker ? undefined : maxCookMinutes,
+      occasion_preference: occasionPreference
     };
     await trackEvent("recommendation_requested", { meal_type: mealType, quicker }, household.id);
     try {
@@ -625,9 +649,9 @@ export default function App() {
   if (screen === "feedback" && lastMeal) return <Feedback meal={lastMeal} onRate={feedback} />;
   if (screen === "history") return <HistoryScreen meals={meals} onBack={() => setScreen("home")} />;
   if (screen === "catalog") return <CatalogScreen mealType={mealType} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onToggleFavorite={toggleFavorite} onSave={saveCustomDish} onBack={() => setScreen("home")} />;
-  if (screen === "tomorrow") return <TomorrowPlan household={household} pantry={pantry} customDishes={customDishes} favoriteDishIds={favoriteDishIds} reminderTime={reminderTime} onReminderChange={updateReminder} onBack={() => setScreen("home")} />;
+  if (screen === "tomorrow") return <TomorrowPlan household={household} pantry={pantry} customDishes={customDishes} favoriteDishIds={favoriteDishIds} occasionPreference={occasionPreference} reminderTime={reminderTime} onReminderChange={updateReminder} onBack={() => setScreen("home")} />;
   if (screen === "leftovers") return <LeftoverMagic household={household} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onBack={() => setScreen("home")} />;
-  return <Home mealType={mealType} onMealTypeChange={switchMealType} maxCookMinutes={maxCookMinutes} onMaxCookMinutesChange={async (minutes) => { setMaxCookMinutes(minutes); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
+  return <Home mealType={mealType} onMealTypeChange={switchMealType} maxCookMinutes={maxCookMinutes} onMaxCookMinutesChange={async (minutes) => { setMaxCookMinutes(minutes); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} occasionPreference={occasionPreference} onOccasionPreferenceChange={async (occasion) => { setOccasionPreference(occasion); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ occasion_preference: occasion, latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
 }
 
 function SplashScreen({ onSkip }: { onSkip: () => void }) {
@@ -700,8 +724,8 @@ function Pantry({ selected, setSelected, onDone }: { selected: string[]; setSele
   );
 }
 
-function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChange, recommendation, isFavorite, note, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; maxCookMinutes?: number; onMaxCookMinutesChange: (minutes?: number) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onToggleFavorite: () => void }) {
-  if (!recommendation) return <main className="app-shell"><MealTypeSwitch value={mealType} onChange={onMealTypeChange} /><CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} /><p>Finding one good {mealType === "lunch" ? "lunchbox" : "breakfast"}...</p></main>;
+function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChange, occasionPreference, onOccasionPreferenceChange, recommendation, isFavorite, note, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; maxCookMinutes?: number; onMaxCookMinutesChange: (minutes?: number) => void; occasionPreference: OccasionPreference; onOccasionPreferenceChange: (occasion: OccasionPreference) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onToggleFavorite: () => void }) {
+  if (!recommendation) return <main className="app-shell"><MealTypeSwitch value={mealType} onChange={onMealTypeChange} /><OccasionSwitch value={occasionPreference} onChange={onOccasionPreferenceChange} /><CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} /><p>Finding one good {mealType === "lunch" ? "lunchbox" : "breakfast"}...</p></main>;
   return (
     <main className="decision-screen">
       <div className="top-actions">
@@ -711,6 +735,7 @@ function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChan
       <img className="hero-image" src={visualForDish(recommendation.dish)} alt={`${recommendation.dish.name} ${mealType === "lunch" ? "lunchbox" : "breakfast"} inspiration`} />
       <section className="decision-copy">
         <MealTypeSwitch value={mealType} onChange={onMealTypeChange} />
+        <OccasionSwitch value={occasionPreference} onChange={onOccasionPreferenceChange} />
         <CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} />
         <p className="eyebrow"><Clock size={15} /> {recommendation.dish.morning_effort_minutes} min</p>
         <h1>{recommendation.dish.name}</h1>
@@ -738,6 +763,18 @@ function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChan
         </div>
       </section>
     </main>
+  );
+}
+
+function OccasionSwitch({ value, onChange }: { value: OccasionPreference; onChange: (occasion: OccasionPreference) => void }) {
+  return (
+    <div className="occasion-switch" aria-label="Occasion preference">
+      {occasionOptions.map((option) => (
+        <button key={option.value} className={value === option.value ? "active" : ""} onClick={() => onChange(option.value)}>
+          {option.label}
+        </button>
+      ))}
+    </div>
   );
 }
 
@@ -801,7 +838,7 @@ function SyncPanel({ signedInEmail, email, status, onEmailChange, onSend, onSign
   );
 }
 
-function TomorrowPlan({ household, pantry, customDishes, favoriteDishIds, reminderTime, onReminderChange, onBack }: { household?: Household; pantry: string[]; customDishes: CustomDish[]; favoriteDishIds: string[]; reminderTime: string; onReminderChange: (time: string) => void; onBack: () => void }) {
+function TomorrowPlan({ household, pantry, customDishes, favoriteDishIds, occasionPreference, reminderTime, onReminderChange, onBack }: { household?: Household; pantry: string[]; customDishes: CustomDish[]; favoriteDishIds: string[]; occasionPreference: OccasionPreference; reminderTime: string; onReminderChange: (time: string) => void; onBack: () => void }) {
   const [breakfastCatalog, setBreakfastCatalog] = useState<Dish[]>([]);
   const [lunchCatalog, setLunchCatalog] = useState<Dish[]>([]);
   const [note, setNote] = useState("");
@@ -817,10 +854,10 @@ function TomorrowPlan({ household, pantry, customDishes, favoriteDishIds, remind
 
   const breakfastPool = [...customDishes.filter((dish) => dish.meal_type === "breakfast"), ...breakfastCatalog];
   const lunchPool = [...customDishes.filter((dish) => dish.meal_type === "lunch"), ...lunchCatalog];
-  const breakfast = chooseDish(breakfastPool, household, pantry, favoriteDishIds);
-  const lunch = chooseDish(lunchPool, household, pantry, favoriteDishIds, breakfast?.category);
+  const breakfast = chooseDish(breakfastPool, household, pantry, favoriteDishIds, undefined, occasionPreference);
+  const lunch = chooseDish(lunchPool, household, pantry, favoriteDishIds, breakfast?.category, occasionPreference);
   const dinnerPool = lunchPool.filter((dish) => ["chapati", "paratha", "rotti", "rice", "khichdi", "pulao", "lunchbox"].includes(dish.category));
-  const dinner = chooseDish(dinnerPool.length ? dinnerPool : lunchPool, household, pantry, favoriteDishIds, lunch?.category);
+  const dinner = chooseDish(dinnerPool.length ? dinnerPool : lunchPool, household, pantry, favoriteDishIds, lunch?.category, occasionPreference);
   const prep = prepForPlan(breakfast, lunch);
   const gaps = groceryGap([breakfast, lunch, dinner], pantry);
   const tomorrowDate = new Date(Date.now() + 86_400_000).toISOString().slice(0, 10);

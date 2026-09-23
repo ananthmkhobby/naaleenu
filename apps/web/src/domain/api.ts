@@ -1,4 +1,4 @@
-import type { Dish, FeedbackRating, Household, MealEvent, MealType, Recommendation } from "./types";
+import type { Dish, FeedbackRating, Household, MealEvent, MealType, OccasionPreference, Recommendation } from "./types";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
 
@@ -27,6 +27,7 @@ export async function recommendation(payload: {
   cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
   quicker_than_minutes?: number;
   max_cook_minutes?: number;
+  occasion_preference?: OccasionPreference;
 }): Promise<Recommendation> {
   return request<Recommendation>("/v1/recommendations", { method: "POST", body: JSON.stringify(payload) });
 }

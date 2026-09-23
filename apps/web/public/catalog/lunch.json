@@ -2,6 +2,279 @@
   {
     "id": "lunch-001",
     "meal_type": "lunch",
+    "slug": "sabudana-khichdi-curd",
+    "name": "Sabudana Khichdi + Curd",
+    "region": [
+      "lunchbox",
+      "North Indian",
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "khichdi",
+    "active_time_minutes": 22,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 22,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "dal"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "cucumber slices",
+      "roasted papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep dal ready and use any cooked base already available.",
+      "Prepare Sabudana Khichdi + Curd with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/sabudana-khichdi-curd",
+    "tags": [
+      "north-indian",
+      "ekadashi-friendly",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 12,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-002",
+    "meal_type": "lunch",
+    "slug": "boiled-potato-peanut-bowl",
+    "name": "Boiled Potato Peanut Bowl",
+    "region": [
+      "lunchbox",
+      "Western",
+      "urban quick"
+    ],
+    "diet_type": "veg",
+    "category": "lunchbox",
+    "active_time_minutes": 20,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 20,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "fruit"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep lentils, rice ready and use any cooked base already available.",
+      "Prepare Boiled Potato Peanut Bowl with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/boiled-potato-peanut-bowl",
+    "tags": [
+      "western",
+      "ekadashi-friendly",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-003",
+    "meal_type": "lunch",
+    "slug": "fruit-curd-bowl",
+    "name": "Fruit Curd Bowl",
+    "region": [
+      "lunchbox",
+      "Western",
+      "urban quick"
+    ],
+    "diet_type": "veg",
+    "category": "lunchbox",
+    "active_time_minutes": 20,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 20,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "fruit"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep lentils, rice ready and use any cooked base already available.",
+      "Prepare Fruit Curd Bowl with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/fruit-curd-bowl",
+    "tags": [
+      "western",
+      "ekadashi-friendly",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-004",
+    "meal_type": "lunch",
+    "slug": "kesari-bath-fruit",
+    "name": "Kesari Bath + Fruit",
+    "region": [
+      "lunchbox",
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "lunchbox",
+    "active_time_minutes": 22,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 22,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "cucumber slices",
+      "roasted papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep mixed vegetables, rava ready and use any cooked base already available.",
+      "Prepare Kesari Bath + Fruit with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/kesari-bath-fruit",
+    "tags": [
+      "south-indian",
+      "ekadashi-friendly",
+      "festive",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-005",
+    "meal_type": "lunch",
     "slug": "lemon-rice-curd",
     "name": "Lemon Rice + Curd",
     "region": [
@@ -69,7 +342,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-002",
+    "id": "lunch-006",
     "meal_type": "lunch",
     "slug": "chitranna-cucumber",
     "name": "Chitranna + Cucumber",
@@ -137,7 +410,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-003",
+    "id": "lunch-007",
     "meal_type": "lunch",
     "slug": "tomato-rice-cucumber",
     "name": "Tomato Rice + Cucumber",
@@ -206,7 +479,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-004",
+    "id": "lunch-008",
     "meal_type": "lunch",
     "slug": "coconut-rice-sundal",
     "name": "Coconut Rice + Sundal",
@@ -277,7 +550,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-005",
+    "id": "lunch-009",
     "meal_type": "lunch",
     "slug": "puliyogare-curd",
     "name": "Puliyogare + Curd",
@@ -329,6 +602,7 @@
     "image_key": "lunch/puliyogare-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -345,7 +619,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-006",
+    "id": "lunch-010",
     "meal_type": "lunch",
     "slug": "curd-rice-carrot",
     "name": "Curd Rice + Carrot",
@@ -415,7 +689,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-007",
+    "id": "lunch-011",
     "meal_type": "lunch",
     "slug": "tamarind-rice-peanut-sundal",
     "name": "Tamarind Rice + Peanut Sundal",
@@ -486,7 +760,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-008",
+    "id": "lunch-012",
     "meal_type": "lunch",
     "slug": "mango-rice-curd",
     "name": "Mango Rice + Curd",
@@ -555,7 +829,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-009",
+    "id": "lunch-013",
     "meal_type": "lunch",
     "slug": "coriander-rice-curd",
     "name": "Coriander Rice + Curd",
@@ -624,7 +898,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-010",
+    "id": "lunch-014",
     "meal_type": "lunch",
     "slug": "mint-rice-boiled-egg",
     "name": "Mint Rice + Boiled Egg",
@@ -694,7 +968,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-011",
+    "id": "lunch-015",
     "meal_type": "lunch",
     "slug": "capsicum-rice-curd",
     "name": "Capsicum Rice + Curd",
@@ -763,7 +1037,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-012",
+    "id": "lunch-016",
     "meal_type": "lunch",
     "slug": "peanut-rice-cucumber",
     "name": "Peanut Rice + Cucumber",
@@ -832,7 +1106,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-013",
+    "id": "lunch-017",
     "meal_type": "lunch",
     "slug": "sesame-rice-papad",
     "name": "Sesame Rice + Papad",
@@ -901,7 +1175,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-014",
+    "id": "lunch-018",
     "meal_type": "lunch",
     "slug": "sambar-rice-poriyal",
     "name": "Sambar Rice + Poriyal",
@@ -971,7 +1245,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-015",
+    "id": "lunch-019",
     "meal_type": "lunch",
     "slug": "rasam-rice-potato-fry",
     "name": "Rasam Rice + Potato Fry",
@@ -1040,7 +1314,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-016",
+    "id": "lunch-020",
     "meal_type": "lunch",
     "slug": "bisi-bele-bath-curd",
     "name": "Bisi Bele Bath + Curd",
@@ -1094,6 +1368,8 @@
     "image_key": "lunch/bisi-bele-bath-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -1110,7 +1386,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-017",
+    "id": "lunch-021",
     "meal_type": "lunch",
     "slug": "vangi-bath-curd",
     "name": "Vangi Bath + Curd",
@@ -1164,6 +1440,7 @@
     "image_key": "lunch/vangi-bath-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -1180,7 +1457,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-018",
+    "id": "lunch-022",
     "meal_type": "lunch",
     "slug": "vegetable-rice-bath-raita",
     "name": "Vegetable Rice Bath + Raita",
@@ -1251,7 +1528,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-019",
+    "id": "lunch-023",
     "meal_type": "lunch",
     "slug": "ghee-rice-dal",
     "name": "Ghee Rice + Dal",
@@ -1305,6 +1582,7 @@
     "image_key": "lunch/ghee-rice-dal",
     "tags": [
       "south-indian",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -1321,7 +1599,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-020",
+    "id": "lunch-024",
     "meal_type": "lunch",
     "slug": "coconut-milk-rice-kurma",
     "name": "Coconut Milk Rice + Kurma",
@@ -1390,7 +1668,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-021",
+    "id": "lunch-025",
     "meal_type": "lunch",
     "slug": "vegetable-pulao-raita",
     "name": "Vegetable Pulao + Raita",
@@ -1455,7 +1733,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-022",
+    "id": "lunch-026",
     "meal_type": "lunch",
     "slug": "peas-pulao-curd",
     "name": "Peas Pulao + Curd",
@@ -1505,6 +1783,7 @@
     "image_key": "lunch/peas-pulao-curd",
     "tags": [
       "pan-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -1521,7 +1800,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-023",
+    "id": "lunch-027",
     "meal_type": "lunch",
     "slug": "tomato-pulao-raita",
     "name": "Tomato Pulao + Raita",
@@ -1587,7 +1866,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-024",
+    "id": "lunch-028",
     "meal_type": "lunch",
     "slug": "millet-pulao-raita",
     "name": "Millet Pulao + Raita",
@@ -1653,7 +1932,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-025",
+    "id": "lunch-029",
     "meal_type": "lunch",
     "slug": "millet-curd-rice",
     "name": "Millet Curd Rice",
@@ -1723,7 +2002,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-026",
+    "id": "lunch-030",
     "meal_type": "lunch",
     "slug": "foxtail-millet-lemon-rice",
     "name": "Foxtail Millet Lemon Rice",
@@ -1792,7 +2071,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-027",
+    "id": "lunch-031",
     "meal_type": "lunch",
     "slug": "little-millet-tomato-rice",
     "name": "Little Millet Tomato Rice",
@@ -1861,7 +2140,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-028",
+    "id": "lunch-032",
     "meal_type": "lunch",
     "slug": "ragi-mudde-sambar",
     "name": "Ragi Mudde + Sambar",
@@ -1914,6 +2193,7 @@
     "image_key": "lunch/ragi-mudde-sambar",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -1930,7 +2210,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-029",
+    "id": "lunch-033",
     "meal_type": "lunch",
     "slug": "jolada-rotti-brinjal-palya",
     "name": "Jolada Rotti + Brinjal Palya",
@@ -1999,7 +2279,77 @@
     "is_active": true
   },
   {
-    "id": "lunch-030",
+    "id": "lunch-034",
+    "meal_type": "lunch",
+    "slug": "sweet-pongal-banana",
+    "name": "Sweet Pongal + Banana",
+    "region": [
+      "lunchbox",
+      "South Indian",
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "lunchbox",
+    "active_time_minutes": 20,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 20,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "banana"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "fruit"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep banana ready and use any cooked base already available.",
+      "Prepare Sweet Pongal + Banana with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/sweet-pongal-banana",
+    "tags": [
+      "south-indian",
+      "ekadashi-friendly",
+      "festive",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-035",
     "meal_type": "lunch",
     "slug": "akki-rotti-curd",
     "name": "Akki Rotti + Curd",
@@ -2069,7 +2419,74 @@
     "is_active": true
   },
   {
-    "id": "lunch-031",
+    "id": "lunch-036",
+    "meal_type": "lunch",
+    "slug": "pineapple-kesari-curd",
+    "name": "Pineapple Kesari + Curd",
+    "region": [
+      "lunchbox",
+      "pan-Indian"
+    ],
+    "diet_type": "veg",
+    "category": "lunchbox",
+    "active_time_minutes": 20,
+    "total_time_minutes": 30,
+    "morning_effort_minutes": 20,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "curd",
+      "fruit",
+      "pickle"
+    ],
+    "side_suggestions": [
+      "curd",
+      "fruit"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Keep lentils, rice ready and use any cooked base already available.",
+      "Prepare Pineapple Kesari + Curd with mild seasoning so it travels well in a lunch box.",
+      "Cool slightly before closing the box to reduce excess steam.",
+      "Pack with curd, fruit or a small side if it is available."
+    ],
+    "image_key": "lunch/pineapple-kesari-curd",
+    "tags": [
+      "pan-indian",
+      "ekadashi-friendly",
+      "festive",
+      "lunchbox"
+    ],
+    "nutrition": {
+      "serving": "Per person, approx.",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
+    "is_active": true
+  },
+  {
+    "id": "lunch-037",
     "meal_type": "lunch",
     "slug": "ragi-rotti-chutney",
     "name": "Ragi Rotti + Chutney",
@@ -2122,6 +2539,7 @@
     "image_key": "lunch/ragi-rotti-chutney",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -2138,7 +2556,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-032",
+    "id": "lunch-038",
     "meal_type": "lunch",
     "slug": "vegetable-akki-rotti-curd",
     "name": "Vegetable Akki Rotti + Curd",
@@ -2207,7 +2625,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-033",
+    "id": "lunch-039",
     "meal_type": "lunch",
     "slug": "onion-akki-rotti-chutney",
     "name": "Onion Akki Rotti + Chutney",
@@ -2277,7 +2695,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-034",
+    "id": "lunch-040",
     "meal_type": "lunch",
     "slug": "methi-akki-rotti-curd",
     "name": "Methi Akki Rotti + Curd",
@@ -2347,7 +2765,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-035",
+    "id": "lunch-041",
     "meal_type": "lunch",
     "slug": "idli-podi-ghee",
     "name": "Idli + Podi + Ghee",
@@ -2400,6 +2818,7 @@
     "image_key": "lunch/idli-podi-ghee",
     "tags": [
       "south-indian",
+      "festive",
       "quick",
       "lunchbox"
     ],
@@ -2417,7 +2836,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-036",
+    "id": "lunch-042",
     "meal_type": "lunch",
     "slug": "mini-idli-sambar",
     "name": "Mini Idli + Sambar",
@@ -2488,7 +2907,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-037",
+    "id": "lunch-043",
     "meal_type": "lunch",
     "slug": "podi-idli-curd",
     "name": "Podi Idli + Curd",
@@ -2558,7 +2977,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-038",
+    "id": "lunch-044",
     "meal_type": "lunch",
     "slug": "idli-upma-fruit",
     "name": "Idli Upma + Fruit",
@@ -2629,7 +3048,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-039",
+    "id": "lunch-045",
     "meal_type": "lunch",
     "slug": "dosa-roll-potato",
     "name": "Dosa Roll + Potato",
@@ -2701,7 +3120,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-040",
+    "id": "lunch-046",
     "meal_type": "lunch",
     "slug": "set-dosa-chutney",
     "name": "Set Dosa + Chutney",
@@ -2770,7 +3189,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-041",
+    "id": "lunch-047",
     "meal_type": "lunch",
     "slug": "pesarattu-roll",
     "name": "Pesarattu Roll",
@@ -2840,7 +3259,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-042",
+    "id": "lunch-048",
     "meal_type": "lunch",
     "slug": "adai-roll-chutney",
     "name": "Adai Roll + Chutney",
@@ -2910,7 +3329,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-043",
+    "id": "lunch-049",
     "meal_type": "lunch",
     "slug": "uttapam-chutney",
     "name": "Uttapam + Chutney",
@@ -2979,7 +3398,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-044",
+    "id": "lunch-050",
     "meal_type": "lunch",
     "slug": "kuzhi-paniyaram-chutney",
     "name": "Kuzhi Paniyaram + Chutney",
@@ -3048,7 +3467,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-045",
+    "id": "lunch-051",
     "meal_type": "lunch",
     "slug": "appam-vegetable-stew",
     "name": "Appam + Vegetable Stew",
@@ -3102,6 +3521,7 @@
     "image_key": "lunch/appam-vegetable-stew",
     "tags": [
       "south-indian",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -3118,7 +3538,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-046",
+    "id": "lunch-052",
     "meal_type": "lunch",
     "slug": "idiyappam-vegetable-kurma",
     "name": "Idiyappam + Vegetable Kurma",
@@ -3172,6 +3592,7 @@
     "image_key": "lunch/idiyappam-vegetable-kurma",
     "tags": [
       "south-indian",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -3188,7 +3609,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-047",
+    "id": "lunch-053",
     "meal_type": "lunch",
     "slug": "puttu-kadala-curry",
     "name": "Puttu + Kadala Curry",
@@ -3241,6 +3662,7 @@
     "image_key": "lunch/puttu-kadala-curry",
     "tags": [
       "south-indian",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -3257,7 +3679,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-048",
+    "id": "lunch-054",
     "meal_type": "lunch",
     "slug": "semiya-upma-curd",
     "name": "Semiya Upma + Curd",
@@ -3325,7 +3747,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-049",
+    "id": "lunch-055",
     "meal_type": "lunch",
     "slug": "vegetable-upma-fruit",
     "name": "Vegetable Upma + Fruit",
@@ -3394,7 +3816,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-050",
+    "id": "lunch-056",
     "meal_type": "lunch",
     "slug": "avalakki-peanut-sundal",
     "name": "Avalakki + Peanut Sundal",
@@ -3464,7 +3886,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-051",
+    "id": "lunch-057",
     "meal_type": "lunch",
     "slug": "bread-upma-banana",
     "name": "Bread Upma + Banana",
@@ -3534,7 +3956,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-052",
+    "id": "lunch-058",
     "meal_type": "lunch",
     "slug": "akki-usli-curd",
     "name": "Akki Usli + Curd",
@@ -3603,7 +4025,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-053",
+    "id": "lunch-059",
     "meal_type": "lunch",
     "slug": "vegetable-akki-usli-chutney",
     "name": "Vegetable Akki Usli + Chutney",
@@ -3673,7 +4095,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-054",
+    "id": "lunch-060",
     "meal_type": "lunch",
     "slug": "cabbage-akki-usli-curd",
     "name": "Cabbage Akki Usli + Curd",
@@ -3742,7 +4164,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-055",
+    "id": "lunch-061",
     "meal_type": "lunch",
     "slug": "avarekalu-akki-usli-chutney",
     "name": "Avarekalu Akki Usli + Chutney",
@@ -3811,7 +4233,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-056",
+    "id": "lunch-062",
     "meal_type": "lunch",
     "slug": "sprouts-sundal-chapati",
     "name": "Sprouts Sundal + Chapati",
@@ -3883,7 +4305,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-057",
+    "id": "lunch-063",
     "meal_type": "lunch",
     "slug": "chickpea-sundal-curd-rice",
     "name": "Chickpea Sundal + Curd Rice",
@@ -3955,7 +4377,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-058",
+    "id": "lunch-064",
     "meal_type": "lunch",
     "slug": "moong-sundal-fruit",
     "name": "Moong Sundal + Fruit",
@@ -4025,7 +4447,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-059",
+    "id": "lunch-065",
     "meal_type": "lunch",
     "slug": "mixed-veg-palya-chapati",
     "name": "Mixed Veg Palya + Chapati",
@@ -4095,7 +4517,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-060",
+    "id": "lunch-066",
     "meal_type": "lunch",
     "slug": "beans-palya-chapati",
     "name": "Beans Palya + Chapati",
@@ -4165,7 +4587,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-061",
+    "id": "lunch-067",
     "meal_type": "lunch",
     "slug": "carrot-poriyal-curd-rice",
     "name": "Carrot Poriyal + Curd Rice",
@@ -4235,7 +4657,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-062",
+    "id": "lunch-068",
     "meal_type": "lunch",
     "slug": "cabbage-poriyal-rice",
     "name": "Cabbage Poriyal + Rice",
@@ -4304,7 +4726,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-063",
+    "id": "lunch-069",
     "meal_type": "lunch",
     "slug": "potato-palya-poori",
     "name": "Potato Palya + Poori",
@@ -4356,6 +4778,8 @@
     "image_key": "lunch/potato-palya-poori",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -4372,7 +4796,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-064",
+    "id": "lunch-070",
     "meal_type": "lunch",
     "slug": "poori-potato-palya",
     "name": "Poori + Potato Palya",
@@ -4424,6 +4848,8 @@
     "image_key": "lunch/poori-potato-palya",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
+      "festive",
       "lunchbox"
     ],
     "nutrition": {
@@ -4440,7 +4866,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-065",
+    "id": "lunch-071",
     "meal_type": "lunch",
     "slug": "chapati-aloo-palya",
     "name": "Chapati + Aloo Palya",
@@ -4510,7 +4936,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-066",
+    "id": "lunch-072",
     "meal_type": "lunch",
     "slug": "chapati-mixed-vegetable-sabzi",
     "name": "Chapati + Mixed Vegetable Sabzi",
@@ -4577,7 +5003,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-067",
+    "id": "lunch-073",
     "meal_type": "lunch",
     "slug": "chapati-paneer-bhurji",
     "name": "Chapati + Paneer Bhurji",
@@ -4647,7 +5073,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-068",
+    "id": "lunch-074",
     "meal_type": "lunch",
     "slug": "chapati-egg-bhurji",
     "name": "Chapati + Egg Bhurji",
@@ -4714,7 +5140,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-069",
+    "id": "lunch-075",
     "meal_type": "lunch",
     "slug": "chapati-chana-masala",
     "name": "Chapati + Chana Masala",
@@ -4781,7 +5207,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-070",
+    "id": "lunch-076",
     "meal_type": "lunch",
     "slug": "phulka-roll-vegetable-palya",
     "name": "Phulka Roll + Vegetable Palya",
@@ -4852,7 +5278,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-071",
+    "id": "lunch-077",
     "meal_type": "lunch",
     "slug": "curd-chapati-roll",
     "name": "Curd Chapati Roll",
@@ -4919,7 +5345,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-072",
+    "id": "lunch-078",
     "meal_type": "lunch",
     "slug": "paneer-chapati-roll",
     "name": "Paneer Chapati Roll",
@@ -4990,7 +5416,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-073",
+    "id": "lunch-079",
     "meal_type": "lunch",
     "slug": "egg-chapati-roll",
     "name": "Egg Chapati Roll",
@@ -5058,7 +5484,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-074",
+    "id": "lunch-080",
     "meal_type": "lunch",
     "slug": "vegetable-paratha-curd",
     "name": "Vegetable Paratha + Curd",
@@ -5108,6 +5534,7 @@
     "image_key": "lunch/vegetable-paratha-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -5124,7 +5551,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-075",
+    "id": "lunch-081",
     "meal_type": "lunch",
     "slug": "aloo-paratha-curd",
     "name": "Aloo Paratha + Curd",
@@ -5175,6 +5602,7 @@
     "image_key": "lunch/aloo-paratha-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -5191,7 +5619,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-076",
+    "id": "lunch-082",
     "meal_type": "lunch",
     "slug": "methi-paratha-pickle",
     "name": "Methi Paratha + Pickle",
@@ -5258,7 +5686,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-077",
+    "id": "lunch-083",
     "meal_type": "lunch",
     "slug": "paneer-paratha-curd",
     "name": "Paneer Paratha + Curd",
@@ -5311,6 +5739,7 @@
     "image_key": "lunch/paneer-paratha-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -5327,7 +5756,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-078",
+    "id": "lunch-084",
     "meal_type": "lunch",
     "slug": "gobi-paratha-curd",
     "name": "Gobi Paratha + Curd",
@@ -5378,6 +5807,7 @@
     "image_key": "lunch/gobi-paratha-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -5394,7 +5824,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-079",
+    "id": "lunch-085",
     "meal_type": "lunch",
     "slug": "thepla-curd",
     "name": "Thepla + Curd",
@@ -5443,6 +5873,7 @@
     "image_key": "lunch/thepla-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -5459,7 +5890,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-080",
+    "id": "lunch-086",
     "meal_type": "lunch",
     "slug": "thepla-pickle",
     "name": "Thepla + Pickle",
@@ -5524,7 +5955,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-081",
+    "id": "lunch-087",
     "meal_type": "lunch",
     "slug": "moong-dal-chilla-roll",
     "name": "Moong Dal Chilla Roll",
@@ -5593,7 +6024,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-082",
+    "id": "lunch-088",
     "meal_type": "lunch",
     "slug": "vegetable-besan-chilla",
     "name": "Vegetable Besan Chilla",
@@ -5658,7 +6089,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-083",
+    "id": "lunch-089",
     "meal_type": "lunch",
     "slug": "dal-khichdi-curd",
     "name": "Dal Khichdi + Curd",
@@ -5724,7 +6155,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-084",
+    "id": "lunch-090",
     "meal_type": "lunch",
     "slug": "vegetable-khichdi-papad",
     "name": "Vegetable Khichdi + Papad",
@@ -5791,7 +6222,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-085",
+    "id": "lunch-091",
     "meal_type": "lunch",
     "slug": "rajma-rice",
     "name": "Rajma Rice",
@@ -5860,7 +6291,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-086",
+    "id": "lunch-092",
     "meal_type": "lunch",
     "slug": "chole-rice",
     "name": "Chole Rice",
@@ -5930,7 +6361,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-087",
+    "id": "lunch-093",
     "meal_type": "lunch",
     "slug": "jeera-rice-dal",
     "name": "Jeera Rice + Dal",
@@ -6000,7 +6431,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-088",
+    "id": "lunch-094",
     "meal_type": "lunch",
     "slug": "matar-pulao-curd",
     "name": "Matar Pulao + Curd",
@@ -6051,6 +6482,7 @@
     "image_key": "lunch/matar-pulao-curd",
     "tags": [
       "north-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -6067,7 +6499,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-089",
+    "id": "lunch-095",
     "meal_type": "lunch",
     "slug": "aloo-methi-phulka",
     "name": "Aloo Methi + Phulka",
@@ -6132,7 +6564,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-090",
+    "id": "lunch-096",
     "meal_type": "lunch",
     "slug": "bhindi-sabzi-chapati",
     "name": "Bhindi Sabzi + Chapati",
@@ -6198,7 +6630,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-091",
+    "id": "lunch-097",
     "meal_type": "lunch",
     "slug": "paneer-bhurji-roll",
     "name": "Paneer Bhurji Roll",
@@ -6269,7 +6701,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-092",
+    "id": "lunch-098",
     "meal_type": "lunch",
     "slug": "chana-salad-chapati",
     "name": "Chana Salad + Chapati",
@@ -6336,7 +6768,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-093",
+    "id": "lunch-099",
     "meal_type": "lunch",
     "slug": "leftover-rice-fried-rice",
     "name": "Leftover Rice Fried Rice",
@@ -6403,7 +6835,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-094",
+    "id": "lunch-100",
     "meal_type": "lunch",
     "slug": "leftover-chapati-noodles",
     "name": "Leftover Chapati Noodles",
@@ -6471,7 +6903,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-095",
+    "id": "lunch-101",
     "meal_type": "lunch",
     "slug": "leftover-sambar-rice",
     "name": "Leftover Sambar Rice",
@@ -6542,7 +6974,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-096",
+    "id": "lunch-102",
     "meal_type": "lunch",
     "slug": "leftover-dal-paratha",
     "name": "Leftover Dal Paratha",
@@ -6609,7 +7041,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-097",
+    "id": "lunch-103",
     "meal_type": "lunch",
     "slug": "leftover-idli-fry",
     "name": "Leftover Idli Fry",
@@ -6679,7 +7111,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-098",
+    "id": "lunch-104",
     "meal_type": "lunch",
     "slug": "leftover-dosa-roll",
     "name": "Leftover Dosa Roll",
@@ -6751,7 +7183,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-099",
+    "id": "lunch-105",
     "meal_type": "lunch",
     "slug": "curd-rice-mango-pickle",
     "name": "Curd Rice + Mango Pickle",
@@ -6821,7 +7253,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-100",
+    "id": "lunch-106",
     "meal_type": "lunch",
     "slug": "lemon-sevai-curd",
     "name": "Lemon Sevai + Curd",
@@ -6874,6 +7306,7 @@
     "image_key": "lunch/lemon-sevai-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -6890,7 +7323,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-101",
+    "id": "lunch-107",
     "meal_type": "lunch",
     "slug": "tomato-sevai-curd",
     "name": "Tomato Sevai + Curd",
@@ -6943,6 +7376,7 @@
     "image_key": "lunch/tomato-sevai-curd",
     "tags": [
       "south-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -6959,7 +7393,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-102",
+    "id": "lunch-108",
     "meal_type": "lunch",
     "slug": "coconut-sevai-sundal",
     "name": "Coconut Sevai + Sundal",
@@ -7028,7 +7462,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-103",
+    "id": "lunch-109",
     "meal_type": "lunch",
     "slug": "paneer-sandwich-fruit",
     "name": "Paneer Sandwich + Fruit",
@@ -7079,6 +7513,7 @@
     "image_key": "lunch/paneer-sandwich-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick",
       "lunchbox"
     ],
@@ -7096,7 +7531,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-104",
+    "id": "lunch-110",
     "meal_type": "lunch",
     "slug": "vegetable-sandwich-curd",
     "name": "Vegetable Sandwich + Curd",
@@ -7147,6 +7582,7 @@
     "image_key": "lunch/vegetable-sandwich-curd",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick",
       "lunchbox"
     ],
@@ -7164,7 +7600,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-105",
+    "id": "lunch-111",
     "meal_type": "lunch",
     "slug": "egg-sandwich-fruit",
     "name": "Egg Sandwich + Fruit",
@@ -7215,6 +7651,7 @@
     "image_key": "lunch/egg-sandwich-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick",
       "lunchbox"
     ],
@@ -7232,7 +7669,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-106",
+    "id": "lunch-112",
     "meal_type": "lunch",
     "slug": "cheese-vegetable-sandwich",
     "name": "Cheese Vegetable Sandwich",
@@ -7300,7 +7737,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-107",
+    "id": "lunch-113",
     "meal_type": "lunch",
     "slug": "corn-sandwich-fruit",
     "name": "Corn Sandwich + Fruit",
@@ -7350,6 +7787,7 @@
     "image_key": "lunch/corn-sandwich-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick",
       "lunchbox"
     ],
@@ -7367,7 +7805,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-108",
+    "id": "lunch-114",
     "meal_type": "lunch",
     "slug": "vegetable-wrap-curd",
     "name": "Vegetable Wrap + Curd",
@@ -7416,6 +7854,7 @@
     "image_key": "lunch/vegetable-wrap-curd",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7432,7 +7871,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-109",
+    "id": "lunch-115",
     "meal_type": "lunch",
     "slug": "paneer-wrap-fruit",
     "name": "Paneer Wrap + Fruit",
@@ -7481,6 +7920,7 @@
     "image_key": "lunch/paneer-wrap-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7497,7 +7937,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-110",
+    "id": "lunch-116",
     "meal_type": "lunch",
     "slug": "egg-wrap-fruit",
     "name": "Egg Wrap + Fruit",
@@ -7546,6 +7986,7 @@
     "image_key": "lunch/egg-wrap-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7562,7 +8003,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-111",
+    "id": "lunch-117",
     "meal_type": "lunch",
     "slug": "paneer-fried-rice",
     "name": "Paneer Fried Rice",
@@ -7629,7 +8070,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-112",
+    "id": "lunch-118",
     "meal_type": "lunch",
     "slug": "egg-fried-rice",
     "name": "Egg Fried Rice",
@@ -7696,7 +8137,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-113",
+    "id": "lunch-119",
     "meal_type": "lunch",
     "slug": "vegetable-fried-rice",
     "name": "Vegetable Fried Rice",
@@ -7763,7 +8204,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-114",
+    "id": "lunch-120",
     "meal_type": "lunch",
     "slug": "veg-noodles-fruit",
     "name": "Veg Noodles + Fruit",
@@ -7813,6 +8254,7 @@
     "image_key": "lunch/veg-noodles-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7829,7 +8271,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-115",
+    "id": "lunch-121",
     "meal_type": "lunch",
     "slug": "egg-noodles-fruit",
     "name": "Egg Noodles + Fruit",
@@ -7880,6 +8322,7 @@
     "image_key": "lunch/egg-noodles-fruit",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7896,7 +8339,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-116",
+    "id": "lunch-122",
     "meal_type": "lunch",
     "slug": "vegetable-pasta-curd",
     "name": "Vegetable Pasta + Curd",
@@ -7947,6 +8390,7 @@
     "image_key": "lunch/vegetable-pasta-curd",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -7963,7 +8407,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-117",
+    "id": "lunch-123",
     "meal_type": "lunch",
     "slug": "macaroni-fruit",
     "name": "Macaroni + Fruit",
@@ -8012,6 +8456,7 @@
     "image_key": "lunch/macaroni-fruit",
     "tags": [
       "pan-indian",
+      "ekadashi-friendly",
       "lunchbox"
     ],
     "nutrition": {
@@ -8028,7 +8473,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-118",
+    "id": "lunch-124",
     "meal_type": "lunch",
     "slug": "oats-vegetable-bowl",
     "name": "Oats Vegetable Bowl",
@@ -8094,7 +8539,7 @@
     "is_active": true
   },
   {
-    "id": "lunch-119",
+    "id": "lunch-125",
     "meal_type": "lunch",
     "slug": "banana-peanut-sandwich",
     "name": "Banana Peanut Sandwich",
@@ -8145,6 +8590,7 @@
     "image_key": "lunch/banana-peanut-sandwich",
     "tags": [
       "western",
+      "ekadashi-friendly",
       "quick",
       "lunchbox"
     ],
