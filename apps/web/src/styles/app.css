@@ -41,74 +41,133 @@ button {
   max-width: 520px;
   margin: 0 auto;
   overflow: hidden;
-  background: #17221a;
-  color: #fffdf8;
+  background:
+    radial-gradient(circle at 50% 36%, rgba(244, 220, 168, 0.38), transparent 28rem),
+    linear-gradient(180deg, #fffdf8 0%, #fbf7ef 100%);
+  color: #17221a;
 }
 
-.splash-base {
-  width: 100%;
-  height: 100svh;
-  object-fit: cover;
-  filter: grayscale(1) contrast(0.92) brightness(1.04);
-  transform: scale(1.04);
-  animation: baseSettle 1800ms ease forwards;
-}
-
-.splash-tiles {
+.splash-dish-stage {
   position: absolute;
   inset: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  overflow: hidden;
+  place-items: center;
 }
 
-.splash-tiles span {
-  --tile: 0;
-  background-image: url("/assets/naale-enu-splash.png");
-  background-size: 400% 200%;
+.question-orbit {
+  width: clamp(8.2rem, 42vw, 12rem);
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: #fffdf8;
+  box-shadow: 0 28px 70px rgba(33, 79, 58, 0.12), inset 0 0 0 1px rgba(33, 79, 58, 0.08);
+  animation: questionDance 1500ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.question-orbit span {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(5rem, 26vw, 8rem);
+  color: #214f3a;
+  line-height: 1;
+}
+
+.dish-token {
+  --dish: 0;
+  --start-x: 0vw;
+  --start-y: 0vh;
+  --mid-x: 0rem;
+  --mid-y: 0rem;
+  position: absolute;
+  min-width: clamp(7.2rem, 34vw, 9.4rem);
+  min-height: 5.3rem;
+  padding: 0.7rem 0.85rem;
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  border-radius: 1.2rem;
+  background: rgba(255, 253, 248, 0.9);
+  box-shadow: 0 22px 50px rgba(33, 79, 58, 0.14), inset 0 0 0 1px rgba(33, 79, 58, 0.08);
+  backdrop-filter: blur(10px);
   opacity: 0;
-  transform: translateY(28px) scale(0.98);
-  filter: saturate(1.08) contrast(1.02);
-  animation: tileAssemble 900ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
-  animation-delay: calc(120ms + var(--tile) * 85ms);
+  transform: translate(var(--start-x), var(--start-y)) scale(0.7) rotate(-8deg);
+  animation: dishDance 1650ms cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  animation-delay: calc(var(--dish) * 65ms);
 }
 
-.splash-tiles span:nth-child(1) { background-position: 0% 0%; }
-.splash-tiles span:nth-child(2) { background-position: 33.333% 0%; }
-.splash-tiles span:nth-child(3) { background-position: 66.666% 0%; }
-.splash-tiles span:nth-child(4) { background-position: 100% 0%; }
-.splash-tiles span:nth-child(5) { background-position: 0% 100%; }
-.splash-tiles span:nth-child(6) { background-position: 33.333% 100%; }
-.splash-tiles span:nth-child(7) { background-position: 66.666% 100%; }
-.splash-tiles span:nth-child(8) { background-position: 100% 100%; }
-
-@keyframes baseSettle {
-  to {
-    filter: grayscale(0.82) contrast(0.95) brightness(0.98);
-    transform: scale(1);
-  }
+.dish-token i {
+  position: relative;
+  width: 4.1rem;
+  aspect-ratio: 1.55;
+  border-radius: 999px;
+  background: #fff8ec;
+  box-shadow: inset 0 -0.35rem 0 rgba(33, 79, 58, 0.08);
 }
 
-@keyframes tileAssemble {
-  0% {
-    opacity: 0;
-    transform: translateY(28px) scale(0.98);
-  }
-  70% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-.splash-screen::after {
+.dish-token i::before,
+.dish-token i::after {
   content: "";
   position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(23, 34, 26, 0.08), rgba(23, 34, 26, 0.12) 45%, rgba(23, 34, 26, 0.74));
+  border-radius: 999px;
+}
+
+.dish-token i::before {
+  inset: 19% 14%;
+  background: var(--dish-fill, #f4dca8);
+}
+
+.dish-token i::after {
+  right: 0.15rem;
+  bottom: -0.15rem;
+  width: 1.4rem;
+  aspect-ratio: 1;
+  background: #2f6f47;
+  box-shadow: -2.65rem -0.2rem 0 var(--side-fill, #c95f32);
+}
+
+.dish-token b {
+  color: #17221a;
+  font-size: 0.82rem;
+  line-height: 1.05;
+  text-align: center;
+}
+
+.dish-token.coconut { --dish-fill: #fffdf8; --side-fill: #f4dca8; --start-x: -52vw; --start-y: -31vh; --mid-x: -7.6rem; --mid-y: -7.6rem; }
+.dish-token.gold { --dish-fill: #d8a24a; --side-fill: #c95f32; --start-x: 54vw; --start-y: -25vh; --mid-x: 7.8rem; --mid-y: -6.8rem; }
+.dish-token.cream { --dish-fill: #f2deb2; --side-fill: #2f6f47; --start-x: -56vw; --start-y: 8vh; --mid-x: -8.6rem; --mid-y: 0.8rem; }
+.dish-token.rava { --dish-fill: #ead2a0; --side-fill: #b88a3b; --start-x: 55vw; --start-y: 12vh; --mid-x: 8.2rem; --mid-y: 1.4rem; }
+.dish-token.toast { --dish-fill: #c98f45; --side-fill: #2f6f47; --start-x: -42vw; --start-y: 40vh; --mid-x: -5.2rem; --mid-y: 8.3rem; }
+.dish-token.lemon { --dish-fill: #f3c85f; --side-fill: #c95f32; --start-x: 42vw; --start-y: 42vh; --mid-x: 5.7rem; --mid-y: 8.1rem; }
+
+@keyframes questionDance {
+  0% { opacity: 0; transform: scale(0.72) rotate(-10deg); }
+  22% { opacity: 1; transform: scale(1.04) rotate(7deg); }
+  48% { transform: scale(0.98) rotate(-5deg); }
+  70% { transform: scale(1.02) rotate(4deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+@keyframes dishDance {
+  0% {
+    opacity: 0;
+    transform: translate(var(--start-x), var(--start-y)) scale(0.7) rotate(-10deg);
+  }
+  28% {
+    opacity: 1;
+    transform: translate(var(--mid-x), var(--mid-y)) scale(1) rotate(4deg);
+  }
+  55% {
+    opacity: 1;
+    transform: translate(calc(var(--mid-x) * 0.94), calc(var(--mid-y) * 1.03)) scale(1.03) rotate(-3deg);
+  }
+  76% {
+    opacity: 1;
+    transform: translate(var(--mid-x), var(--mid-y)) scale(1) rotate(3deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(var(--start-x) * 0.82), calc(var(--start-y) * 0.82)) scale(0.82) rotate(10deg);
+  }
 }
 
 .splash-copy {
@@ -119,11 +178,10 @@ button {
   bottom: max(2rem, env(safe-area-inset-bottom));
   display: grid;
   gap: 0.2rem;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.35);
   opacity: 0;
   transform: translateY(10px);
   animation: splashTitleIn 520ms ease forwards;
-  animation-delay: 1150ms;
+  animation-delay: 1040ms;
 }
 
 .splash-copy p {
@@ -138,7 +196,7 @@ button {
 }
 
 .splash-copy span {
-  color: #f4dca8;
+  color: #214f3a;
   font-weight: 800;
 }
 

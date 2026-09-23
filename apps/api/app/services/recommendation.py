@@ -22,6 +22,13 @@ WEIGHTS = {
     "history": 0.10
 }
 
+CUISINE_PRIORITY = {
+    "south-indian": 0.12,
+    "north-indian": 0.05,
+    "pan-indian": 0.03,
+    "western": 0.0
+}
+
 
 def _days_since(value: str) -> int:
     try:
@@ -111,8 +118,11 @@ def _score(dish: Dish, req: RecommendationRequest) -> tuple[float, list[str]]:
         + variety_score * WEIGHTS["variety"]
         + history_score * WEIGHTS["history"]
     )
+    score += max((CUISINE_PRIORITY.get(tag.lower(), 0.0) for tag in dish.tags), default=0.0)
 
     reasons = []
+    if "south-indian" in {tag.lower() for tag in dish.tags}:
+        reasons.append("south_indian_first")
     if ingredient_score >= 0.75:
         reasons.append("pantry_match")
     if dish.morning_effort_minutes <= 10:

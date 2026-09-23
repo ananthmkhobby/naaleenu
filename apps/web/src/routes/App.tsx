@@ -10,6 +10,7 @@ import { fetchCustomDishes, fetchHousehold, saveFeedback, saveMealEvent, saveTom
 const pantryChoices = ["rice", "urad dal", "rava", "poha", "bread", "egg", "oats", "banana", "paneer", "mixed vegetables"];
 const styleChoices = ["idli", "dosa", "poha", "upma", "rice", "rotti", "oats"];
 const leftoverChoices = ["cooked rice", "chapati", "dal", "sambar", "dosa batter", "boiled potato", "curd", "vegetable palya"];
+const cuisinePriority: Record<string, number> = { "south-indian": 12, "north-indian": 5, "pan-indian": 3, western: 0 };
 
 function dishVisual(dish: Pick<Dish, "name" | "category" | "meal_type">) {
   const palette: Record<string, { plate: string; accent: string; side: string }> = {
@@ -79,7 +80,15 @@ function interleaveByCategory(dishes: Dish[], favoriteDishIds: string[]) {
       }
     }
   }
-  return ordered.sort((first, second) => Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id)));
+  return ordered.sort((first, second) => {
+    const fav = Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id));
+    if (fav !== 0) return fav;
+    return cuisineScore(second) - cuisineScore(first);
+  });
+}
+
+function cuisineScore(dish: Dish) {
+  return Math.max(...dish.tags.map((tag) => cuisinePriority[tag.toLowerCase()] ?? 0), 0);
 }
 
 function sidesFor(dish: Dish) {
@@ -118,6 +127,8 @@ function chooseDish(dishes: Dish[], household: Household | undefined, pantry: st
     const pantryScore = (dish: Dish) => dish.ingredients_required.filter((ingredient) => pantrySet.has(ingredient.toLowerCase())).length;
     const pantryDiff = pantryScore(second) - pantryScore(first);
     if (pantryDiff !== 0) return pantryDiff;
+    const cuisineDiff = cuisineScore(second) - cuisineScore(first);
+    if (cuisineDiff !== 0) return cuisineDiff;
     return first.morning_effort_minutes - second.morning_effort_minutes;
   })[0];
 }
@@ -167,7 +178,7 @@ async function clientRecommendation(payload: {
       const pantryScore = item.ingredients_required.filter((ingredient) => pantrySet.has(ingredient.toLowerCase())).length * 4;
       const favoriteScore = loved.has(item.id) ? 8 : 0;
       const styleScore = preferred.has(item.category.toLowerCase()) ? 5 : 0;
-      return pantryScore + favoriteScore + styleScore - item.morning_effort_minutes / 10;
+      return pantryScore + favoriteScore + styleScore + cuisineScore(item) - item.morning_effort_minutes / 10;
     };
     return score(second) - score(first);
   })[0];
@@ -472,19 +483,31 @@ export default function App() {
 }
 
 function SplashScreen({ onSkip }: { onSkip: () => void }) {
-  const tiles = Array.from({ length: 8 }, (_, index) => index);
+  const dishes = [
+    { name: "Idli", tone: "coconut" },
+    { name: "Dosa", tone: "gold" },
+    { name: "Pongal", tone: "cream" },
+    { name: "Upma", tone: "rava" },
+    { name: "Akki rotti", tone: "toast" },
+    { name: "Chitranna", tone: "lemon" }
+  ];
   return (
     <main className="splash-screen" onClick={onSkip}>
-      <img className="splash-base" src="/assets/naale-enu-splash.png" alt="Indian homemaker thinking about tomorrow's meals in a warm kitchen" />
-      <div className="splash-tiles" aria-hidden="true">
-        {tiles.map((tile) => (
-          <span key={tile} style={{ "--tile": tile } as React.CSSProperties} />
+      <div className="splash-dish-stage" aria-hidden="true">
+        <div className="question-orbit">
+          <span>?</span>
+        </div>
+        {dishes.map((dish, index) => (
+          <span key={dish.name} className={`dish-token ${dish.tone}`} style={{ "--dish": index } as React.CSSProperties}>
+            <i />
+            <b>{dish.name}</b>
+          </span>
         ))}
       </div>
       <div className="splash-copy">
         <p>ನಾಳೆ ಏನು?</p>
         <h1>Naale enu?</h1>
-        <span>Tomorrow feels lighter</span>
+        <span>What shall we make?</span>
       </div>
     </main>
   );

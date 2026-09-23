@@ -15,7 +15,7 @@ Mobile-first PWA prototype for homemakers who want one practical breakfast recom
 - Vercel deployment configuration with static catalog fallback when the FastAPI prototype service is absent.
 - Favorite dishes saved locally and prioritized first in the Breakfast Book and recommendation ranking.
 - FastAPI service with a deterministic recommendation engine.
-- 104-dish South Indian breakfast seed corpus plus 60 lunchbox ideas.
+- 216-dish breakfast seed corpus plus 119 lunchbox ideas, ordered South Indian first, then North Indian, then Western quick options.
 - Side-dish suggestions for breakfast and lunchbox recommendations.
 - Family/custom recipe editing after copying catalog dishes.
 - IndexedDB local household state, latest recommendation, meal history and offline outbox.

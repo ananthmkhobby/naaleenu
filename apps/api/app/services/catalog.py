@@ -11,6 +11,24 @@ ROOT = Path(__file__).resolve().parents[4]
 BREAKFAST_NAMES_PATH = ROOT / "data" / "dish_names.json"
 LUNCHBOX_NAMES_PATH = ROOT / "data" / "lunchbox_names.json"
 
+SOUTH_TERMS = {
+    "idli", "dosa", "uttapam", "uthappam", "pongal", "upma", "bath", "avalakki", "poha", "puttu",
+    "appam", "idiyappam", "sevai", "akki", "ragi", "jowar", "rotti", "puliyogare", "chitranna",
+    "rice", "bisi bele", "vangi", "sambar", "rasam", "puli", "paniyaram", "adai", "pesarattu",
+    "kozhukattai", "sundal", "kadala", "kootu", "poriyal", "palya", "kuzhi", "neer", "set dosa",
+    "thalipeeth", "curd rice", "lemon rice", "tomato rice", "coconut rice"
+}
+NORTH_TERMS = {
+    "paratha", "phulka", "chapati", "roti", "thepla", "poori", "puri", "chole", "paneer",
+    "bhurji", "sabzi", "sabji", "rajma", "chana", "dal", "khichdi", "chilla", "poha",
+    "methi", "aloo", "matar", "jeera"
+}
+WESTERN_TERMS = {
+    "sandwich", "toast", "omelette", "oats", "porridge", "bowl", "pancake", "wrap", "pasta",
+    "fried rice", "noodles"
+}
+WESTERN_OVERRIDE_TERMS = {"sandwich", "toast", "porridge", "bowl", "pancake", "wrap", "pasta", "fried rice", "noodles", "cornflakes"}
+
 
 def slugify(value: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", value.lower()).strip("-")
@@ -19,11 +37,11 @@ def slugify(value: str) -> str:
 def category_for(name: str, meal_type: MealType = MealType.breakfast) -> str:
     lower = name.lower()
     if meal_type == MealType.lunch:
-        for category in ["rice", "chapati", "roll", "paratha", "rotti", "idli", "dosa", "sandwich", "sundal", "khichdi", "pulao", "millet"]:
+        for category in ["rice", "chapati", "roll", "paratha", "rotti", "idli", "dosa", "sandwich", "sundal", "khichdi", "pulao", "millet", "noodles", "pasta"]:
             if category in lower:
                 return category
         return "lunchbox"
-    for category in ["idli", "dosa", "uttapam", "poha", "upma", "pongal", "usli", "rice", "rotti", "appam", "puttu", "paratha", "sandwich", "egg", "oats"]:
+    for category in ["idli", "dosa", "uttapam", "vada", "poha", "upma", "pongal", "usli", "rice", "rotti", "appam", "puttu", "paniyaram", "paratha", "sandwich", "egg", "oats"]:
         if category in lower or (category == "poha" and "avalakki" in lower):
             return category
     if "chapati" in lower:
@@ -31,6 +49,34 @@ def category_for(name: str, meal_type: MealType = MealType.breakfast) -> str:
     if "porridge" in lower or "malt" in lower:
         return "porridge"
     return "other"
+
+
+def cuisine_tier_for(name: str) -> str:
+    lower = name.lower()
+    if any(term in lower for term in WESTERN_OVERRIDE_TERMS):
+        return "western"
+    if any(term in lower for term in SOUTH_TERMS):
+        return "south-indian"
+    if any(term in lower for term in NORTH_TERMS):
+        return "north-indian"
+    if any(term in lower for term in WESTERN_TERMS):
+        return "western"
+    return "pan-indian"
+
+
+def region_for(name: str, meal_type: MealType) -> list[str]:
+    tier = cuisine_tier_for(name)
+    if tier == "south-indian":
+        regions = ["South Indian", "Karnataka", "Tamil Nadu", "Kerala", "Andhra/Telangana"]
+    elif tier == "north-indian":
+        regions = ["North Indian", "pan-Indian"]
+    elif tier == "western":
+        regions = ["Western", "urban quick"]
+    else:
+        regions = ["pan-Indian"]
+    if meal_type == MealType.lunch:
+        return ["lunchbox", *regions]
+    return regions
 
 
 def ingredients_for(name: str) -> list[str]:
@@ -42,6 +88,10 @@ def ingredients_for(name: str) -> list[str]:
         ingredients += ["rava", "curd"]
     if "oats" in lower:
         ingredients += ["oats"]
+    if "pasta" in lower:
+        ingredients += ["pasta"]
+    if "noodles" in lower:
+        ingredients += ["noodles"]
     if "ragi" in lower:
         ingredients += ["ragi flour"]
     if "poha" in lower or "avalakki" in lower:
@@ -50,7 +100,7 @@ def ingredients_for(name: str) -> list[str]:
         ingredients += ["rice rava", "coconut"]
     if "upma" in lower or "bath" in lower:
         ingredients += ["rava"]
-    if "rice" in lower or "puliyogare" in lower:
+    if "rice" in lower or "puliyogare" in lower or "chitranna" in lower:
         ingredients += ["cooked rice"]
     if "egg" in lower or "omelette" in lower:
         ingredients += ["egg"]
@@ -62,11 +112,11 @@ def ingredients_for(name: str) -> list[str]:
         ingredients += ["paneer"]
     if any(x in lower for x in ["vegetable", "palya", "bath"]):
         ingredients += ["mixed vegetables"]
-    if "chapati" in lower or "phulka" in lower or "roll" in lower:
+    if "chapati" in lower or "phulka" in lower or "roll" in lower or "thepla" in lower:
         ingredients += ["wheat flour"]
     if "dal" in lower or "khichdi" in lower or "sambar" in lower:
         ingredients += ["dal"]
-    if "chickpea" in lower or "chana" in lower or "kadala" in lower:
+    if "chickpea" in lower or "chana" in lower or "kadala" in lower or "chole" in lower:
         ingredients += ["chickpea"]
     if "sprouts" in lower or "moong" in lower:
         ingredients += ["moong"]
@@ -108,10 +158,10 @@ def side_suggestions_for(name: str, category: str, meal_type: MealType = MealTyp
             return ["curd", "cucumber slices", "roasted papad"]
         if any(x in lower for x in ["chapati", "paratha", "roll", "rotti"]):
             return ["curd", "pickle", "fruit"]
-        if "sandwich" in lower:
+        if "sandwich" in lower or "pasta" in lower or "noodles" in lower:
             return ["fruit", "curd", "nuts"]
         return ["curd", "fruit"]
-    if category in ["idli", "dosa", "uttapam", "appam", "idiyappam"]:
+    if category in ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram", "vada"]:
         return ["coconut chutney", "sambar", "podi with ghee"]
     if category in ["poha", "upma", "pongal", "usli"]:
         return ["coconut chutney", "curd", "banana"]
@@ -163,7 +213,7 @@ def load_catalog(meal_type: MealType | None = None) -> list[Dish]:
                 meal_type=current_meal_type,
                 slug=slug,
                 name=name,
-                region=["lunchbox", "pan-Indian"] if current_meal_type == MealType.lunch else ["Karnataka", "Tamil Nadu", "Kerala", "Andhra/Telangana"] if index % 5 == 0 else ["pan-South"],
+                region=region_for(name, current_meal_type),
                 diet_type=diet_for(name),
                 category=category,
                 active_time_minutes=morning,
@@ -183,7 +233,16 @@ def load_catalog(meal_type: MealType | None = None) -> list[Dish]:
                 repeat_gap_days=4 if category in ["idli", "dosa"] else 3,
                 steps=steps_for(name, ingredients, current_meal_type),
                 image_key=f"{current_meal_type.value}/{slug}",
-                tags=["quick", "lunchbox"] if current_meal_type == MealType.lunch and morning <= 15 else ["lunchbox"] if current_meal_type == MealType.lunch else ["quick"] if morning <= 10 else ["weekday"] if morning <= 20 else ["weekend"],
+                tags=[
+                    cuisine_tier_for(name),
+                    *(
+                        ["quick", "lunchbox"] if current_meal_type == MealType.lunch and morning <= 15
+                        else ["lunchbox"] if current_meal_type == MealType.lunch
+                        else ["quick"] if morning <= 10
+                        else ["weekday"] if morning <= 20
+                        else ["weekend"]
+                    )
+                ],
                 is_active=True
             ))
     return dishes
