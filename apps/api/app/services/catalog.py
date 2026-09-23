@@ -221,7 +221,7 @@ def nutrition_for(name: str, category: str, meal_type: MealType = MealType.break
         calories += 40
         carbs += 6
     return {
-        "serving": "1 typical home serving",
+        "serving": "Per person, approx.",
         "calories_kcal": calories,
         "carbs_g": carbs,
         "protein_g": protein,

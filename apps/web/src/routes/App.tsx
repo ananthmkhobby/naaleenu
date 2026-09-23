@@ -167,7 +167,7 @@ function nutritionForDish(dish: Dish): NonNullable<Dish["nutrition"]> {
     carbs += 6;
   }
   return {
-    serving: "1 typical home serving",
+    serving: "Per person, approx.",
     calories_kcal: calories,
     carbs_g: carbs,
     protein_g: protein,
@@ -177,6 +177,11 @@ function nutritionForDish(dish: Dish): NonNullable<Dish["nutrition"]> {
     source_license: "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
     confidence: "estimated from ingredients/category; verify with weighed recipe for clinical use"
   };
+}
+
+function displayReason(reason: string) {
+  if (/api/i.test(reason)) return "This fits your saved preferences and today’s time.";
+  return reason;
 }
 
 function familyFor(category: string) {
@@ -675,7 +680,7 @@ function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChan
         <CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} />
         <p className="eyebrow"><Clock size={15} /> {recommendation.dish.morning_effort_minutes} min</p>
         <h1>{recommendation.dish.name}</h1>
-        <p>{recommendation.reason}</p>
+        <p>{displayReason(recommendation.reason)}</p>
         <NutritionPanel nutrition={nutritionForDish(recommendation.dish)} />
         {sidesFor(recommendation.dish).length > 0 && (
           <section className="side-panel" aria-label="Recommended side dishes">
@@ -715,19 +720,29 @@ function CookTimeFilter({ value, onChange }: { value?: number; onChange: (minute
 }
 
 function NutritionPanel({ nutrition }: { nutrition: NonNullable<Dish["nutrition"]> }) {
+  const [expanded, setExpanded] = useState(false);
   return (
-    <section className="nutrition-panel" aria-label="Estimated nutrition per serving">
-      <div>
-        <strong>Est. nutrition</strong>
-        <span>{nutrition.serving}</span>
+    <section className={`nutrition-panel ${expanded ? "expanded" : ""}`} aria-label="Estimated nutrition per person">
+      <div className="nutrition-head">
+        <div>
+          <strong>Nutrition estimate</strong>
+          <span>Per person, approx.</span>
+        </div>
+        <button onClick={() => setExpanded((current) => !current)}>{expanded ? "Hide" : "Details"}</button>
       </div>
-      <div className="macro-grid">
-        <span><b>{nutrition.calories_kcal}</b> kcal</span>
-        <span><b>{nutrition.carbs_g}g</b> carbs</span>
-        <span><b>{nutrition.protein_g}g</b> protein</span>
-        <span><b>{nutrition.fat_g}g</b> fat</span>
-      </div>
-      <small>{nutrition.source_name}. {nutrition.confidence}</small>
+      {expanded ? (
+        <>
+          <div className="macro-grid">
+            <span><b>{nutrition.calories_kcal}</b> kcal</span>
+            <span><b>{nutrition.carbs_g}g</b> carbs</span>
+            <span><b>{nutrition.protein_g}g</b> protein</span>
+            <span><b>{nutrition.fat_g}g</b> fat</span>
+          </div>
+          <small>{nutrition.source_name}. {nutrition.confidence}</small>
+        </>
+      ) : (
+        <p>{nutrition.calories_kcal} kcal · {nutrition.carbs_g}g carbs · {nutrition.protein_g}g protein</p>
+      )}
     </section>
   );
 }
