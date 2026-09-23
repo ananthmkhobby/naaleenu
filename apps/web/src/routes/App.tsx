@@ -35,6 +35,40 @@ const categoryFamilies: Record<string, string[]> = {
   paratha: ["rotti", "chapati", "paratha"]
 };
 
+type LeftoverGoal = "breakfast" | "lunchbox" | "dinner";
+type LeftoverIdea = {
+  slot: "Use this first" | "Pack this" | "Dinner rescue";
+  title: string;
+  goal: LeftoverGoal;
+  minutes: number;
+  uses: string[];
+  reason: string;
+  side: string;
+  groceryGap: string[];
+  dish?: Dish;
+};
+
+const leftoverRules: Array<Omit<LeftoverIdea, "dish"> & { patterns: string[]; dishHints: string[] }> = [
+  { slot: "Use this first", title: "Leftover chapati upma", goal: "breakfast", minutes: 10, uses: ["chapati"], patterns: ["chapati"], dishHints: ["Leftover Chapati Upma"], reason: "Uses chapati before it dries out and avoids making fresh batter.", side: "curd or pickle", groceryGap: ["onion", "curry leaves"] },
+  { slot: "Pack this", title: "Chapati palya roll", goal: "lunchbox", minutes: 8, uses: ["chapati", "vegetable palya"], patterns: ["chapati", "vegetable palya"], dishHints: ["Phulka Roll + Vegetable Palya", "Curd Chapati Roll"], reason: "Turns yesterday's palya into a neat lunchbox roll with almost no cooking.", side: "curd and fruit", groceryGap: [] },
+  { slot: "Dinner rescue", title: "Chapati noodles", goal: "dinner", minutes: 15, uses: ["chapati"], patterns: ["chapati"], dishHints: ["Leftover Chapati Noodles"], reason: "Feels different from breakfast and clears leftover chapati in one pan.", side: "curd", groceryGap: ["onion", "capsicum"] },
+  { slot: "Use this first", title: "Lemon rice from yesterday's rice", goal: "breakfast", minutes: 12, uses: ["cooked rice"], patterns: ["cooked rice"], dishHints: ["Lemon Rice", "Chitranna"], reason: "Cooked rice should be used early; tempering makes it fresh and quick.", side: "curd or coconut chutney", groceryGap: ["lemon", "peanuts"] },
+  { slot: "Pack this", title: "Curd rice lunchbox", goal: "lunchbox", minutes: 8, uses: ["cooked rice", "curd"], patterns: ["cooked rice", "curd"], dishHints: ["Curd Rice + Carrot", "Curd Rice"], reason: "Best when rice and curd are already available, and it travels well.", side: "pickle and cucumber", groceryGap: ["cucumber"] },
+  { slot: "Dinner rescue", title: "Sambar rice", goal: "dinner", minutes: 10, uses: ["cooked rice", "sambar"], patterns: ["cooked rice", "sambar"], dishHints: ["Sambar Rice + Poriyal", "Sambar Rice"], reason: "Combines two leftovers into one warm dinner without a new curry decision.", side: "papad or curd", groceryGap: [] },
+  { slot: "Use this first", title: "Paniyaram from batter", goal: "breakfast", minutes: 15, uses: ["dosa batter"], patterns: ["dosa batter"], dishHints: ["Kuzhi Paniyaram", "Kaara Paniyaram", "Ragi Paniyaram"], reason: "Uses batter differently so it does not feel like dosa again.", side: "coconut chutney", groceryGap: ["onion"] },
+  { slot: "Pack this", title: "Uttapam lunchbox", goal: "lunchbox", minutes: 15, uses: ["dosa batter"], patterns: ["dosa batter"], dishHints: ["Mini Uttapam", "Vegetable Uttapam", "Uttapam + Chutney"], reason: "Batter becomes a sturdy lunchbox item when made thicker with vegetables.", side: "podi with ghee", groceryGap: ["onion", "carrot"] },
+  { slot: "Dinner rescue", title: "Masala dosa with potato", goal: "dinner", minutes: 20, uses: ["dosa batter", "boiled potato"], patterns: ["dosa batter", "boiled potato"], dishHints: ["Masala Dosa", "Mysore Masala Dosa"], reason: "Boiled potato makes batter feel like a complete meal, not just another dosa.", side: "chutney or sambar", groceryGap: [] },
+  { slot: "Use this first", title: "Dal khichdi", goal: "breakfast", minutes: 20, uses: ["dal"], patterns: ["dal"], dishHints: ["Dal Khichdi + Curd", "Dal Khichdi"], reason: "Leftover dal becomes a soft one-pot meal with less thinking.", side: "curd and pickle", groceryGap: ["rice"] },
+  { slot: "Pack this", title: "Dal paratha", goal: "lunchbox", minutes: 25, uses: ["dal"], patterns: ["dal"], dishHints: ["Leftover Dal Paratha"], reason: "Thick dal can go into dough and makes a filling lunchbox.", side: "curd", groceryGap: ["wheat flour"] },
+  { slot: "Dinner rescue", title: "Dal rice bowl", goal: "dinner", minutes: 10, uses: ["dal", "cooked rice"], patterns: ["dal", "cooked rice"], dishHints: ["Jeera Rice + Dal", "Dal Khichdi + Curd"], reason: "Uses both dal and rice first, with only a small tadka if needed.", side: "papad", groceryGap: [] },
+  { slot: "Use this first", title: "Aloo dosa", goal: "breakfast", minutes: 18, uses: ["boiled potato", "dosa batter"], patterns: ["boiled potato", "dosa batter"], dishHints: ["Masala Dosa"], reason: "Boiled potato upgrades batter into a filling breakfast.", side: "coconut chutney", groceryGap: [] },
+  { slot: "Pack this", title: "Aloo chapati roll", goal: "lunchbox", minutes: 12, uses: ["boiled potato", "chapati"], patterns: ["boiled potato", "chapati"], dishHints: ["Dosa Roll + Potato", "Curd Chapati Roll"], reason: "Potato and chapati make a quick roll children usually finish.", side: "curd", groceryGap: ["onion"] },
+  { slot: "Dinner rescue", title: "Poori palya", goal: "dinner", minutes: 30, uses: ["boiled potato"], patterns: ["boiled potato"], dishHints: ["Poori + Potato Palya"], reason: "Works when there is time and boiled potato is already done.", side: "curd or pickle", groceryGap: ["wheat flour"] },
+  { slot: "Use this first", title: "Curd avalakki", goal: "breakfast", minutes: 8, uses: ["curd"], patterns: ["curd"], dishHints: ["Curd Avalakki"], reason: "Curd becomes a cooling breakfast without cooking.", side: "banana", groceryGap: ["poha"] },
+  { slot: "Pack this", title: "Palya sandwich", goal: "lunchbox", minutes: 10, uses: ["vegetable palya"], patterns: ["vegetable palya"], dishHints: ["Vegetable Sandwich + Curd", "Vegetable Sandwich"], reason: "Leftover palya becomes a lunchbox filling instead of another sabzi.", side: "fruit", groceryGap: ["bread"] },
+  { slot: "Dinner rescue", title: "Palya rice bath", goal: "dinner", minutes: 12, uses: ["vegetable palya", "cooked rice"], patterns: ["vegetable palya", "cooked rice"], dishHints: ["Vegetable Rice Bath", "Vegetable Rice Bath + Raita"], reason: "Rice and palya become one fresh-tasting mixed rice.", side: "raita", groceryGap: [] }
+];
+
 function dishVisual(dish: Pick<Dish, "name" | "category" | "meal_type">) {
   const palette: Record<string, { plate: string; accent: string; side: string }> = {
     dosa: { plate: "#d8a24a", accent: "#fff1c2", side: "#2f6f47" },
@@ -864,6 +898,9 @@ function PlanCard({ title, dish }: { title: string; dish?: Dish }) {
 
 function LeftoverMagic({ household, customDishes, favoriteDishIds, onBack }: { household?: Household; customDishes: CustomDish[]; favoriteDishIds: string[]; onBack: () => void }) {
   const [selected, setSelected] = useState<string[]>([]);
+  const [goal, setGoal] = useState<LeftoverGoal>("breakfast");
+  const [maxMinutes, setMaxMinutes] = useState<number | undefined>(20);
+  const [seenTitles, setSeenTitles] = useState<string[]>([]);
   const [catalog, setCatalog] = useState<Dish[]>([]);
   const [note, setNote] = useState("");
 
@@ -873,23 +910,33 @@ function LeftoverMagic({ household, customDishes, favoriteDishIds, onBack }: { h
       .catch(() => setNote("Using saved family recipes. Start the local API for the full list."));
   }, []);
 
-  const selectedText = selected.join(" ").toLowerCase();
   const allDishes = [...customDishes, ...catalog].filter((dish) => dietAllowed(dish, household) && avoidsAllowed(dish, household));
-  const magic = allDishes
-    .filter((dish) => {
-      const haystack = `${dish.name} ${dish.ingredients_required.join(" ")} ${dish.tags.join(" ")}`.toLowerCase();
-      if (selectedText.includes("cooked rice") && /(rice|fried|curd|lemon|tomato|puliyogare)/.test(haystack)) return true;
-      if (selectedText.includes("chapati") && /(chapati|roll|upma|sandwich)/.test(haystack)) return true;
-      if (selectedText.includes("dal") && /(dal|khichdi|chilla|sambar)/.test(haystack)) return true;
-      if (selectedText.includes("sambar") && /(idli|rice|dosa|sambar)/.test(haystack)) return true;
-      if (selectedText.includes("dosa batter") && /(dosa|idli|uttapam|appam)/.test(haystack)) return true;
-      if (selectedText.includes("boiled potato") && /(potato|aloo|masala|poori|paratha)/.test(haystack)) return true;
-      if (selectedText.includes("curd") && /(curd|paratha|rice|avalakki)/.test(haystack)) return true;
-      if (selectedText.includes("vegetable palya") && /(chapati|roll|sandwich|rice)/.test(haystack)) return true;
-      return false;
+  const selectedSet = new Set(selected);
+  const ideas = leftoverRules
+    .map((rule) => {
+      const matched = rule.patterns.filter((item) => selectedSet.has(item)).length;
+      if (!matched) return undefined;
+      const dish = findDishForLeftover(rule.dishHints, rule.goal, allDishes, favoriteDishIds);
+      const minutes = dish?.morning_effort_minutes ?? rule.minutes;
+      if (maxMinutes && minutes > maxMinutes) return undefined;
+      const selectedUseCount = rule.uses.filter((item) => selectedSet.has(item)).length;
+      const score =
+        matched * 12
+        + selectedUseCount * 8
+        + (rule.goal === goal ? 10 : 0)
+        + (rule.slot === "Use this first" ? 4 : 0)
+        + (dish && favoriteDishIds.includes(dish.id) ? 6 : 0)
+        - (seenTitles.includes(rule.title) ? 14 : 0)
+        - minutes / 10;
+      return { ...rule, dish, minutes, score };
     })
-    .sort((first, second) => Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id)) || first.morning_effort_minutes - second.morning_effort_minutes)
-    .slice(0, 5);
+    .filter(Boolean)
+    .sort((first, second) => (second?.score ?? 0) - (first?.score ?? 0)) as Array<LeftoverIdea & { score: number }>;
+  const primaryIdeas = pickLeftoverSlots(ideas).slice(0, 3);
+
+  function rotateIdeas() {
+    setSeenTitles((current) => [...primaryIdeas.map((idea) => idea.title), ...current].slice(0, 10));
+  }
 
   return (
     <main className="app-shell leftover-screen">
@@ -897,25 +944,57 @@ function LeftoverMagic({ household, customDishes, favoriteDishIds, onBack }: { h
       <p className="eyebrow">Leftover magic</p>
       <h1>Use what is already there</h1>
       {note && <p className="note">{note}</p>}
+      <div className="segmented" aria-label="Leftover meal target">
+        {(["breakfast", "lunchbox", "dinner"] as LeftoverGoal[]).map((item) => (
+          <button key={item} className={goal === item ? "active" : ""} onClick={() => setGoal(item)}>{item}</button>
+        ))}
+      </div>
+      <CookTimeFilter value={maxMinutes} onChange={setMaxMinutes} />
       <div className="leftover-grid">
         {leftoverChoices.map((item) => (
           <button key={item} className={selected.includes(item) ? "active" : ""} onClick={() => setSelected((current) => current.includes(item) ? current.filter((value) => value !== item) : [...current, item])}>{item}</button>
         ))}
       </div>
-      <section className="dish-list" aria-label="Leftover ideas">
-        {selected.length === 0 ? <p className="subtle">Tap one or two leftovers to get practical ideas.</p> : magic.length === 0 ? <p className="subtle">No perfect match yet. Add a family recipe for this leftover.</p> : magic.map((dish) => (
-          <article className="dish-row" key={dish.id}>
-            <img className="dish-thumb" src={visualForDish(dish)} alt="" />
+      <section className="leftover-results" aria-label="Leftover ideas">
+        {selected.length === 0 ? <p className="subtle">Tap one or two leftovers to get a practical first answer.</p> : primaryIdeas.length === 0 ? <p className="subtle">No good match under this time. Try Any time or add one more leftover.</p> : primaryIdeas.map((idea) => (
+          <article className="leftover-card" key={`${idea.slot}-${idea.title}`}>
+            {idea.dish && <img className="dish-thumb" src={visualForDish(idea.dish)} alt="" />}
             <div>
-              <strong>{dish.name}</strong>
-              <span>{dish.morning_effort_minutes} min · {dish.meal_type === "lunch" ? "lunchbox" : "breakfast"}</span>
-              <small>Best with {sidesFor(dish).slice(0, 2).join(", ")}</small>
+              <strong>{idea.slot}</strong>
+              <h2>{idea.dish?.name ?? idea.title}</h2>
+              <span>{idea.minutes} min · uses {idea.uses.filter((item) => selectedSet.has(item)).join(", ") || idea.uses.join(", ")}</span>
+              <p>{idea.reason}</p>
+              <small>Best with {idea.side}{idea.groceryGap.length ? ` · Need ${idea.groceryGap.join(", ")}` : ""}</small>
             </div>
           </article>
         ))}
+        {primaryIdeas.length > 0 && <ChoiceButton variant="quiet" icon={<RefreshCw size={18} />} onClick={rotateIdeas}>Show different ideas</ChoiceButton>}
       </section>
     </main>
   );
+}
+
+function findDishForLeftover(hints: string[], goal: LeftoverGoal, dishes: Dish[], favoriteDishIds: string[]) {
+  const goalMealType: MealType = goal === "breakfast" ? "breakfast" : "lunch";
+  const normalizedHints = hints.map((hint) => hint.toLowerCase());
+  return [...dishes]
+    .filter((dish) => dish.meal_type === goalMealType || goal === "dinner")
+    .filter((dish) => normalizedHints.some((hint) => dish.name.toLowerCase().includes(hint.toLowerCase()) || hint.includes(dish.name.toLowerCase())))
+    .sort((first, second) => Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id)) || first.morning_effort_minutes - second.morning_effort_minutes)[0];
+}
+
+function pickLeftoverSlots(ideas: Array<LeftoverIdea & { score: number }>) {
+  const preferred = ["Use this first", "Pack this", "Dinner rescue"] as const;
+  const picked: Array<LeftoverIdea & { score: number }> = [];
+  for (const slot of preferred) {
+    const next = ideas.find((idea) => idea.slot === slot && !picked.some((item) => item.title === idea.title));
+    if (next) picked.push(next);
+  }
+  for (const idea of ideas) {
+    if (picked.length >= 3) break;
+    if (!picked.some((item) => item.title === idea.title)) picked.push(idea);
+  }
+  return picked;
 }
 
 function MealTypeSwitch({ value, onChange }: { value: MealType; onChange: (mealType: MealType) => void }) {
