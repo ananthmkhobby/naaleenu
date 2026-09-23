@@ -43,6 +43,18 @@ class HouseholdCreate(BaseModel):
     time_band: TimeBand = TimeBand.under_20
 
 
+class NutritionEstimate(BaseModel):
+    serving: str
+    calories_kcal: int
+    carbs_g: int
+    protein_g: int
+    fat_g: int
+    fiber_g: int
+    source_name: str
+    source_license: str
+    confidence: str = "estimate"
+
+
 class Dish(BaseModel):
     id: str
     meal_type: MealType = MealType.breakfast
@@ -70,6 +82,7 @@ class Dish(BaseModel):
     steps: list[str] = Field(min_length=3, max_length=5)
     image_key: str
     tags: list[str] = []
+    nutrition: NutritionEstimate | None = None
     is_active: bool = True
 
 
@@ -82,6 +95,7 @@ class RecommendationRequest(BaseModel):
     session_category_exclusions: list[str] = []
     cooked_history: list[dict] = []
     quicker_than_minutes: int | None = None
+    max_cook_minutes: int | None = None
 
 
 class RecommendationResponse(BaseModel):

@@ -55,6 +55,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -112,6 +123,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -170,6 +192,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -230,6 +263,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 405,
+      "carbs_g": 64,
+      "protein_g": 13,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -287,6 +331,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -346,6 +401,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -406,6 +472,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 405,
+      "carbs_g": 64,
+      "protein_g": 13,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -464,6 +541,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -522,6 +610,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -581,6 +680,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 64,
+      "protein_g": 16,
+      "fat_g": 13,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -639,6 +749,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -697,6 +818,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -755,6 +887,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -814,6 +957,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -872,6 +1026,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -931,6 +1096,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -990,6 +1166,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1050,6 +1237,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1109,6 +1307,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1167,6 +1376,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1221,6 +1441,17 @@
       "pan-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 64,
+      "protein_g": 9,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1276,6 +1507,17 @@
       "pan-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 64,
+      "protein_g": 9,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1331,6 +1573,17 @@
       "pan-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 64,
+      "protein_g": 9,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1386,6 +1639,17 @@
       "pan-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 64,
+      "protein_g": 9,
+      "fat_g": 10,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1445,6 +1709,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1503,6 +1778,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1561,6 +1847,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1619,6 +1916,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 7,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1677,6 +1985,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1736,6 +2055,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1794,6 +2124,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 7,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1852,6 +2193,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1911,6 +2263,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -1970,6 +2333,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 330,
+      "carbs_g": 56,
+      "protein_g": 7,
+      "fat_g": 7,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2029,6 +2403,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 210,
+      "carbs_g": 40,
+      "protein_g": 6,
+      "fat_g": 2,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2089,6 +2474,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 210,
+      "carbs_g": 40,
+      "protein_g": 6,
+      "fat_g": 2,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2148,6 +2544,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 210,
+      "carbs_g": 40,
+      "protein_g": 6,
+      "fat_g": 2,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2208,6 +2615,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 210,
+      "carbs_g": 40,
+      "protein_g": 6,
+      "fat_g": 2,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2269,6 +2687,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2327,6 +2756,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 300,
+      "carbs_g": 48,
+      "protein_g": 7,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2386,6 +2826,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2445,6 +2896,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2503,6 +2965,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2561,6 +3034,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2620,6 +3104,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2679,6 +3174,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2737,6 +3243,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 405,
+      "carbs_g": 58,
+      "protein_g": 15,
+      "fat_g": 9,
+      "fiber_g": 8,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2794,6 +3311,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2852,6 +3380,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2911,6 +3450,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 335,
+      "carbs_g": 42,
+      "protein_g": 18,
+      "fat_g": 8,
+      "fiber_g": 11,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -2970,6 +3520,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3028,6 +3589,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3087,6 +3659,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3145,6 +3728,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3203,6 +3797,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3264,6 +3869,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 385,
+      "carbs_g": 56,
+      "protein_g": 15,
+      "fat_g": 8,
+      "fiber_g": 9,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3325,6 +3941,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 405,
+      "carbs_g": 64,
+      "protein_g": 13,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3384,6 +4011,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 335,
+      "carbs_g": 42,
+      "protein_g": 18,
+      "fat_g": 8,
+      "fiber_g": 11,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3443,6 +4081,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3502,6 +4151,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3561,6 +4221,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3619,6 +4290,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3676,6 +4358,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 15,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3733,6 +4426,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 15,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3792,6 +4496,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3848,6 +4563,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3907,6 +4633,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 56,
+      "protein_g": 17,
+      "fat_g": 16,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -3963,6 +4700,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 420,
+      "carbs_g": 56,
+      "protein_g": 18,
+      "fat_g": 13,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4019,6 +4767,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4079,6 +4838,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4135,6 +4905,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4195,6 +4976,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 56,
+      "protein_g": 17,
+      "fat_g": 16,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4252,6 +5044,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 420,
+      "carbs_g": 56,
+      "protein_g": 18,
+      "fat_g": 13,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4307,6 +5110,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 54,
+      "protein_g": 9,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4363,6 +5177,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 54,
+      "protein_g": 9,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4419,6 +5244,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 54,
+      "protein_g": 9,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4477,6 +5313,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 490,
+      "carbs_g": 54,
+      "protein_g": 16,
+      "fat_g": 22,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4533,6 +5380,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 54,
+      "protein_g": 9,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4587,6 +5445,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4641,6 +5510,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4699,6 +5579,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 355,
+      "carbs_g": 50,
+      "protein_g": 13,
+      "fat_g": 8,
+      "fiber_g": 7,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4753,6 +5644,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4808,6 +5710,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 12,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4864,6 +5777,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 12,
+      "fat_g": 8,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4922,6 +5846,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -4981,6 +5916,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5040,6 +5986,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5096,6 +6053,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 64,
+      "protein_g": 9,
+      "fat_g": 10,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5150,6 +6118,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5205,6 +6184,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5265,6 +6255,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 410,
+      "carbs_g": 50,
+      "protein_g": 15,
+      "fat_g": 16,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5321,6 +6322,17 @@
       "north-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5377,6 +6389,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5434,6 +6457,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 350,
+      "carbs_g": 56,
+      "protein_g": 10,
+      "fat_g": 8,
+      "fiber_g": 6,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5494,6 +6528,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5550,6 +6595,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 400,
+      "carbs_g": 54,
+      "protein_g": 9,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5609,6 +6665,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 210,
+      "carbs_g": 40,
+      "protein_g": 6,
+      "fat_g": 2,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5670,6 +6737,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5729,6 +6807,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5787,6 +6876,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5845,6 +6945,17 @@
       "south-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5903,6 +7014,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 335,
+      "carbs_g": 42,
+      "protein_g": 18,
+      "fat_g": 8,
+      "fiber_g": 11,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -5960,6 +7082,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 430,
+      "carbs_g": 44,
+      "protein_g": 18,
+      "fat_g": 19,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6017,6 +7150,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 340,
+      "carbs_g": 44,
+      "protein_g": 11,
+      "fat_g": 11,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6074,6 +7218,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 410,
+      "carbs_g": 44,
+      "protein_g": 19,
+      "fat_g": 16,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6131,6 +7286,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 430,
+      "carbs_g": 44,
+      "protein_g": 18,
+      "fat_g": 19,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6187,6 +7353,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 340,
+      "carbs_g": 44,
+      "protein_g": 11,
+      "fat_g": 11,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6241,6 +7418,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6295,6 +7483,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 460,
+      "carbs_g": 58,
+      "protein_g": 17,
+      "fat_g": 17,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6349,6 +7548,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 58,
+      "protein_g": 18,
+      "fat_g": 14,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6405,6 +7615,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 530,
+      "carbs_g": 64,
+      "protein_g": 15,
+      "fat_g": 22,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6461,6 +7682,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 510,
+      "carbs_g": 64,
+      "protein_g": 16,
+      "fat_g": 19,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6517,6 +7749,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 440,
+      "carbs_g": 64,
+      "protein_g": 8,
+      "fat_g": 14,
+      "fiber_g": 3,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6572,6 +7815,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6628,6 +7882,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 390,
+      "carbs_g": 50,
+      "protein_g": 16,
+      "fat_g": 13,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6684,6 +7949,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 320,
+      "carbs_g": 50,
+      "protein_g": 8,
+      "fat_g": 8,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6738,6 +8014,17 @@
       "pan-indian",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6793,6 +8080,17 @@
       "western",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 370,
+      "carbs_g": 58,
+      "protein_g": 10,
+      "fat_g": 9,
+      "fiber_g": 5,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   },
   {
@@ -6850,6 +8148,17 @@
       "quick",
       "lunchbox"
     ],
+    "nutrition": {
+      "serving": "1 typical home serving",
+      "calories_kcal": 340,
+      "carbs_g": 44,
+      "protein_g": 11,
+      "fat_g": 11,
+      "fiber_g": 4,
+      "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+      "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+      "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use"
+    },
     "is_active": true
   }
 ]

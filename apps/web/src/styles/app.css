@@ -368,6 +368,29 @@ textarea {
   color: #fffdf8;
 }
 
+.cook-filter {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.35rem;
+  margin: -0.35rem 0 0.85rem;
+}
+
+.cook-filter button {
+  min-height: 38px;
+  border: 1px solid #e7dece;
+  border-radius: 999px;
+  background: #fffdf8;
+  color: #697066;
+  font-size: 0.82rem;
+  font-weight: 800;
+}
+
+.cook-filter button.active {
+  border-color: #214f3a;
+  background: #214f3a;
+  color: #fffdf8;
+}
+
 .choice-button {
   width: 100%;
   border: 0;
@@ -495,6 +518,59 @@ textarea {
 
 .favorite-inline.active {
   color: #b88a3b;
+}
+
+.nutrition-panel {
+  margin-top: 0.85rem;
+  padding: 0.85rem;
+  border: 1px solid #e7dece;
+  border-radius: 8px;
+  background: #fffdf8;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.nutrition-panel > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+.nutrition-panel strong {
+  color: #214f3a;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nutrition-panel span,
+.nutrition-panel small {
+  color: #697066;
+}
+
+.macro-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.macro-grid span {
+  min-height: 3rem;
+  padding: 0.45rem;
+  border-radius: 8px;
+  display: grid;
+  align-content: center;
+  gap: 0.1rem;
+  background: #fbf7ef;
+  color: #697066;
+  font-size: 0.72rem;
+  text-align: center;
+}
+
+.macro-grid b {
+  color: #17221a;
+  font-size: 0.92rem;
 }
 
 .side-panel {

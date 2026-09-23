@@ -11,6 +11,12 @@ const pantryChoices = ["rice", "urad dal", "rava", "poha", "bread", "egg", "oats
 const styleChoices = ["idli", "dosa", "poha", "upma", "rice", "rotti", "oats"];
 const leftoverChoices = ["cooked rice", "chapati", "dal", "sambar", "dosa batter", "boiled potato", "curd", "vegetable palya"];
 const cuisinePriority: Record<string, number> = { "south-indian": 12, "north-indian": 5, "pan-indian": 3, western: 0 };
+const cookTimeFilters = [
+  { label: "Any", value: undefined },
+  { label: "10 min", value: 10 },
+  { label: "20 min", value: 20 },
+  { label: "30 min", value: 30 }
+] as const;
 const categoryFamilies: Record<string, string[]> = {
   idli: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
   dosa: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
@@ -189,6 +195,7 @@ async function clientRecommendation(payload: {
   session_category_exclusions: string[];
   cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
   quicker_than_minutes?: number;
+  max_cook_minutes?: number;
 }): Promise<Recommendation> {
   const catalog = await listDishes(payload.meal_type);
   const pantrySet = new Set(payload.pantry_items.map((item) => item.toLowerCase()));
@@ -199,7 +206,8 @@ async function clientRecommendation(payload: {
     .filter((dish) => !payload.session_exclusions.includes(dish.id))
     .filter((dish) => !payload.session_category_exclusions.includes(dish.category))
     .filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household))
-    .filter((dish) => !payload.quicker_than_minutes || dish.morning_effort_minutes < payload.quicker_than_minutes);
+    .filter((dish) => !payload.quicker_than_minutes || dish.morning_effort_minutes < payload.quicker_than_minutes)
+    .filter((dish) => !payload.max_cook_minutes || dish.morning_effort_minutes <= payload.max_cook_minutes);
   const pool = dishes.length ? dishes : [...payload.custom_dishes, ...catalog].filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household));
   const preferred = new Set(payload.household.preferred_styles.map((style) => style.toLowerCase()));
   const score = (item: Dish) => {
@@ -233,6 +241,7 @@ export default function App() {
   const [customDishes, setCustomDishes] = useState<CustomDish[]>([]);
   const [favoriteDishIds, setFavoriteDishIds] = useState<string[]>([]);
   const [reminderTime, setReminderTime] = useState("20:30");
+  const [maxCookMinutes, setMaxCookMinutes] = useState<number | undefined>();
   const [syncEmail, setSyncEmail] = useState("");
   const [syncStatus, setSyncStatus] = useState("");
   const [signedInEmail, setSignedInEmail] = useState<string | undefined>();
@@ -342,7 +351,8 @@ export default function App() {
         ...meals,
         ...favoriteDishIds.map((dishId) => ({ dish_id: dishId, rating: "loved" as const }))
       ],
-      quicker_than_minutes: quicker && rec ? rec.dish.morning_effort_minutes : undefined
+      quicker_than_minutes: quicker && rec ? rec.dish.morning_effort_minutes : undefined,
+      max_cook_minutes: quicker ? undefined : maxCookMinutes
     };
     await trackEvent("recommendation_requested", { meal_type: mealType, quicker }, household.id);
     try {
@@ -513,7 +523,7 @@ export default function App() {
   if (screen === "catalog") return <CatalogScreen mealType={mealType} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onToggleFavorite={toggleFavorite} onSave={saveCustomDish} onBack={() => setScreen("home")} />;
   if (screen === "tomorrow") return <TomorrowPlan household={household} pantry={pantry} customDishes={customDishes} favoriteDishIds={favoriteDishIds} reminderTime={reminderTime} onReminderChange={updateReminder} onBack={() => setScreen("home")} />;
   if (screen === "leftovers") return <LeftoverMagic household={household} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onBack={() => setScreen("home")} />;
-  return <Home mealType={mealType} onMealTypeChange={switchMealType} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} signedInEmail={signedInEmail} syncEmail={syncEmail} syncStatus={syncStatus} onSyncEmailChange={setSyncEmail} onSendSyncLink={sendSyncLink} onSignOut={signOutLive} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
+  return <Home mealType={mealType} onMealTypeChange={switchMealType} maxCookMinutes={maxCookMinutes} onMaxCookMinutesChange={async (minutes) => { setMaxCookMinutes(minutes); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
 }
 
 function SplashScreen({ onSkip }: { onSkip: () => void }) {
@@ -586,8 +596,8 @@ function Pantry({ selected, setSelected, onDone }: { selected: string[]; setSele
   );
 }
 
-function Home({ mealType, onMealTypeChange, recommendation, isFavorite, note, signedInEmail, syncEmail, syncStatus, onSyncEmailChange, onSendSyncLink, onSignOut, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; signedInEmail?: string; syncEmail: string; syncStatus: string; onSyncEmailChange: (email: string) => void; onSendSyncLink: () => void; onSignOut: () => void; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onToggleFavorite: () => void }) {
-  if (!recommendation) return <main className="app-shell"><MealTypeSwitch value={mealType} onChange={onMealTypeChange} /><p>Finding one good {mealType === "lunch" ? "lunchbox" : "breakfast"}...</p></main>;
+function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChange, recommendation, isFavorite, note, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; maxCookMinutes?: number; onMaxCookMinutesChange: (minutes?: number) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onToggleFavorite: () => void }) {
+  if (!recommendation) return <main className="app-shell"><MealTypeSwitch value={mealType} onChange={onMealTypeChange} /><CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} /><p>Finding one good {mealType === "lunch" ? "lunchbox" : "breakfast"}...</p></main>;
   return (
     <main className="decision-screen">
       <div className="top-actions">
@@ -597,9 +607,11 @@ function Home({ mealType, onMealTypeChange, recommendation, isFavorite, note, si
       <img className="hero-image" src={visualForDish(recommendation.dish)} alt={`${recommendation.dish.name} ${mealType === "lunch" ? "lunchbox" : "breakfast"} inspiration`} />
       <section className="decision-copy">
         <MealTypeSwitch value={mealType} onChange={onMealTypeChange} />
+        <CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} />
         <p className="eyebrow"><Clock size={15} /> {recommendation.dish.morning_effort_minutes} min</p>
         <h1>{recommendation.dish.name}</h1>
         <p>{recommendation.reason}</p>
+        {recommendation.dish.nutrition && <NutritionPanel nutrition={recommendation.dish.nutrition} />}
         {sidesFor(recommendation.dish).length > 0 && (
           <section className="side-panel" aria-label="Recommended side dishes">
             <strong>Best with</strong>
@@ -620,9 +632,38 @@ function Home({ mealType, onMealTypeChange, recommendation, isFavorite, note, si
           <button onClick={onTomorrow}><CalendarCheck size={17} /> Tomorrow plan</button>
           <button onClick={onLeftovers}><Wand2 size={17} /> Leftover magic</button>
         </div>
-        <SyncPanel signedInEmail={signedInEmail} email={syncEmail} status={syncStatus} onEmailChange={onSyncEmailChange} onSend={onSendSyncLink} onSignOut={onSignOut} />
       </section>
     </main>
+  );
+}
+
+function CookTimeFilter({ value, onChange }: { value?: number; onChange: (minutes?: number) => void }) {
+  return (
+    <div className="cook-filter" aria-label="Cooking time filter">
+      {cookTimeFilters.map((filter) => (
+        <button key={filter.label} className={value === filter.value ? "active" : ""} onClick={() => onChange(filter.value)}>
+          {filter.label}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function NutritionPanel({ nutrition }: { nutrition: NonNullable<Dish["nutrition"]> }) {
+  return (
+    <section className="nutrition-panel" aria-label="Estimated nutrition per serving">
+      <div>
+        <strong>Est. nutrition</strong>
+        <span>{nutrition.serving}</span>
+      </div>
+      <div className="macro-grid">
+        <span><b>{nutrition.calories_kcal}</b> kcal</span>
+        <span><b>{nutrition.carbs_g}g</b> carbs</span>
+        <span><b>{nutrition.protein_g}g</b> protein</span>
+        <span><b>{nutrition.fat_g}g</b> fat</span>
+      </div>
+      <small>{nutrition.source_name}. {nutrition.confidence}</small>
+    </section>
   );
 }
 

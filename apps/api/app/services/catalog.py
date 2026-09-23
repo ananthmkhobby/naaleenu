@@ -174,6 +174,65 @@ def side_suggestions_for(name: str, category: str, meal_type: MealType = MealTyp
     return ["coconut chutney", "curd"]
 
 
+def nutrition_for(name: str, category: str, meal_type: MealType = MealType.breakfast) -> dict:
+    lower = name.lower()
+    base_by_category = {
+        "idli": (170, 34, 6, 2, 3),
+        "dosa": (260, 42, 7, 8, 3),
+        "uttapam": (280, 44, 8, 8, 4),
+        "poha": (250, 45, 7, 7, 4),
+        "upma": (270, 43, 7, 9, 4),
+        "pongal": (320, 48, 10, 10, 4),
+        "rice": (330, 58, 8, 8, 3),
+        "rotti": (290, 50, 7, 7, 5),
+        "appam": (240, 45, 5, 5, 2),
+        "puttu": (300, 56, 8, 6, 5),
+        "paniyaram": (280, 42, 7, 9, 3),
+        "paratha": (360, 48, 9, 14, 5),
+        "chapati": (310, 50, 10, 8, 6),
+        "sandwich": (300, 38, 11, 11, 4),
+        "egg": (260, 20, 16, 14, 2),
+        "oats": (260, 42, 10, 7, 6),
+        "khichdi": (330, 52, 12, 8, 5),
+        "pulao": (360, 58, 9, 10, 4),
+        "sundal": (260, 36, 13, 8, 8),
+        "lunchbox": (330, 52, 10, 9, 5),
+        "other": (280, 44, 8, 8, 4),
+    }
+    calories, carbs, protein, fat, fiber = base_by_category.get(category, base_by_category["other"])
+    if "egg" in lower or "omelette" in lower:
+        protein += 8
+        fat += 5
+        calories += 70
+    if "paneer" in lower or "cheese" in lower:
+        protein += 7
+        fat += 8
+        calories += 90
+    if "sprouts" in lower or "moong" in lower or "chickpea" in lower or "sundal" in lower or "kadala" in lower:
+        protein += 5
+        fiber += 3
+        calories += 35
+    if "millet" in lower or "ragi" in lower or "jowar" in lower:
+        fiber += 2
+    if "poori" in lower or "fried" in lower:
+        fat += 6
+        calories += 70
+    if meal_type == MealType.lunch:
+        calories += 40
+        carbs += 6
+    return {
+        "serving": "1 typical home serving",
+        "calories_kcal": calories,
+        "carbs_g": carbs,
+        "protein_g": protein,
+        "fat_g": fat,
+        "fiber_g": fiber,
+        "source_name": "USDA FoodData Central + Indian Food Composition Tables 2017",
+        "source_license": "USDA FDC public domain; IFCT 2017 by ICMR-NIN used as India-specific reference",
+        "confidence": "estimated from ingredients/category; verify with weighed recipe for clinical use",
+    }
+
+
 def steps_for(name: str, ingredients: list[str], meal_type: MealType = MealType.breakfast) -> list[str]:
     main = ingredients[0]
     if meal_type == MealType.lunch:
@@ -243,6 +302,7 @@ def load_catalog(meal_type: MealType | None = None) -> list[Dish]:
                         else ["weekend"]
                     )
                 ],
+                nutrition=nutrition_for(name, category, current_meal_type),
                 is_active=True
             ))
     return dishes

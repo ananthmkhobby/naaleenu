@@ -32,6 +32,17 @@ export interface Dish {
   image_key: string;
   photo_data_url?: string;
   tags: string[];
+  nutrition?: {
+    serving: string;
+    calories_kcal: number;
+    carbs_g: number;
+    protein_g: number;
+    fat_g: number;
+    fiber_g: number;
+    source_name: string;
+    source_license: string;
+    confidence: string;
+  };
 }
 
 export interface CustomDish extends Dish {

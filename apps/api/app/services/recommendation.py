@@ -109,6 +109,8 @@ def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time
             continue
         if req.quicker_than_minutes is not None and dish.morning_effort_minutes >= req.quicker_than_minutes:
             continue
+        if req.max_cook_minutes is not None and dish.morning_effort_minutes > req.max_cook_minutes:
+            continue
         if not relax_time and dish.morning_effort_minutes > limit:
             continue
         if not relax_repeat and cooked_days.get(dish.id, 999) < dish.repeat_gap_days:

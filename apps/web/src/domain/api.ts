@@ -26,6 +26,7 @@ export async function recommendation(payload: {
   session_category_exclusions: string[];
   cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
   quicker_than_minutes?: number;
+  max_cook_minutes?: number;
 }): Promise<Recommendation> {
   return request<Recommendation>("/v1/recommendations", { method: "POST", body: JSON.stringify(payload) });
 }
