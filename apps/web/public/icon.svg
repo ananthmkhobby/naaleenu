@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Breakfast bowl">
+  <rect width="128" height="128" rx="28" fill="#fbf7ef"/>
+  <path d="M24 70c4 24 20 38 40 38s36-14 40-38H24Z" fill="#214f3a"/>
+  <path d="M30 70c6 11 18 17 34 17s28-6 34-17H30Z" fill="#f4dca8"/>
+  <path d="M41 45c7-12 22-17 35-10 7 4 12 10 15 18" fill="none" stroke="#b88a3b" stroke-width="9" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+{
+  "name": "Breakfast Decision Assistant",
+  "short_name": "Breakfast",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#fbf7ef",
+  "theme_color": "#214f3a",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: breakfast
+      POSTGRES_PASSWORD: breakfast
+      POSTGRES_DB: breakfast
+    ports:
+      - "5432:5432"
+    volumes:
+      - breakfast_pg:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U breakfast -d breakfast"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+volumes:
+  breakfast_pg:

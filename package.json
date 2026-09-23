@@ -1,0 +1,21 @@
+{
+  "name": "breakfast-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Mobile-first breakfast decision assistant for homemakers.",
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter @breakfast/api --filter @breakfast/web dev",
+    "db-up": "docker compose -f infra/docker-compose.yml up -d postgres",
+    "db-migrate": "pnpm --filter @breakfast/api db:migrate",
+    "seed": "pnpm --filter @breakfast/api seed",
+    "test": "pnpm --filter @breakfast/api test && pnpm --filter @breakfast/web test",
+    "test-e2e": "pnpm --filter @breakfast/web test:e2e",
+    "lint": "pnpm --filter @breakfast/web lint && pnpm --filter @breakfast/api lint",
+    "build": "pnpm --filter @breakfast/web build",
+    "smoke": "pnpm --filter @breakfast/api smoke"
+  },
+  "devDependencies": {
+    "concurrently": "latest"
+  }
+}

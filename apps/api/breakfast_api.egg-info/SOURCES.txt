@@ -1,0 +1,14 @@
+pyproject.toml
+app/__init__.py
+app/cli.py
+app/main.py
+app/schemas/__init__.py
+app/schemas/domain.py
+app/services/catalog.py
+app/services/recommendation.py
+breakfast_api.egg-info/PKG-INFO
+breakfast_api.egg-info/SOURCES.txt
+breakfast_api.egg-info/dependency_links.txt
+breakfast_api.egg-info/requires.txt
+breakfast_api.egg-info/top_level.txt
+tests/test_recommendation.py

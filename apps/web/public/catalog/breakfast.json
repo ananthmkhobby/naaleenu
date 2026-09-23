@@ -1,0 +1,5370 @@
+[
+  {
+    "id": "dish-001",
+    "meal_type": "breakfast",
+    "slug": "plain-idli",
+    "name": "Plain Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Plain Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/plain-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-002",
+    "meal_type": "breakfast",
+    "slug": "mini-idli",
+    "name": "Mini Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Mini Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/mini-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-003",
+    "meal_type": "breakfast",
+    "slug": "rava-idli",
+    "name": "Rava Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "curd",
+      "rava",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather curd, rava, rice and keep the usual pantry staples ready.",
+      "Prepare the curd base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Rava Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/rava-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-004",
+    "meal_type": "breakfast",
+    "slug": "vegetable-rava-idli",
+    "name": "Vegetable Rava Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "curd",
+      "mixed vegetables",
+      "rava",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather curd, mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the curd base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Rava Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-rava-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-005",
+    "meal_type": "breakfast",
+    "slug": "thatte-idli",
+    "name": "Thatte Idli",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Thatte Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/thatte-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-006",
+    "meal_type": "breakfast",
+    "slug": "kanchipuram-idli",
+    "name": "Kanchipuram Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Kanchipuram Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/kanchipuram-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-007",
+    "meal_type": "breakfast",
+    "slug": "podi-idli",
+    "name": "Podi Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Podi Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/podi-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-008",
+    "meal_type": "breakfast",
+    "slug": "fried-idli",
+    "name": "Fried Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Fried Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/fried-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-009",
+    "meal_type": "breakfast",
+    "slug": "masala-idli",
+    "name": "Masala Idli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Masala Idli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/masala-idli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-010",
+    "meal_type": "breakfast",
+    "slug": "idli-upma",
+    "name": "Idli Upma",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "idli",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rava",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rava, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Idli Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/idli-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-011",
+    "meal_type": "breakfast",
+    "slug": "plain-dosa",
+    "name": "Plain Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Plain Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/plain-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-012",
+    "meal_type": "breakfast",
+    "slug": "onion-dosa",
+    "name": "Onion Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Onion Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/onion-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-013",
+    "meal_type": "breakfast",
+    "slug": "tomato-dosa",
+    "name": "Tomato Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tomato Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tomato-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-014",
+    "meal_type": "breakfast",
+    "slug": "podi-dosa",
+    "name": "Podi Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Podi Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/podi-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-015",
+    "meal_type": "breakfast",
+    "slug": "ghee-roast-dosa",
+    "name": "Ghee Roast Dosa",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ghee Roast Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ghee-roast-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-016",
+    "meal_type": "breakfast",
+    "slug": "masala-dosa",
+    "name": "Masala Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Masala Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/masala-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-017",
+    "meal_type": "breakfast",
+    "slug": "set-dosa",
+    "name": "Set Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Set Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/set-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-018",
+    "meal_type": "breakfast",
+    "slug": "vegetable-uttapam",
+    "name": "Vegetable Uttapam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "uttapam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Uttapam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-uttapam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-019",
+    "meal_type": "breakfast",
+    "slug": "onion-uttapam",
+    "name": "Onion Uttapam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "uttapam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Onion Uttapam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/onion-uttapam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-020",
+    "meal_type": "breakfast",
+    "slug": "tomato-uttapam",
+    "name": "Tomato Uttapam",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "uttapam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tomato Uttapam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tomato-uttapam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-021",
+    "meal_type": "breakfast",
+    "slug": "cheese-uttapam",
+    "name": "Cheese Uttapam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "uttapam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 2,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Cheese Uttapam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/cheese-uttapam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-022",
+    "meal_type": "breakfast",
+    "slug": "egg-dosa",
+    "name": "Egg Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "egg",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather egg, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the egg base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Egg Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/egg-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-023",
+    "meal_type": "breakfast",
+    "slug": "egg-uttapam",
+    "name": "Egg Uttapam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "uttapam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "egg",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather egg, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the egg base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Egg Uttapam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/egg-uttapam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-024",
+    "meal_type": "breakfast",
+    "slug": "neer-dosa",
+    "name": "Neer Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Neer Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/neer-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-025",
+    "meal_type": "breakfast",
+    "slug": "ragi-dosa",
+    "name": "Ragi Dosa",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "ragi flour",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather ragi flour, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the ragi flour base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ragi Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ragi-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-026",
+    "meal_type": "breakfast",
+    "slug": "ragi-onion-dosa",
+    "name": "Ragi Onion Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "ragi flour",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather ragi flour, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the ragi flour base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ragi Onion Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ragi-onion-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-027",
+    "meal_type": "breakfast",
+    "slug": "wheat-dosa",
+    "name": "Wheat Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Wheat Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/wheat-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-028",
+    "meal_type": "breakfast",
+    "slug": "instant-oats-dosa",
+    "name": "Instant Oats Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "oats",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather oats, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the oats base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Instant Oats Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/instant-oats-dosa",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-029",
+    "meal_type": "breakfast",
+    "slug": "instant-rava-dosa",
+    "name": "Instant Rava Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "curd",
+      "rava",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather curd, rava, rice and keep the usual pantry staples ready.",
+      "Prepare the curd base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Instant Rava Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/instant-rava-dosa",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-030",
+    "meal_type": "breakfast",
+    "slug": "pesarattu",
+    "name": "Pesarattu",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Pesarattu warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/pesarattu",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-031",
+    "meal_type": "breakfast",
+    "slug": "adai",
+    "name": "Adai",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Adai warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/adai",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-032",
+    "meal_type": "breakfast",
+    "slug": "avalakki-poha",
+    "name": "Avalakki / Poha",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Avalakki / Poha warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/avalakki-poha",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-033",
+    "meal_type": "breakfast",
+    "slug": "lemon-avalakki",
+    "name": "Lemon Avalakki",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Lemon Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/lemon-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-034",
+    "meal_type": "breakfast",
+    "slug": "vegetable-avalakki",
+    "name": "Vegetable Avalakki",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, poha and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-035",
+    "meal_type": "breakfast",
+    "slug": "tomato-avalakki",
+    "name": "Tomato Avalakki",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tomato Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tomato-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-036",
+    "meal_type": "breakfast",
+    "slug": "coconut-avalakki",
+    "name": "Coconut Avalakki",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Coconut Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/coconut-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-037",
+    "meal_type": "breakfast",
+    "slug": "tamarind-avalakki",
+    "name": "Tamarind Avalakki",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tamarind Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tamarind-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-038",
+    "meal_type": "breakfast",
+    "slug": "curd-avalakki",
+    "name": "Curd Avalakki",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Curd Avalakki warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/curd-avalakki",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-039",
+    "meal_type": "breakfast",
+    "slug": "peanut-poha",
+    "name": "Peanut Poha",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "poha",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "poha"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather poha and keep the usual pantry staples ready.",
+      "Prepare the poha base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Peanut Poha warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/peanut-poha",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-040",
+    "meal_type": "breakfast",
+    "slug": "plain-upma",
+    "name": "Plain Upma",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rava and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Plain Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/plain-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-041",
+    "meal_type": "breakfast",
+    "slug": "vegetable-upma",
+    "name": "Vegetable Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-042",
+    "meal_type": "breakfast",
+    "slug": "khara-bath",
+    "name": "Khara Bath",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Khara Bath warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/khara-bath",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-043",
+    "meal_type": "breakfast",
+    "slug": "semiya-upma",
+    "name": "Semiya Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rava and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Semiya Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/semiya-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-044",
+    "meal_type": "breakfast",
+    "slug": "lemon-semiya",
+    "name": "Lemon Semiya",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Lemon Semiya warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/lemon-semiya",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-045",
+    "meal_type": "breakfast",
+    "slug": "tomato-semiya",
+    "name": "Tomato Semiya",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tomato Semiya warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tomato-semiya",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-046",
+    "meal_type": "breakfast",
+    "slug": "oats-upma",
+    "name": "Oats Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "oats",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather oats, rava and keep the usual pantry staples ready.",
+      "Prepare the oats base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Oats Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/oats-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-047",
+    "meal_type": "breakfast",
+    "slug": "millet-upma",
+    "name": "Millet Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rava and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Millet Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/millet-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-048",
+    "meal_type": "breakfast",
+    "slug": "broken-wheat-upma",
+    "name": "Broken Wheat Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rava and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Broken Wheat Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/broken-wheat-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-049",
+    "meal_type": "breakfast",
+    "slug": "rice-sevai-upma",
+    "name": "Rice Sevai Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice, rava and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Rice Sevai Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/rice-sevai-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-050",
+    "meal_type": "breakfast",
+    "slug": "ven-pongal",
+    "name": "Ven Pongal",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ven Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ven-pongal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-051",
+    "meal_type": "breakfast",
+    "slug": "vegetable-pongal",
+    "name": "Vegetable Pongal",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-pongal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-052",
+    "meal_type": "breakfast",
+    "slug": "rava-pongal",
+    "name": "Rava Pongal",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "curd",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather curd, rava and keep the usual pantry staples ready.",
+      "Prepare the curd base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Rava Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/rava-pongal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-053",
+    "meal_type": "breakfast",
+    "slug": "millet-pongal",
+    "name": "Millet Pongal",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "pongal",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Millet Pongal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/millet-pongal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-054",
+    "meal_type": "breakfast",
+    "slug": "lemon-rice",
+    "name": "Lemon Rice",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Lemon Rice warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/lemon-rice",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-055",
+    "meal_type": "breakfast",
+    "slug": "coconut-rice",
+    "name": "Coconut Rice",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Coconut Rice warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/coconut-rice",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-056",
+    "meal_type": "breakfast",
+    "slug": "tomato-rice",
+    "name": "Tomato Rice",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Tomato Rice warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/tomato-rice",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-057",
+    "meal_type": "breakfast",
+    "slug": "puliyogare",
+    "name": "Puliyogare",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Puliyogare warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/puliyogare",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-058",
+    "meal_type": "breakfast",
+    "slug": "curd-rice",
+    "name": "Curd Rice",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Curd Rice warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/curd-rice",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-059",
+    "meal_type": "breakfast",
+    "slug": "mango-rice",
+    "name": "Mango Rice",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Mango Rice warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/mango-rice",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-060",
+    "meal_type": "breakfast",
+    "slug": "vegetable-rice-bath",
+    "name": "Vegetable Rice Bath",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "rice",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "cooked rice",
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "papad"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather cooked rice, mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Rice Bath warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-rice-bath",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-061",
+    "meal_type": "breakfast",
+    "slug": "bisi-bele-bath",
+    "name": "Bisi Bele Bath",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Bisi Bele Bath warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/bisi-bele-bath",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-062",
+    "meal_type": "breakfast",
+    "slug": "vangi-bath",
+    "name": "Vangi Bath",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, rava and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vangi Bath warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vangi-bath",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-063",
+    "meal_type": "breakfast",
+    "slug": "akki-rotti",
+    "name": "Akki Rotti",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rotti",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Akki Rotti warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/akki-rotti",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-064",
+    "meal_type": "breakfast",
+    "slug": "ragi-rotti",
+    "name": "Ragi Rotti",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rotti",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "ragi flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather ragi flour and keep the usual pantry staples ready.",
+      "Prepare the ragi flour base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ragi Rotti warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ragi-rotti",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-065",
+    "meal_type": "breakfast",
+    "slug": "jowar-rotti",
+    "name": "Jowar Rotti",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "rotti",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Jowar Rotti warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/jowar-rotti",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-066",
+    "meal_type": "breakfast",
+    "slug": "vegetable-akki-rotti",
+    "name": "Vegetable Akki Rotti",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rotti",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Akki Rotti warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-akki-rotti",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-067",
+    "meal_type": "breakfast",
+    "slug": "onion-akki-rotti",
+    "name": "Onion Akki Rotti",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "rotti",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Onion Akki Rotti warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/onion-akki-rotti",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-068",
+    "meal_type": "breakfast",
+    "slug": "idiyappam",
+    "name": "Idiyappam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "appam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Idiyappam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/idiyappam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-069",
+    "meal_type": "breakfast",
+    "slug": "appam",
+    "name": "Appam",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "appam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Appam warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/appam",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-070",
+    "meal_type": "breakfast",
+    "slug": "puttu",
+    "name": "Puttu",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "puttu",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Puttu warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/puttu",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-071",
+    "meal_type": "breakfast",
+    "slug": "vegetable-puttu",
+    "name": "Vegetable Puttu",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "puttu",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Puttu warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-puttu",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-072",
+    "meal_type": "breakfast",
+    "slug": "kerala-appam-stew",
+    "name": "Kerala Appam + Stew",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "appam",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Kerala Appam + Stew warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/kerala-appam-stew",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-073",
+    "meal_type": "breakfast",
+    "slug": "poori-potato-palya",
+    "name": "Poori + Potato Palya",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Poori + Potato Palya warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/poori-potato-palya",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-074",
+    "meal_type": "breakfast",
+    "slug": "chapati-vegetable-palya",
+    "name": "Chapati + Vegetable Palya",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "bread",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables",
+      "wheat flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables, wheat flour and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Chapati + Vegetable Palya warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/chapati-vegetable-palya",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-075",
+    "meal_type": "breakfast",
+    "slug": "vegetable-paratha",
+    "name": "Vegetable Paratha",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "paratha",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Paratha warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-paratha",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-076",
+    "meal_type": "breakfast",
+    "slug": "aloo-paratha",
+    "name": "Aloo Paratha",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "paratha",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Aloo Paratha warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/aloo-paratha",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-077",
+    "meal_type": "breakfast",
+    "slug": "paneer-paratha",
+    "name": "Paneer Paratha",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "paratha",
+    "active_time_minutes": 25,
+    "total_time_minutes": 35,
+    "morning_effort_minutes": 25,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "paneer"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 2,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather paneer and keep the usual pantry staples ready.",
+      "Prepare the paneer base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Paneer Paratha warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/paneer-paratha",
+    "tags": [
+      "weekend"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-078",
+    "meal_type": "breakfast",
+    "slug": "curd-chapati-roll",
+    "name": "Curd Chapati Roll",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "bread",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "wheat flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "curd",
+      "pickle",
+      "vegetable palya"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather wheat flour and keep the usual pantry staples ready.",
+      "Prepare the wheat flour base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Curd Chapati Roll warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/curd-chapati-roll",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-079",
+    "meal_type": "breakfast",
+    "slug": "vegetable-sandwich",
+    "name": "Vegetable Sandwich",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "sandwich",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Sandwich warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-sandwich",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-080",
+    "meal_type": "breakfast",
+    "slug": "paneer-sandwich",
+    "name": "Paneer Sandwich",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "sandwich",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "paneer"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 4,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 2,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, paneer and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Paneer Sandwich warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/paneer-sandwich",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-081",
+    "meal_type": "breakfast",
+    "slug": "egg-sandwich",
+    "name": "Egg Sandwich",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "sandwich",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "egg"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 4,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, egg and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Egg Sandwich warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/egg-sandwich",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-082",
+    "meal_type": "breakfast",
+    "slug": "bread-upma",
+    "name": "Bread Upma",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "rava"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, rava and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Bread Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/bread-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-083",
+    "meal_type": "breakfast",
+    "slug": "bread-omelette",
+    "name": "Bread Omelette",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "other",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "egg"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, egg and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Bread Omelette warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/bread-omelette",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-084",
+    "meal_type": "breakfast",
+    "slug": "masala-omelette",
+    "name": "Masala Omelette",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "other",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "egg"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather egg and keep the usual pantry staples ready.",
+      "Prepare the egg base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Masala Omelette warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/masala-omelette",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-085",
+    "meal_type": "breakfast",
+    "slug": "boiled-egg-toast",
+    "name": "Boiled Egg + Toast",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "egg",
+    "category": "egg",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "bread",
+      "egg"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather bread, egg and keep the usual pantry staples ready.",
+      "Prepare the bread base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Boiled Egg + Toast warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/boiled-egg-toast",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-086",
+    "meal_type": "breakfast",
+    "slug": "scrambled-egg-chapati",
+    "name": "Scrambled Egg + Chapati",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "egg",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "egg",
+      "wheat flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather egg, wheat flour and keep the usual pantry staples ready.",
+      "Prepare the egg base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Scrambled Egg + Chapati warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/scrambled-egg-chapati",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-087",
+    "meal_type": "breakfast",
+    "slug": "egg-bhurji-roll",
+    "name": "Egg Bhurji Roll",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "egg",
+    "category": "egg",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "egg",
+      "wheat flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather egg, wheat flour and keep the usual pantry staples ready.",
+      "Prepare the egg base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Egg Bhurji Roll warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/egg-bhurji-roll",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-088",
+    "meal_type": "breakfast",
+    "slug": "oats-porridge",
+    "name": "Oats Porridge",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "oats",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "oats"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather oats and keep the usual pantry staples ready.",
+      "Prepare the oats base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Oats Porridge warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/oats-porridge",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-089",
+    "meal_type": "breakfast",
+    "slug": "banana-oats-porridge",
+    "name": "Banana Oats Porridge",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "oats",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "banana",
+      "oats"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather banana, oats and keep the usual pantry staples ready.",
+      "Prepare the banana base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Banana Oats Porridge warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/banana-oats-porridge",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-090",
+    "meal_type": "breakfast",
+    "slug": "savoury-oats-bowl",
+    "name": "Savoury Oats Bowl",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "oats",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "oats"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather oats and keep the usual pantry staples ready.",
+      "Prepare the oats base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Savoury Oats Bowl warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/savoury-oats-bowl",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-091",
+    "meal_type": "breakfast",
+    "slug": "ragi-malt",
+    "name": "Ragi Malt",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "porridge",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "ragi flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "banana",
+      "jaggery",
+      "nuts"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather ragi flour and keep the usual pantry staples ready.",
+      "Prepare the ragi flour base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ragi Malt warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ragi-malt",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-092",
+    "meal_type": "breakfast",
+    "slug": "ragi-banana-porridge",
+    "name": "Ragi Banana Porridge",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "porridge",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "banana",
+      "ragi flour"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "banana",
+      "jaggery",
+      "nuts"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather banana, ragi flour and keep the usual pantry staples ready.",
+      "Prepare the banana base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Ragi Banana Porridge warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/ragi-banana-porridge",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-093",
+    "meal_type": "breakfast",
+    "slug": "fruit-curd-bowl",
+    "name": "Fruit + Curd Bowl",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "lentils",
+      "rice"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather lentils, rice and keep the usual pantry staples ready.",
+      "Prepare the lentils base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Fruit + Curd Bowl warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/fruit-curd-bowl",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-094",
+    "meal_type": "breakfast",
+    "slug": "banana-peanut-bowl",
+    "name": "Banana Peanut Bowl",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 8,
+    "total_time_minutes": 12,
+    "morning_effort_minutes": 8,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "banana"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 4,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather banana and keep the usual pantry staples ready.",
+      "Prepare the banana base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Banana Peanut Bowl warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/banana-peanut-bowl",
+    "tags": [
+      "quick"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-095",
+    "meal_type": "breakfast",
+    "slug": "sprouts-sundal",
+    "name": "Sprouts Sundal",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "dal",
+      "moong"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather dal, moong and keep the usual pantry staples ready.",
+      "Prepare the dal base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Sprouts Sundal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/sprouts-sundal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-096",
+    "meal_type": "breakfast",
+    "slug": "chickpea-sundal",
+    "name": "Chickpea Sundal",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "chickpea",
+      "dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 5,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather chickpea, dal and keep the usual pantry staples ready.",
+      "Prepare the chickpea base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Chickpea Sundal warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/chickpea-sundal",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-097",
+    "meal_type": "breakfast",
+    "slug": "moong-dal-chilla",
+    "name": "Moong Dal Chilla",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "dal",
+      "moong"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 4,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather dal, moong and keep the usual pantry staples ready.",
+      "Prepare the dal base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Moong Dal Chilla warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/moong-dal-chilla",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-098",
+    "meal_type": "breakfast",
+    "slug": "vegetable-besan-chilla",
+    "name": "Vegetable Besan Chilla",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "other",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "mixed vegetables"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather mixed vegetables and keep the usual pantry staples ready.",
+      "Prepare the mixed vegetables base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Besan Chilla warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-besan-chilla",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-099",
+    "meal_type": "breakfast",
+    "slug": "leftover-rice-dosa",
+    "name": "Leftover Rice Dosa",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "dosa",
+    "active_time_minutes": 18,
+    "total_time_minutes": 25,
+    "morning_effort_minutes": 18,
+    "previous_night_effort_minutes": 10,
+    "requires_previous_night_prep": true,
+    "ingredients_required": [
+      "cooked rice",
+      "rice",
+      "urad dal"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "sambar",
+      "podi with ghee"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 4,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 4,
+    "steps": [
+      "Gather cooked rice, rice, urad dal and keep the usual pantry staples ready.",
+      "Prepare the cooked rice base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Leftover Rice Dosa warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/leftover-rice-dosa",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-100",
+    "meal_type": "breakfast",
+    "slug": "leftover-chapati-upma",
+    "name": "Leftover Chapati Upma",
+    "region": [
+      "Karnataka",
+      "Tamil Nadu",
+      "Kerala",
+      "Andhra/Telangana"
+    ],
+    "diet_type": "veg",
+    "category": "upma",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "rava",
+      "wheat flour"
+    ],
+    "ingredients_optional": [
+      "curry leaves",
+      "coconut",
+      "peanuts"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": true,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather rava, wheat flour and keep the usual pantry staples ready.",
+      "Prepare the rava base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Leftover Chapati Upma warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/leftover-chapati-upma",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-101",
+    "meal_type": "breakfast",
+    "slug": "akki-usli",
+    "name": "Akki Usli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "usli",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "coconut",
+      "rice rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather coconut, rice rava and keep the usual pantry staples ready.",
+      "Prepare the coconut base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Akki Usli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/akki-usli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-102",
+    "meal_type": "breakfast",
+    "slug": "vegetable-akki-usli",
+    "name": "Vegetable Akki Usli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "usli",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "coconut",
+      "mixed vegetables",
+      "rice rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather coconut, mixed vegetables, rice rava and keep the usual pantry staples ready.",
+      "Prepare the coconut base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Vegetable Akki Usli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/vegetable-akki-usli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-103",
+    "meal_type": "breakfast",
+    "slug": "beans-akki-usli",
+    "name": "Beans Akki Usli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "usli",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "coconut",
+      "rice rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather coconut, rice rava and keep the usual pantry staples ready.",
+      "Prepare the coconut base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Beans Akki Usli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/beans-akki-usli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  },
+  {
+    "id": "dish-104",
+    "meal_type": "breakfast",
+    "slug": "avarekalu-akki-usli",
+    "name": "Avarekalu Akki Usli",
+    "region": [
+      "pan-South"
+    ],
+    "diet_type": "veg",
+    "category": "usli",
+    "active_time_minutes": 15,
+    "total_time_minutes": 20,
+    "morning_effort_minutes": 15,
+    "previous_night_effort_minutes": 0,
+    "requires_previous_night_prep": false,
+    "ingredients_required": [
+      "coconut",
+      "rice rava"
+    ],
+    "ingredients_optional": [
+      "chutney"
+    ],
+    "side_suggestions": [
+      "coconut chutney",
+      "curd",
+      "banana"
+    ],
+    "pantry_assumptions": [
+      "oil",
+      "salt",
+      "water"
+    ],
+    "kids_score": 3,
+    "lunchbox_score": 3,
+    "protein_score": 3,
+    "health_score": 3,
+    "cost_level": 1,
+    "leftover_friendly": false,
+    "repeat_gap_days": 3,
+    "steps": [
+      "Gather coconut, rice rava and keep the usual pantry staples ready.",
+      "Prepare the coconut base and season it gently for a breakfast-friendly taste.",
+      "Cook on medium heat until the texture is set and the aroma is fresh.",
+      "Serve Avarekalu Akki Usli warm with chutney, curd or a simple side that is already available."
+    ],
+    "image_key": "breakfast/avarekalu-akki-usli",
+    "tags": [
+      "weekday"
+    ],
+    "is_active": true
+  }
+]

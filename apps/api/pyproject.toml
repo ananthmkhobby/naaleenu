@@ -1,0 +1,15 @@
+[project]
+name = "breakfast-api"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.141,<0.142",
+  "uvicorn[standard]>=0.35,<0.36",
+  "pydantic>=2.11,<3",
+  "pytest>=8,<9",
+  "httpx>=0.28,<0.29"
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
