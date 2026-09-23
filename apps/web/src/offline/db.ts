@@ -10,6 +10,7 @@ export interface LocalState {
   reminder_time: string;
   latest_recommendation?: Recommendation;
   session_exclusions: string[];
+  session_category_exclusions: string[];
 }
 
 export interface OutboxItem {
@@ -45,8 +46,8 @@ export const db = new BreakfastDb();
 
 export async function getLocalState(): Promise<LocalState> {
   const state = await db.state.get("active");
-  if (state) return { ...state, meal_type: state.meal_type ?? "breakfast", favorite_dish_ids: state.favorite_dish_ids ?? [], reminder_time: state.reminder_time ?? "20:30" };
-  const fresh: LocalState = { key: "active", meal_type: "breakfast", pantry_items: [], favorite_dish_ids: [], reminder_time: "20:30", session_exclusions: [] };
+  if (state) return { ...state, meal_type: state.meal_type ?? "breakfast", favorite_dish_ids: state.favorite_dish_ids ?? [], reminder_time: state.reminder_time ?? "20:30", session_exclusions: state.session_exclusions ?? [], session_category_exclusions: state.session_category_exclusions ?? [] };
+  const fresh: LocalState = { key: "active", meal_type: "breakfast", pantry_items: [], favorite_dish_ids: [], reminder_time: "20:30", session_exclusions: [], session_category_exclusions: [] };
   await db.state.put(fresh);
   return fresh;
 }

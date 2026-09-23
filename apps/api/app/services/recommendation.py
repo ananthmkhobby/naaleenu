@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import date, datetime
+from random import choice
 from uuid import uuid4
 
 from app.schemas.domain import DietType, Dish, RecommendationRequest, RecommendationResponse, TimeBand
@@ -27,6 +28,24 @@ CUISINE_PRIORITY = {
     "north-indian": 0.05,
     "pan-indian": 0.03,
     "western": 0.0
+}
+
+CATEGORY_FAMILIES = {
+    "idli": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "dosa": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "uttapam": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "appam": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "idiyappam": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "paniyaram": {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"},
+    "rice": {"rice", "khichdi", "pulao"},
+    "khichdi": {"rice", "khichdi", "pulao"},
+    "pulao": {"rice", "khichdi", "pulao"},
+    "upma": {"upma", "poha", "usli"},
+    "poha": {"upma", "poha", "usli"},
+    "usli": {"upma", "poha", "usli"},
+    "rotti": {"rotti", "chapati", "paratha"},
+    "chapati": {"rotti", "chapati", "paratha"},
+    "paratha": {"rotti", "chapati", "paratha"},
 }
 
 
@@ -70,6 +89,11 @@ def _history_maps(history: list[dict]) -> tuple[dict[str, int], set[str], set[st
 def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time: bool = False) -> list[Dish]:
     limit = TIME_LIMITS[req.household.time_band]
     cooked_days, _, blocked = _history_maps(req.cooked_history)
+    excluded_categories = {
+        family_category
+        for category in req.session_category_exclusions
+        for family_category in CATEGORY_FAMILIES.get(category, {category})
+    }
     result: list[Dish] = []
     custom_dishes = [dish for dish in req.custom_dishes if dish.meal_type == req.meal_type]
     for dish in [*custom_dishes, *load_catalog(req.meal_type)]:
@@ -77,7 +101,7 @@ def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time
             continue
         if dish.id in blocked or dish.id in req.session_exclusions:
             continue
-        if dish.category in req.session_category_exclusions:
+        if dish.category in excluded_categories:
             continue
         if not _diet_allowed(dish, req.household.diet_type):
             continue
@@ -160,7 +184,9 @@ def recommend(req: RecommendationRequest) -> RecommendationResponse:
         ((_score(dish, req), dish) for dish in candidates),
         key=lambda item: (item[0][0], item[1].id)
     )
-    (score, reason_codes), dish = ranked[-1]
+    best_score = ranked[-1][0][0]
+    top_band = [item for item in ranked if item[0][0] >= best_score - 3.0]
+    (score, reason_codes), dish = choice(top_band[-8:])
     session_id = f"session-{uuid4()}"
     return RecommendationResponse(
         recommendation_id=f"rec-{uuid4()}",

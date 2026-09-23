@@ -11,6 +11,23 @@ const pantryChoices = ["rice", "urad dal", "rava", "poha", "bread", "egg", "oats
 const styleChoices = ["idli", "dosa", "poha", "upma", "rice", "rotti", "oats"];
 const leftoverChoices = ["cooked rice", "chapati", "dal", "sambar", "dosa batter", "boiled potato", "curd", "vegetable palya"];
 const cuisinePriority: Record<string, number> = { "south-indian": 12, "north-indian": 5, "pan-indian": 3, western: 0 };
+const categoryFamilies: Record<string, string[]> = {
+  idli: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  dosa: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  uttapam: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  appam: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  idiyappam: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  paniyaram: ["idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"],
+  rice: ["rice", "khichdi", "pulao"],
+  khichdi: ["rice", "khichdi", "pulao"],
+  pulao: ["rice", "khichdi", "pulao"],
+  upma: ["upma", "poha", "usli"],
+  poha: ["upma", "poha", "usli"],
+  usli: ["upma", "poha", "usli"],
+  rotti: ["rotti", "chapati", "paratha"],
+  chapati: ["rotti", "chapati", "paratha"],
+  paratha: ["rotti", "chapati", "paratha"]
+};
 
 function dishVisual(dish: Pick<Dish, "name" | "category" | "meal_type">) {
   const palette: Record<string, { plate: string; accent: string; side: string }> = {
@@ -89,6 +106,18 @@ function interleaveByCategory(dishes: Dish[], favoriteDishIds: string[]) {
 
 function cuisineScore(dish: Dish) {
   return Math.max(...dish.tags.map((tag) => cuisinePriority[tag.toLowerCase()] ?? 0), 0);
+}
+
+function familyFor(category: string) {
+  return categoryFamilies[category] ?? [category];
+}
+
+function pickFromTopBand<T>(ranked: T[], score: (item: T) => number) {
+  if (!ranked.length) return undefined;
+  const sorted = [...ranked].sort((first, second) => score(second) - score(first));
+  const best = score(sorted[0]);
+  const topBand = sorted.filter((item) => score(item) >= best - 3).slice(0, 8);
+  return topBand[Math.floor(Math.random() * topBand.length)];
 }
 
 function sidesFor(dish: Dish) {
@@ -173,15 +202,13 @@ async function clientRecommendation(payload: {
     .filter((dish) => !payload.quicker_than_minutes || dish.morning_effort_minutes < payload.quicker_than_minutes);
   const pool = dishes.length ? dishes : [...payload.custom_dishes, ...catalog].filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household));
   const preferred = new Set(payload.household.preferred_styles.map((style) => style.toLowerCase()));
-  const dish = [...pool].sort((first, second) => {
-    const score = (item: Dish) => {
-      const pantryScore = item.ingredients_required.filter((ingredient) => pantrySet.has(ingredient.toLowerCase())).length * 4;
-      const favoriteScore = loved.has(item.id) ? 8 : 0;
-      const styleScore = preferred.has(item.category.toLowerCase()) ? 5 : 0;
-      return pantryScore + favoriteScore + styleScore + cuisineScore(item) - item.morning_effort_minutes / 10;
-    };
-    return score(second) - score(first);
-  })[0];
+  const score = (item: Dish) => {
+    const pantryScore = item.ingredients_required.filter((ingredient) => pantrySet.has(ingredient.toLowerCase())).length * 4;
+    const favoriteScore = loved.has(item.id) ? 8 : 0;
+    const styleScore = preferred.has(item.category.toLowerCase()) ? 5 : 0;
+    return pantryScore + favoriteScore + styleScore + cuisineScore(item) - item.morning_effort_minutes / 10;
+  };
+  const dish = pickFromTopBand(pool, score);
   if (!dish) throw new Error("No dish available");
   return {
     recommendation_id: `local-rec-${crypto.randomUUID()}`,
@@ -201,6 +228,7 @@ export default function App() {
   const [pantry, setPantry] = useState<string[]>([]);
   const [rec, setRec] = useState<Recommendation | undefined>();
   const [sessionExclusions, setSessionExclusions] = useState<string[]>([]);
+  const [sessionCategoryExclusions, setSessionCategoryExclusions] = useState<string[]>([]);
   const [meals, setMeals] = useState<MealEvent[]>([]);
   const [customDishes, setCustomDishes] = useState<CustomDish[]>([]);
   const [favoriteDishIds, setFavoriteDishIds] = useState<string[]>([]);
@@ -222,6 +250,7 @@ export default function App() {
       setPantry(state.pantry_items);
       setRec(latestRecommendation);
       setSessionExclusions(state.session_exclusions);
+      setSessionCategoryExclusions(state.session_category_exclusions);
       setFavoriteDishIds(state.favorite_dish_ids);
       setReminderTime(state.reminder_time);
       setMeals(localMeals);
@@ -308,7 +337,7 @@ export default function App() {
       pantry_items: pantry,
       custom_dishes: customDishes.filter((dish) => dish.meal_type === mealType),
       session_exclusions: sessionExclusions,
-      session_category_exclusions: rec && !quicker ? [rec.dish.category] : [],
+      session_category_exclusions: quicker ? sessionCategoryExclusions : [...sessionCategoryExclusions, ...(rec ? familyFor(rec.dish.category) : [])],
       cooked_history: [
         ...meals,
         ...favoriteDishIds.map((dishId) => ({ dish_id: dishId, rating: "loved" as const }))
@@ -319,19 +348,23 @@ export default function App() {
     try {
       const next = await recommendation(payload);
       const exclusions = [...sessionExclusions, next.dish.id].slice(-8);
+      const categoryExclusions = [...new Set([...sessionCategoryExclusions, ...familyFor(next.dish.category)])].slice(-10);
       setRec(next);
       setSessionExclusions(exclusions);
+      setSessionCategoryExclusions(categoryExclusions);
       setOfflineNote("");
-      await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, pantry_items: pantry });
+      await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
       await trackEvent("recommendation_shown", { meal_type: mealType, dish_id: next.dish.id, category: next.dish.category }, household.id);
     } catch {
       try {
         const next = await clientRecommendation(payload);
         const exclusions = [...sessionExclusions, next.dish.id].slice(-8);
+        const categoryExclusions = [...new Set([...sessionCategoryExclusions, ...familyFor(next.dish.category)])].slice(-10);
         setRec(next);
         setSessionExclusions(exclusions);
+        setSessionCategoryExclusions(categoryExclusions);
         setOfflineNote("Using local recommendations. Sync will resume when services are available.");
-        await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, pantry_items: pantry });
+        await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
       } catch {
         setOfflineNote("Showing the last useful recommendation. New actions will be kept locally.");
       }
@@ -442,7 +475,8 @@ export default function App() {
     setMealType(nextMealType);
     setRec(undefined);
     setSessionExclusions([]);
-    await saveLocalState({ meal_type: nextMealType, latest_recommendation: undefined, session_exclusions: [] });
+    setSessionCategoryExclusions([]);
+    await saveLocalState({ meal_type: nextMealType, latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] });
   }
 
   async function sendSyncLink() {
@@ -517,7 +551,7 @@ function Setup({ onDone, note }: { onDone: (input: Omit<Household, "id">) => voi
   const [size, setSize] = useState(4);
   const [diet, setDiet] = useState<DietType>("veg");
   const [time, setTime] = useState<TimeBand>("under_20");
-  const [styles, setStyles] = useState<string[]>(["dosa", "idli"]);
+  const [styles, setStyles] = useState<string[]>(["dosa", "upma", "rice", "rotti"]);
   const [avoid, setAvoid] = useState("");
   return (
     <main className="app-shell setup">

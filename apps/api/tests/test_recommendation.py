@@ -65,4 +65,4 @@ def test_another_can_skip_current_category_when_enough_options_exist():
         pantry_items=["rice", "urad dal"],
         session_category_exclusions=["dosa"],
     ))
-    assert response.dish.category != "dosa"
+    assert response.dish.category not in {"idli", "dosa", "uttapam", "appam", "idiyappam", "paniyaram"}
