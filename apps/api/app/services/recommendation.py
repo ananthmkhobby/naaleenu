@@ -86,9 +86,23 @@ def _history_maps(history: list[dict]) -> tuple[dict[str, int], set[str], set[st
     return cooked_days, loved, blocked
 
 
+def _recent_family_days(history: list[dict], meal_type) -> dict[str, int]:
+    dish_lookup = {dish.id: dish for dish in load_catalog(meal_type)}
+    result: dict[str, int] = {}
+    for event in history:
+        dish = dish_lookup.get(str(event.get("dish_id", "")))
+        if not dish or "cooked_at" not in event:
+            continue
+        days = _days_since(str(event["cooked_at"]))
+        for category in CATEGORY_FAMILIES.get(dish.category, {dish.category}):
+            result[category] = min(result.get(category, 999), days)
+    return result
+
+
 def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time: bool = False) -> list[Dish]:
     limit = TIME_LIMITS[req.household.time_band]
     cooked_days, _, blocked = _history_maps(req.cooked_history)
+    recent_family_days = _recent_family_days(req.cooked_history, req.meal_type)
     excluded_categories = {
         family_category
         for category in req.session_category_exclusions
@@ -116,6 +130,8 @@ def _eligible(req: RecommendationRequest, relax_repeat: bool = False, relax_time
         if not relax_time and dish.morning_effort_minutes > limit:
             continue
         if not relax_repeat and cooked_days.get(dish.id, 999) < dish.repeat_gap_days:
+            continue
+        if not relax_repeat and recent_family_days.get(dish.category, 999) < 2:
             continue
         result.append(dish)
     return result

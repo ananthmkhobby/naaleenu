@@ -235,6 +235,21 @@ function displayReason(reason: string) {
   return reason;
 }
 
+function todayKey() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function rememberShownRecommendation(current: Array<{ dish_id: string; cooked_at: string }>, dish: Dish) {
+  const next = [{ dish_id: dish.id, cooked_at: new Date().toISOString() }, ...current.filter((item) => item.dish_id !== dish.id)];
+  return next.slice(0, 24);
+}
+
+function daysSince(value: string) {
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return 999;
+  return Math.floor((Date.now() - date.getTime()) / 86_400_000);
+}
+
 function familyFor(category: string) {
   return categoryFamilies[category] ?? [category];
 }
@@ -316,19 +331,26 @@ async function clientRecommendation(payload: {
   custom_dishes: Dish[];
   session_exclusions: string[];
   session_category_exclusions: string[];
-  cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
+  cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating } | { dish_id: string; cooked_at: string }>;
   quicker_than_minutes?: number;
   max_cook_minutes?: number;
   occasion_preference?: OccasionPreference;
 }): Promise<Recommendation> {
   const catalog = await listDishes(payload.meal_type);
   const pantrySet = new Set(payload.pantry_items.map((item) => item.toLowerCase()));
-  const loved = new Set(payload.cooked_history.filter((event) => event.rating === "loved").map((event) => event.dish_id));
-  const blocked = new Set(payload.cooked_history.filter((event) => event.rating === "dont_suggest").map((event) => event.dish_id));
+  const loved = new Set(payload.cooked_history.filter((event) => "rating" in event && event.rating === "loved").map((event) => event.dish_id));
+  const blocked = new Set(payload.cooked_history.filter((event) => "rating" in event && event.rating === "dont_suggest").map((event) => event.dish_id));
+  const dishLookup = new Map([...payload.custom_dishes, ...catalog].map((dish) => [dish.id, dish]));
+  const recentFamilies = new Set(
+    payload.cooked_history
+      .filter((event) => "cooked_at" in event && daysSince(event.cooked_at) < 2)
+      .flatMap((event) => familyFor(dishLookup.get(event.dish_id)?.category ?? ""))
+  );
   const dishes = [...payload.custom_dishes, ...catalog]
     .filter((dish) => !blocked.has(dish.id))
     .filter((dish) => !payload.session_exclusions.includes(dish.id))
     .filter((dish) => !payload.session_category_exclusions.includes(dish.category))
+    .filter((dish) => !recentFamilies.has(dish.category))
     .filter((dish) => dietAllowed(dish, payload.household) && avoidsAllowed(dish, payload.household))
     .filter((dish) => occasionAllowed(dish, payload.occasion_preference ?? "regular"))
     .filter((dish) => !payload.quicker_than_minutes || dish.morning_effort_minutes < payload.quicker_than_minutes)
@@ -363,6 +385,7 @@ export default function App() {
   const [sessionExclusions, setSessionExclusions] = useState<string[]>([]);
   const [sessionCategoryExclusions, setSessionCategoryExclusions] = useState<string[]>([]);
   const [meals, setMeals] = useState<MealEvent[]>([]);
+  const [recentRecommendations, setRecentRecommendations] = useState<Array<{ dish_id: string; cooked_at: string }>>([]);
   const [customDishes, setCustomDishes] = useState<CustomDish[]>([]);
   const [favoriteDishIds, setFavoriteDishIds] = useState<string[]>([]);
   const [reminderTime, setReminderTime] = useState("20:30");
@@ -379,16 +402,18 @@ export default function App() {
       const state = await getLocalState();
       const localMeals = await db.meals.orderBy("cooked_at").reverse().toArray();
       const localCustomDishes = await db.customDishes.orderBy("created_at").reverse().toArray();
-      const latestRecommendation = state.latest_recommendation?.dish.meal_type === state.meal_type ? state.latest_recommendation : undefined;
+      const hasTodayRecommendation = state.latest_recommendation_date === todayKey();
+      const latestRecommendation = state.latest_recommendation?.dish.meal_type === state.meal_type && hasTodayRecommendation ? state.latest_recommendation : undefined;
       setHousehold(state.household);
       setMealType(state.meal_type);
       setPantry(state.pantry_items);
       setRec(latestRecommendation);
-      setSessionExclusions(state.session_exclusions);
-      setSessionCategoryExclusions(state.session_category_exclusions);
+      setSessionExclusions(hasTodayRecommendation ? state.session_exclusions : []);
+      setSessionCategoryExclusions(hasTodayRecommendation ? state.session_category_exclusions : []);
       setFavoriteDishIds(state.favorite_dish_ids);
       setReminderTime(state.reminder_time);
       setOccasionPreference(state.occasion_preference);
+      setRecentRecommendations(state.recent_recommendations);
       setMeals(localMeals);
       setCustomDishes(localCustomDishes);
       setScreen(state.household ? "home" : "setup");
@@ -476,6 +501,7 @@ export default function App() {
       session_category_exclusions: quicker ? sessionCategoryExclusions : [...sessionCategoryExclusions, ...(rec ? familyFor(rec.dish.category) : [])],
       cooked_history: [
         ...meals,
+        ...recentRecommendations,
         ...favoriteDishIds.map((dishId) => ({ dish_id: dishId, rating: "loved" as const }))
       ],
       quicker_than_minutes: quicker && rec ? rec.dish.morning_effort_minutes : undefined,
@@ -487,22 +513,26 @@ export default function App() {
       const next = await recommendation(payload);
       const exclusions = [...sessionExclusions, next.dish.id].slice(-8);
       const categoryExclusions = [...new Set([...sessionCategoryExclusions, ...familyFor(next.dish.category)])].slice(-10);
+      const recommendationMemory = rememberShownRecommendation(recentRecommendations, next.dish);
       setRec(next);
       setSessionExclusions(exclusions);
       setSessionCategoryExclusions(categoryExclusions);
+      setRecentRecommendations(recommendationMemory);
       setOfflineNote("");
-      await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
+      await saveLocalState({ latest_recommendation: next, latest_recommendation_date: todayKey(), recent_recommendations: recommendationMemory, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
       await trackEvent("recommendation_shown", { meal_type: mealType, dish_id: next.dish.id, category: next.dish.category }, household.id);
     } catch {
       try {
         const next = await clientRecommendation(payload);
         const exclusions = [...sessionExclusions, next.dish.id].slice(-8);
         const categoryExclusions = [...new Set([...sessionCategoryExclusions, ...familyFor(next.dish.category)])].slice(-10);
+        const recommendationMemory = rememberShownRecommendation(recentRecommendations, next.dish);
         setRec(next);
         setSessionExclusions(exclusions);
         setSessionCategoryExclusions(categoryExclusions);
+        setRecentRecommendations(recommendationMemory);
         setOfflineNote("Using local recommendations. Sync will resume when services are available.");
-        await saveLocalState({ latest_recommendation: next, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
+        await saveLocalState({ latest_recommendation: next, latest_recommendation_date: todayKey(), recent_recommendations: recommendationMemory, session_exclusions: exclusions, session_category_exclusions: categoryExclusions, pantry_items: pantry });
       } catch {
         setOfflineNote("Showing the last useful recommendation. New actions will be kept locally.");
       }

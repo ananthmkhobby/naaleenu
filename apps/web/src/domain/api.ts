@@ -24,7 +24,7 @@ export async function recommendation(payload: {
   custom_dishes: Dish[];
   session_exclusions: string[];
   session_category_exclusions: string[];
-  cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating }>;
+  cooked_history: Array<MealEvent | { dish_id: string; rating: FeedbackRating } | { dish_id: string; cooked_at: string }>;
   quicker_than_minutes?: number;
   max_cook_minutes?: number;
   occasion_preference?: OccasionPreference;

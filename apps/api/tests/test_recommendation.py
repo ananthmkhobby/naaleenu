@@ -1,3 +1,5 @@
+from datetime import date
+
 from app.schemas.domain import DietType, Household, MealType, RecommendationRequest, TimeBand
 from app.services.recommendation import recommend
 
@@ -33,6 +35,30 @@ def test_another_excludes_current_recommendation():
         session_exclusions=[first.dish.id],
     ))
     assert second.dish.id != first.dish.id
+
+
+def test_recently_shown_item_is_not_repeated_as_next_day_default():
+    first = recommend(RecommendationRequest(household=household(), pantry_items=["rice", "urad dal", "rava"]))
+    second = recommend(RecommendationRequest(
+        household=household(),
+        pantry_items=["rice", "urad dal", "rava"],
+        cooked_history=[{"dish_id": first.dish.id, "cooked_at": f"{date.today().isoformat()}T07:00:00+00:00"}],
+    ))
+    assert second.dish.id != first.dish.id
+
+
+def test_recently_shown_category_family_rotates_away():
+    first = recommend(RecommendationRequest(
+        household=household(preferred_styles=["upma"]),
+        pantry_items=["rava", "rice", "poha", "wheat flour"],
+    ))
+    second = recommend(RecommendationRequest(
+        household=household(preferred_styles=["upma", "rice", "rotti"]),
+        pantry_items=["rava", "rice", "poha", "wheat flour"],
+        cooked_history=[{"dish_id": first.dish.id, "cooked_at": f"{date.today().isoformat()}T07:00:00+00:00"}],
+    ))
+    if first.dish.category in {"upma", "poha", "usli"}:
+        assert second.dish.category not in {"upma", "poha", "usli"}
 
 
 def test_quicker_returns_lower_effort():
