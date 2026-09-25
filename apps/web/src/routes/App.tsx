@@ -10,6 +10,11 @@ import { fetchCustomDishes, fetchHousehold, saveFeedback, saveMealEvent, saveTom
 const pantryChoices = ["rice", "urad dal", "rava", "poha", "bread", "egg", "oats", "banana", "paneer", "mixed vegetables"];
 const styleChoices = ["idli", "dosa", "poha", "upma", "rice", "rotti", "oats"];
 const leftoverChoices = ["cooked rice", "chapati", "dal", "sambar", "dosa batter", "boiled potato", "curd", "vegetable palya"];
+const vegetableChoices = [
+  "onion", "tomato", "potato", "carrot", "beans", "cabbage", "capsicum", "brinjal",
+  "methi leaves", "palak", "cucumber", "cauliflower", "green peas", "beetroot", "bottle gourd",
+  "ridge gourd", "drumstick", "okra", "raw banana", "coriander", "curry leaves"
+];
 const cuisinePriority: Record<string, number> = { "south-indian": 12, "north-indian": 5, "pan-indian": 3, western: 0 };
 const cookTimeFilters = [
   { label: "Any", value: undefined },
@@ -53,6 +58,17 @@ type LeftoverIdea = {
   dish?: Dish;
 };
 
+type FridgeIdea = {
+  title: string;
+  mealType: MealType;
+  minutes: number;
+  vegetables: string[];
+  reason: string;
+  side: string;
+  dishHints: string[];
+  dish?: Dish;
+};
+
 const leftoverRules: Array<Omit<LeftoverIdea, "dish"> & { patterns: string[]; dishHints: string[] }> = [
   { slot: "Use this first", title: "Leftover chapati upma", goal: "breakfast", minutes: 10, uses: ["chapati"], patterns: ["chapati"], dishHints: ["Leftover Chapati Upma"], reason: "Uses chapati before it dries out and avoids making fresh batter.", side: "curd or pickle", groceryGap: ["onion", "curry leaves"] },
   { slot: "Pack this", title: "Chapati palya roll", goal: "lunchbox", minutes: 8, uses: ["chapati", "vegetable palya"], patterns: ["chapati", "vegetable palya"], dishHints: ["Phulka Roll + Vegetable Palya", "Curd Chapati Roll"], reason: "Turns yesterday's palya into a neat lunchbox roll with almost no cooking.", side: "curd and fruit", groceryGap: [] },
@@ -72,6 +88,27 @@ const leftoverRules: Array<Omit<LeftoverIdea, "dish"> & { patterns: string[]; di
   { slot: "Use this first", title: "Curd avalakki", goal: "breakfast", minutes: 8, uses: ["curd"], patterns: ["curd"], dishHints: ["Curd Avalakki"], reason: "Curd becomes a cooling breakfast without cooking.", side: "banana", groceryGap: ["poha"] },
   { slot: "Pack this", title: "Palya sandwich", goal: "lunchbox", minutes: 10, uses: ["vegetable palya"], patterns: ["vegetable palya"], dishHints: ["Vegetable Sandwich + Curd", "Vegetable Sandwich"], reason: "Leftover palya becomes a lunchbox filling instead of another sabzi.", side: "fruit", groceryGap: ["bread"] },
   { slot: "Dinner rescue", title: "Palya rice bath", goal: "dinner", minutes: 12, uses: ["vegetable palya", "cooked rice"], patterns: ["vegetable palya", "cooked rice"], dishHints: ["Vegetable Rice Bath", "Vegetable Rice Bath + Raita"], reason: "Rice and palya become one fresh-tasting mixed rice.", side: "raita", groceryGap: [] }
+];
+
+const fridgeRules: FridgeIdea[] = [
+  { title: "Vegetable upma", mealType: "breakfast", minutes: 18, vegetables: ["carrot", "beans", "onion", "tomato", "green peas"], reason: "Uses small quantities of mixed vegetables and stays quick for breakfast.", side: "coconut chutney or curd", dishHints: ["Vegetable Upma", "Rava Khichadi"] },
+  { title: "Vegetable uttapam", mealType: "breakfast", minutes: 18, vegetables: ["onion", "tomato", "carrot", "capsicum"], reason: "A good way to use chopped vegetables when batter is available.", side: "coconut chutney", dishHints: ["Vegetable Uttapam", "Onion Uttapam", "Tomato Uttapam"] },
+  { title: "Vegetable rice bath", mealType: "lunch", minutes: 25, vegetables: ["carrot", "beans", "green peas", "capsicum", "potato"], reason: "Turns fridge vegetables into a lunchbox-friendly one-pot meal.", side: "curd or raita", dishHints: ["Vegetable Rice Bath", "Vegetable Rice Bath + Raita"] },
+  { title: "Vangi bath", mealType: "lunch", minutes: 25, vegetables: ["brinjal"], reason: "Best use when brinjal is the vegetable waiting in the fridge.", side: "curd", dishHints: ["Vangi Bath", "Vangi Bath + Curd"] },
+  { title: "Capsicum rice", mealType: "lunch", minutes: 18, vegetables: ["capsicum", "onion"], reason: "Fast lunchbox idea when capsicum needs to be used before it softens.", side: "curd", dishHints: ["Capsicum Rice"] },
+  { title: "Tomato rice", mealType: "lunch", minutes: 20, vegetables: ["tomato", "onion"], reason: "Uses ripe tomatoes quickly and avoids a separate curry.", side: "cucumber or curd", dishHints: ["Tomato Rice", "Tomato Rice + Cucumber"] },
+  { title: "Akki rotti with vegetables", mealType: "breakfast", minutes: 25, vegetables: ["onion", "carrot", "coriander", "curry leaves"], reason: "Works well when herbs and one firm vegetable are available.", side: "curd or chutney", dishHints: ["Vegetable Akki Rotti", "Onion Akki Rotti"] },
+  { title: "Methi rotti", mealType: "breakfast", minutes: 25, vegetables: ["methi leaves"], reason: "Uses methi before it wilts and gives a strong breakfast option.", side: "curd", dishHints: ["Methi Akki Rotti", "Methi Paratha"] },
+  { title: "Aloo chapati roll", mealType: "lunch", minutes: 18, vegetables: ["potato", "onion"], reason: "Potato becomes a filling lunchbox roll with very little planning.", side: "curd and pickle", dishHints: ["Chapati + Aloo Palya", "Aloo Chapati Roll"] },
+  { title: "Poori potato palya", mealType: "breakfast", minutes: 30, vegetables: ["potato"], reason: "A familiar special breakfast when potato is the main vegetable.", side: "curd or chutney", dishHints: ["Poori + Potato Palya"] },
+  { title: "Cabbage akki usli", mealType: "breakfast", minutes: 20, vegetables: ["cabbage", "carrot"], reason: "Uses shredded cabbage neatly without needing a separate side dish.", side: "coconut chutney", dishHints: ["Cabbage Akki Usli", "Vegetable Akki Usli"] },
+  { title: "Palak paneer chapati roll", mealType: "lunch", minutes: 25, vegetables: ["palak"], reason: "Good lunchbox direction when greens need to be finished.", side: "curd", dishHints: ["Paneer Chapati Roll", "Chapati + Paneer Bhurji"] },
+  { title: "Okra chapati box", mealType: "lunch", minutes: 25, vegetables: ["okra"], reason: "Pairs well with chapati and stays simple for lunchbox.", side: "curd", dishHints: ["Bhindi Sabzi + Chapati"] },
+  { title: "Cauliflower paratha", mealType: "lunch", minutes: 30, vegetables: ["cauliflower"], reason: "Uses cauliflower as a filling and avoids making a separate sabzi.", side: "curd and pickle", dishHints: ["Gobi Paratha + Curd", "Gobi Paratha"] },
+  { title: "Beetroot dosa", mealType: "breakfast", minutes: 20, vegetables: ["beetroot"], reason: "Adds color and uses a small leftover beetroot without a curry decision.", side: "coconut chutney", dishHints: ["Beetroot Dosa"] },
+  { title: "Sambar rice with vegetables", mealType: "lunch", minutes: 25, vegetables: ["drumstick", "carrot", "beans", "bottle gourd", "ridge gourd"], reason: "Best when sambar vegetables are available and you want one comforting meal.", side: "papad or curd", dishHints: ["Sambar Rice + Poriyal", "Sambar Rice"] },
+  { title: "Raw banana palya with chapati", mealType: "lunch", minutes: 25, vegetables: ["raw banana"], reason: "Uses raw banana as the main vegetable and packs cleanly.", side: "curd", dishHints: ["Chapati + Mixed Vegetable Sabzi"] },
+  { title: "Cucumber curd rice", mealType: "lunch", minutes: 10, vegetables: ["cucumber"], reason: "A very quick cooling lunchbox when cucumber is available.", side: "pickle", dishHints: ["Curd Rice + Carrot", "Curd Rice"] }
 ];
 
 function dishVisual(dish: Pick<Dish, "name" | "category" | "meal_type">) {
@@ -324,6 +361,31 @@ function groceryGap(dishes: Array<Dish | undefined>, pantry: string[]) {
   return [...new Set(gaps)].slice(0, 4);
 }
 
+function findDishByHints(hints: string[], mealType: MealType, dishes: Dish[], favoriteDishIds: string[]) {
+  const normalizedHints = hints.map((hint) => hint.toLowerCase());
+  return [...dishes]
+    .filter((dish) => dish.meal_type === mealType)
+    .filter((dish) => normalizedHints.some((hint) => dish.name.toLowerCase().includes(hint) || hint.includes(dish.name.toLowerCase())))
+    .sort((first, second) => Number(favoriteDishIds.includes(second.id)) - Number(favoriteDishIds.includes(first.id)) || first.morning_effort_minutes - second.morning_effort_minutes)[0];
+}
+
+function buildFridgeIdeas(selectedVegetables: string[], mealType: MealType, dishes: Dish[], favoriteDishIds: string[]) {
+  const selected = new Set(selectedVegetables.map((item) => item.toLowerCase()));
+  return fridgeRules
+    .map((rule) => {
+      const matched = rule.vegetables.filter((vegetable) => selected.has(vegetable.toLowerCase()));
+      if (!matched.length) return undefined;
+      const dish = findDishByHints(rule.dishHints, rule.mealType, dishes, favoriteDishIds);
+      const minutes = dish?.morning_effort_minutes ?? rule.minutes;
+      const mealFit = rule.mealType === mealType ? 10 : 0;
+      const favoriteBoost = dish && favoriteDishIds.includes(dish.id) ? 6 : 0;
+      const score = matched.length * 14 + mealFit + favoriteBoost - minutes / 10;
+      return { ...rule, dish, minutes, matched, score };
+    })
+    .filter(Boolean)
+    .sort((first, second) => (second?.score ?? 0) - (first?.score ?? 0)) as Array<FridgeIdea & { matched: string[]; score: number }>;
+}
+
 async function clientRecommendation(payload: {
   meal_type: MealType;
   household: Household;
@@ -377,10 +439,11 @@ async function clientRecommendation(payload: {
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
-  const [screen, setScreen] = useState<"loading" | "setup" | "pantry" | "home" | "cook" | "feedback" | "history" | "catalog" | "tomorrow" | "leftovers">("loading");
+  const [screen, setScreen] = useState<"loading" | "setup" | "pantry" | "home" | "cook" | "feedback" | "history" | "catalog" | "tomorrow" | "leftovers" | "fridge">("loading");
   const [household, setHousehold] = useState<Household | undefined>();
   const [mealType, setMealType] = useState<MealType>("breakfast");
   const [pantry, setPantry] = useState<string[]>([]);
+  const [fridgeVegetables, setFridgeVegetables] = useState<string[]>([]);
   const [rec, setRec] = useState<Recommendation | undefined>();
   const [sessionExclusions, setSessionExclusions] = useState<string[]>([]);
   const [sessionCategoryExclusions, setSessionCategoryExclusions] = useState<string[]>([]);
@@ -407,6 +470,7 @@ export default function App() {
       setHousehold(state.household);
       setMealType(state.meal_type);
       setPantry(state.pantry_items);
+      setFridgeVegetables(state.fridge_vegetables);
       setRec(latestRecommendation);
       setSessionExclusions(hasTodayRecommendation ? state.session_exclusions : []);
       setSessionCategoryExclusions(hasTodayRecommendation ? state.session_category_exclusions : []);
@@ -681,7 +745,8 @@ export default function App() {
   if (screen === "catalog") return <CatalogScreen mealType={mealType} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onToggleFavorite={toggleFavorite} onSave={saveCustomDish} onBack={() => setScreen("home")} />;
   if (screen === "tomorrow") return <TomorrowPlan household={household} pantry={pantry} customDishes={customDishes} favoriteDishIds={favoriteDishIds} occasionPreference={occasionPreference} reminderTime={reminderTime} onReminderChange={updateReminder} onBack={() => setScreen("home")} />;
   if (screen === "leftovers") return <LeftoverMagic household={household} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onBack={() => setScreen("home")} />;
-  return <Home mealType={mealType} onMealTypeChange={switchMealType} maxCookMinutes={maxCookMinutes} onMaxCookMinutesChange={async (minutes) => { setMaxCookMinutes(minutes); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} occasionPreference={occasionPreference} onOccasionPreferenceChange={async (occasion) => { setOccasionPreference(occasion); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ occasion_preference: occasion, latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
+  if (screen === "fridge") return <FridgeVegetables household={household} mealType={mealType} selected={fridgeVegetables} onSelectedChange={async (items) => { setFridgeVegetables(items); await saveLocalState({ fridge_vegetables: items }); }} customDishes={customDishes} favoriteDishIds={favoriteDishIds} onBack={() => setScreen("home")} />;
+  return <Home mealType={mealType} onMealTypeChange={switchMealType} maxCookMinutes={maxCookMinutes} onMaxCookMinutesChange={async (minutes) => { setMaxCookMinutes(minutes); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} occasionPreference={occasionPreference} onOccasionPreferenceChange={async (occasion) => { setOccasionPreference(occasion); setRec(undefined); setSessionExclusions([]); setSessionCategoryExclusions([]); await saveLocalState({ occasion_preference: occasion, latest_recommendation: undefined, session_exclusions: [], session_category_exclusions: [] }); }} recommendation={rec} isFavorite={rec ? favoriteDishIds.includes(rec.dish.id) : false} note={offlineNote} onAnother={() => loadRecommendation(false)} onQuicker={() => loadRecommendation(true)} onCook={() => setScreen("cook")} onHistory={() => setScreen("history")} onCatalog={() => setScreen("catalog")} onTomorrow={() => setScreen("tomorrow")} onLeftovers={() => setScreen("leftovers")} onFridge={() => setScreen("fridge")} onToggleFavorite={() => rec && toggleFavorite(rec.dish.id)} />;
 }
 
 function SplashScreen({ onSkip }: { onSkip: () => void }) {
@@ -754,7 +819,7 @@ function Pantry({ selected, setSelected, onDone }: { selected: string[]; setSele
   );
 }
 
-function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChange, occasionPreference, onOccasionPreferenceChange, recommendation, isFavorite, note, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; maxCookMinutes?: number; onMaxCookMinutesChange: (minutes?: number) => void; occasionPreference: OccasionPreference; onOccasionPreferenceChange: (occasion: OccasionPreference) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onToggleFavorite: () => void }) {
+function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChange, occasionPreference, onOccasionPreferenceChange, recommendation, isFavorite, note, onAnother, onQuicker, onCook, onHistory, onCatalog, onTomorrow, onLeftovers, onFridge, onToggleFavorite }: { mealType: MealType; onMealTypeChange: (mealType: MealType) => void; maxCookMinutes?: number; onMaxCookMinutesChange: (minutes?: number) => void; occasionPreference: OccasionPreference; onOccasionPreferenceChange: (occasion: OccasionPreference) => void; recommendation?: Recommendation; isFavorite: boolean; note: string; onAnother: () => void; onQuicker: () => void; onCook: () => void; onHistory: () => void; onCatalog: () => void; onTomorrow: () => void; onLeftovers: () => void; onFridge: () => void; onToggleFavorite: () => void }) {
   if (!recommendation) return <main className="app-shell"><MealTypeSwitch value={mealType} onChange={onMealTypeChange} /><OccasionSwitch value={occasionPreference} onChange={onOccasionPreferenceChange} /><CookTimeFilter value={maxCookMinutes} onChange={onMaxCookMinutesChange} /><p>Finding one good {mealType === "lunch" ? "lunchbox" : "breakfast"}...</p></main>;
   return (
     <main className="decision-screen">
@@ -790,6 +855,7 @@ function Home({ mealType, onMealTypeChange, maxCookMinutes, onMaxCookMinutesChan
         <div className="relief-actions">
           <button onClick={onTomorrow}><CalendarCheck size={17} /> Tomorrow plan</button>
           <button onClick={onLeftovers}><Wand2 size={17} /> Leftover magic</button>
+          <button onClick={onFridge}><Search size={17} /> Fridge vegetables</button>
         </div>
       </section>
     </main>
@@ -1036,6 +1102,85 @@ function LeftoverMagic({ household, customDishes, favoriteDishIds, onBack }: { h
           </article>
         ))}
         {primaryIdeas.length > 0 && <ChoiceButton variant="quiet" icon={<RefreshCw size={18} />} onClick={rotateIdeas}>Show different ideas</ChoiceButton>}
+      </section>
+    </main>
+  );
+}
+
+function FridgeVegetables({ household, mealType, selected, onSelectedChange, customDishes, favoriteDishIds, onBack }: { household?: Household; mealType: MealType; selected: string[]; onSelectedChange: (items: string[]) => void; customDishes: CustomDish[]; favoriteDishIds: string[]; onBack: () => void }) {
+  const [query, setQuery] = useState("");
+  const [catalog, setCatalog] = useState<Dish[]>([]);
+  const [note, setNote] = useState("");
+
+  useEffect(() => {
+    void Promise.all([listDishes("breakfast"), listDishes("lunch")])
+      .then(([breakfast, lunch]) => setCatalog([...breakfast, ...lunch]))
+      .catch(() => setNote("Using saved family recipes. Start the local API for the full list."));
+  }, []);
+
+  const normalizedQuery = query.trim().toLowerCase();
+  const allVegetables = [...new Set([...vegetableChoices, ...selected])].sort();
+  const visibleVegetables = allVegetables.filter((item) => item.includes(normalizedQuery));
+  const allDishes = [...customDishes, ...catalog].filter((dish) => dietAllowed(dish, household) && avoidsAllowed(dish, household));
+  const ideas = buildFridgeIdeas(selected, mealType, allDishes, favoriteDishIds);
+  const primary = ideas[0];
+  const alternatives = ideas.slice(1, 4);
+
+  function toggleVegetable(item: string) {
+    onSelectedChange(selected.includes(item) ? selected.filter((value) => value !== item) : [...selected, item]);
+  }
+
+  function addCustomVegetable() {
+    const value = query.trim().toLowerCase();
+    if (!value) return;
+    onSelectedChange(selected.includes(value) ? selected : [...selected, value]);
+    setQuery("");
+  }
+
+  return (
+    <main className="app-shell fridge-screen">
+      <button className="back-button" onClick={onBack}><ArrowLeft size={19} /> Back</button>
+      <p className="eyebrow">Fridge vegetables</p>
+      <h1>What vegetables should we use?</h1>
+      {note && <p className="note">{note}</p>}
+      <div className="search-row">
+        <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search or add vegetable" aria-label="Search vegetables" />
+        <button onClick={addCustomVegetable}><Plus size={18} /></button>
+      </div>
+      <div className="leftover-grid">
+        {visibleVegetables.map((item) => (
+          <button key={item} className={selected.includes(item) ? "active" : ""} onClick={() => toggleVegetable(item)}>{item}</button>
+        ))}
+      </div>
+      <section className="fridge-selection">
+        <strong>Selected</strong>
+        <span>{selected.length ? selected.join(" · ") : "Choose vegetables to get one practical dish."}</span>
+      </section>
+      <section className="leftover-results" aria-label="Vegetable dish recommendation">
+        {selected.length === 0 ? <p className="subtle">Select two or three vegetables from the fridge.</p> : !primary ? <p className="subtle">No strong match yet. Add onion, tomato, potato, carrot, beans or capsicum for better ideas.</p> : (
+          <article className="leftover-card primary">
+            {primary.dish && <img className="dish-thumb" src={visualForDish(primary.dish)} alt="" />}
+            <div>
+              <strong>Recommended</strong>
+              <h2>{primary.dish?.name ?? primary.title}</h2>
+              <span>{primary.minutes} min · uses {primary.matched.join(", ")}</span>
+              <p>{primary.reason}</p>
+              <small>Best with {primary.side}</small>
+            </div>
+          </article>
+        )}
+        {alternatives.map((idea) => (
+          <article className="leftover-card" key={idea.title}>
+            {idea.dish && <img className="dish-thumb" src={visualForDish(idea.dish)} alt="" />}
+            <div>
+              <strong>Another option</strong>
+              <h2>{idea.dish?.name ?? idea.title}</h2>
+              <span>{idea.minutes} min · {idea.mealType === "lunch" ? "lunchbox" : "breakfast"}</span>
+              <p>{idea.reason}</p>
+              <small>Uses {idea.matched.join(", ")}</small>
+            </div>
+          </article>
+        ))}
       </section>
     </main>
   );

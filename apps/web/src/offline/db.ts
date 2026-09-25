@@ -6,6 +6,7 @@ export interface LocalState {
   household?: Household;
   meal_type: MealType;
   pantry_items: string[];
+  fridge_vegetables: string[];
   favorite_dish_ids: string[];
   reminder_time: string;
   occasion_preference: OccasionPreference;
@@ -49,8 +50,8 @@ export const db = new BreakfastDb();
 
 export async function getLocalState(): Promise<LocalState> {
   const state = await db.state.get("active");
-  if (state) return { ...state, meal_type: state.meal_type ?? "breakfast", favorite_dish_ids: state.favorite_dish_ids ?? [], reminder_time: state.reminder_time ?? "20:30", occasion_preference: state.occasion_preference ?? "regular", recent_recommendations: state.recent_recommendations ?? [], session_exclusions: state.session_exclusions ?? [], session_category_exclusions: state.session_category_exclusions ?? [] };
-  const fresh: LocalState = { key: "active", meal_type: "breakfast", pantry_items: [], favorite_dish_ids: [], reminder_time: "20:30", occasion_preference: "regular", recent_recommendations: [], session_exclusions: [], session_category_exclusions: [] };
+  if (state) return { ...state, meal_type: state.meal_type ?? "breakfast", pantry_items: state.pantry_items ?? [], fridge_vegetables: state.fridge_vegetables ?? [], favorite_dish_ids: state.favorite_dish_ids ?? [], reminder_time: state.reminder_time ?? "20:30", occasion_preference: state.occasion_preference ?? "regular", recent_recommendations: state.recent_recommendations ?? [], session_exclusions: state.session_exclusions ?? [], session_category_exclusions: state.session_category_exclusions ?? [] };
+  const fresh: LocalState = { key: "active", meal_type: "breakfast", pantry_items: [], fridge_vegetables: [], favorite_dish_ids: [], reminder_time: "20:30", occasion_preference: "regular", recent_recommendations: [], session_exclusions: [], session_category_exclusions: [] };
   await db.state.put(fresh);
   return fresh;
 }

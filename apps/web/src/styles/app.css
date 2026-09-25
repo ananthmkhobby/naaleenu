@@ -459,7 +459,7 @@ textarea {
 
 .relief-actions {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.65rem;
   margin-top: 0.75rem;
 }
@@ -474,6 +474,7 @@ textarea {
   gap: 0.4rem;
   background: #fffdf8;
   color: #214f3a;
+  font-size: 0.86rem;
   font-weight: 800;
 }
 
@@ -914,6 +915,50 @@ ol {
   margin: 0.2rem 0;
   color: #17221a;
   line-height: 1.35;
+}
+
+.leftover-card.primary {
+  border-left: 4px solid #b88a3b;
+}
+
+.search-row {
+  display: grid;
+  grid-template-columns: 1fr 48px;
+  gap: 0.55rem;
+}
+
+.search-row input {
+  min-width: 0;
+}
+
+.search-row button {
+  border: 1px solid #214f3a;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: #214f3a;
+  color: #fffdf8;
+}
+
+.fridge-selection {
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #e7dece;
+  border-radius: 8px;
+  display: grid;
+  gap: 0.25rem;
+  background: #fffdf8;
+}
+
+.fridge-selection strong {
+  color: #214f3a;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.fridge-selection span {
+  color: #17221a;
+  font-weight: 800;
 }
 
 .favorite-button {
